@@ -1,0 +1,24 @@
+{
+  "name": "abitur",
+  "version": "1.0.0",
+  "description": "web-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rokdai/abitur.git"
+  },
+  "author": "Hryn Nikita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rokdai/abitur/issues"
+  },
+  "homepage": "https://github.com/Rokdai/abitur#readme",
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
+}
