@@ -45,8 +45,6 @@
     "*.json",
     "*.js",
     "source/*.html",
-    "source/admin-html/*.html",
-    "source/game-html/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/less/**/*.less"
