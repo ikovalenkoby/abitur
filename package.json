@@ -3,22 +3,55 @@
   "version": "1.0.0",
   "description": "web-site",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Iryna Kovalenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikovalenkoby/abitur/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rokdai/abitur.git"
+    "url": "https://github.com:ikovalenkoby/abitur.git"
   },
-  "author": "Hryn Nikita",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Rokdai/abitur/issues"
-  },
-  "homepage": "https://github.com/Rokdai/abitur#readme",
   "browserslist": [
     "last 2 versions",
     "IE 11",
     "Firefox ESR"
-  ]
+  ],
+  "dependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "normalize.css": "^8.0.1",
+    "stylelint": "^13.1.0",
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "utill": "^0.1.3"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/admin-html/*.html",
+    "source/game-html/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/less/**/*.less"
+  ],
+  "devDependencies": {
+    "gulp-csso": "^4.0.1"
+  }
 }
