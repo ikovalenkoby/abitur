@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <img src="img/logo.svg" alt="" />
+    <header class="header">
+      <div class="header__container">
+        <img class="logo header__logo" src="img/logo.png" alt="" />
+        <input class="header__search search" type="text" />
       </div>
-      <nav>
-        <ul>
-          <li>Об университете</li>
-          <li>Подготовка к поступлению</li>
-          <li>Централизованное тестирование</li>
-          <li>Приёмная компания</li>
-          <li>Профессиональная ориентация</li>
-        </ul>
-      </nav>
+      <div class="header-allScren">
+        <nav class="header__nav">
+          <ul class="header__nav-menu menu">
+            <li class="menu__item"><a>Об университете</a></li>
+            <li class="menu__item"><a>Подготовка к поступлению</a></li>
+            <li class="menu__item"><a>Централизованное тестирование</a></li>
+            <li class="menu__item"><a>Приёмная компания</a></li>
+            <li class="menu__item"><a>Профессиональная ориентация</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="content">
       <div class="contet__banner">
@@ -30,12 +33,14 @@
       <div class="contetn__calendar"></div>
       <div class="content__news"></div>
     </main>
-    <footer>
-      <div>
-        <img src="img/logo.svg" alt="" />
+    <footer class="footer">
+      <div class="footer__container">
+        <div>
+          <img src="img/logo.png" alt="" />
+        </div>
+        <div></div>
+        <div></div>
       </div>
-      <div></div>
-      <div></div>
     </footer>
 
     <script src="" async defer></script>

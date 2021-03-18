@@ -1,15 +1,27 @@
+@import url("./fonts/fonts.less");
+@import url("./blocks/logo.less");
+@import url("./blocks/menu.less");
+@import url("./pageParts/header.less");
+@import url("./pageParts/content.less");
+@import url("./pageParts/footer.less");
+@import url("./colors/colors.less");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
 
 body {
   height: 100%;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(183px, 202px), 1fr, minmax(108px, 210px);
+  grid-template-rows: minmax(183px, auto), 1fr, minmax(108px, 210px);
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: normal;
@@ -19,9 +31,9 @@ body {
 
 header,
 footer {
-  background-color: #1d233a;
+  background-color: @mainColor;
 }
 
 main {
-  background-color: #ffffff;
+  background-color: @bg;
 }
