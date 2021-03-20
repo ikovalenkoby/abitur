@@ -1,39 +1,16 @@
-@import url("./fonts/fonts.less");
-@import url("./blocks/logo.less");
-@import url("./blocks/menu.less");
-@import url("./pageParts/header.less");
-@import url("./pageParts/content.less");
-@import url("./pageParts/footer.less");
-@import url("./colors/colors.less");
+@import url("./fonts-connect.less");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url("./constants/colors.less");
+@import url("./constants/page__styles.less");
 
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: minmax(183px, auto), 1fr, minmax(108px, 210px);
-  font-family: IBM Plex Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 36px;
-}
-
-header,
-footer {
-  background-color: @mainColor;
-}
-
-main {
-  background-color: @bg;
-}
+@import url("./blocks/h1/h1.less");
+@import url("./blocks/h2/h2.less");
+@import url("./blocks/h3/h3.less");
+@import url("./blocks/h4/h4.less");
+@import url("./blocks/text/text.less");
+@import url("./blocks/caption/captiom.less");
+@import url("./blocks/header/header.less");
+@import url("./blocks/logo/logo.less");
+@import url("./blocks/wrapper/wrapper.less");
+@import url("./blocks/search-form/search-form.less");
+@import url("./blocks/button/button.less");

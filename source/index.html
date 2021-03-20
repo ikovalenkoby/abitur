@@ -1,47 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html class="html">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Абитуриент</title>
+    <title></title>
     <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
-      <div class="header__container">
-        <img class="logo header__logo" src="img/logo.png" alt="" />
-        <input class="header__search search" type="text" />
-      </div>
-      <div class="header-allScren">
-        <nav class="header__nav">
-          <ul class="header__nav-menu menu">
-            <li class="menu__item"><a>Об университете</a></li>
-            <li class="menu__item"><a>Подготовка к поступлению</a></li>
-            <li class="menu__item"><a>Централизованное тестирование</a></li>
-            <li class="menu__item"><a>Приёмная компания</a></li>
-            <li class="menu__item"><a>Профессиональная ориентация</a></li>
-          </ul>
-        </nav>
+      <div class="wrapper header__wrapper">
+        <img class="logo" src="./img/logo.png" alt="" />
+        <form class="search-form header__search-form" action="">
+          <input
+            class="search-form__input h4"
+            type="text"
+            placeholder="Поиск"
+          />
+          <button class="button search-form__button">
+            <img src="./img/search-img.svg" alt="" class="search-form__img" />
+          </button>
+        </form>
+
+        <button class="button header__links">
+          <img src="" alt="" class="header__links-img" />
+          Популярные ссылки
+        </button>
       </div>
     </header>
-    <main class="content">
-      <div class="contet__banner">
-        <img src="img/banner_2.png" alt="" />
-      </div>
-      <div class="contetn__calendar"></div>
-      <div class="content__news"></div>
-    </main>
-    <footer class="footer">
-      <div class="footer__container">
-        <div>
-          <img src="img/logo.png" alt="" />
-        </div>
-        <div></div>
-        <div></div>
-      </div>
-    </footer>
 
     <script src="" async defer></script>
   </body>
