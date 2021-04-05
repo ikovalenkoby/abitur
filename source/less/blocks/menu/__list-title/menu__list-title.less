@@ -1,0 +1,22 @@
+.menu__list-title {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 4px;
+  padding-left: 11px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: @circle;
+    margin-right: 4px;
+  }
+
+  &:hover {
+    color: @menu_act;
+  }
+}
