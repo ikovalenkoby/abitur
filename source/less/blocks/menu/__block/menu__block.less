@@ -1,0 +1,42 @@
+.menu__block {
+  font-size: @f15;
+  line-height: @fl15;
+  text-transform: uppercase;
+  color: @icon;
+  padding: 32px 0;
+  text-align: center;
+  position: relative;
+
+  &:first-child {
+    padding-left: 32px;
+  }
+
+  &:last-child {
+    padding-right: 32px;
+  }
+
+  &:hover {
+    color: @menu_act;
+    cursor: pointer;
+  }
+  &:hover .menu__hidden-box {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1239px) {
+  .menu__block {
+    font-size: @f10;
+    line-height: @fl10;
+    text-align: left;
+    padding: 16px 30px;
+
+    &:first-child {
+      padding-left: 32px;
+    }
+
+    &:last-child {
+      padding-right: 32px;
+    }
+  }
+}
