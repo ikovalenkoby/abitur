@@ -2,8 +2,12 @@
 
 window.addEventListener("DOMContentLoaded", () => {
   const menuBtns = document.querySelectorAll(".menu__btn"),
-    menuBlocks = document.querySelectorAll(".menu__mobile-block");
+    menuBlocks = document.querySelectorAll(".menu__mobile-block"),
+    popup = document.querySelector(".popup"),
+    popupClose = popup.querySelector(".popup__close"),
+    popupOpenBtn = document.querySelector(".header__links");
 
+  //Mobile
   function hiddenMenuBlocks() {
     menuBtns.forEach((btn) => {
       btn.querySelector(".menu__img").classList.remove("menu__img--active");
@@ -18,10 +22,8 @@ window.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       if (menuBlocks[i].classList.contains("show")) {
         hiddenMenuBlocks();
-        console.log("remove");
       } else {
         hiddenMenuBlocks();
-        console.log("add");
         menuBtns[i]
           .querySelector(".menu__img")
           .classList.add("menu__img--active");
@@ -29,5 +31,26 @@ window.addEventListener("DOMContentLoaded", () => {
         menuBlocks[i].classList.remove("hidden");
       }
     });
+  });
+
+  //popup
+  function openPopup() {
+    popup.classList.remove("hidden");
+    popup.classList.add("show__flex");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closePopup() {
+    popup.classList.remove("show__flex");
+    popup.classList.add("hidden");
+    document.body.style.overflow = "";
+  }
+
+  popupOpenBtn.addEventListener("click", openPopup);
+  popupClose.addEventListener("click", closePopup);
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      closePopup();
+    }
   });
 });
