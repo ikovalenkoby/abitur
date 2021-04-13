@@ -4,10 +4,17 @@
   padding: 16px 24px;
   box-sizing: border-box;
   background: @icon;
+  opacity: 0.8;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:focus {
+    outline: 0;
+    border: none;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1239px) {

@@ -1,0 +1,25 @@
+.footer__information {
+  font-size: @f12;
+  line-height: @fl12;
+}
+
+@media screen and (max-width: 1239px) {
+  .footer__information {
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__information {
+    width: auto;
+
+    &:last-child {
+      flex-direction: initial;
+    }
+
+    &:last-child > .footer__description {
+      margin-bottom: 0;
+    }
+  }
+}

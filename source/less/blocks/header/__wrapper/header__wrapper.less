@@ -1,8 +1,16 @@
-@import url(./--menu/header__wrapper--menu.less);
+@import url("./--menu/header__wrapper--menu.less");
+@import url("./--mobile/header__wrapper--mobile.less");
 
 .header__wrapper {
   padding: 24px 0 24px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+    padding: 12px 0 22px 14px;
+  }
 }
