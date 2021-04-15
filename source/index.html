@@ -12,19 +12,24 @@
   <body class="body">
     <header class="header">
       <div class="wrapper header__wrapper">
-        <img class="logo" src="./img/logo.png" alt="" />
+        <a href="./index.html">
+          <img class="logo" src="./img/logo.svg" alt="" />
+        </a>
         <form class="search-form header__search-form" action="">
           <input
             class="search-form__input h4"
             type="text"
             placeholder="Поиск"
           />
-          <button class="button search-form__button">
-            <img src="./img/search-img.svg" alt="" class="search-form__img" />
+          <button class="button button--active search-form__button">
+            <svg class="search-form__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <use xlink:href="./img/search_sprite.svg#search"></use>
+            </svg>
+            <!-- <img src="./img/search-img.svg" alt="" class="search-form__img" /> -->
           </button>
         </form>
 
-        <button class="button header__links">
+        <button class="button button--active header__links">
           <img src="./img/btn_img.png" class="header__links-img" />
           ПОПУЛЯРНЫЕ ССЫЛКИ
           <div class="header__links-circle">
@@ -43,9 +48,9 @@
                   <span class="menu__list-title"
                     >Факультеты и специальности</span
                   >
-                  <li class="menu_item h4">Специальности очной формы</li>
-                  <li class="menu_item h4">Специальности заочной формы</li>
-                  <li class="menu_item h4">Специальности сокращённой формы</li>
+                  <li class="menu__item">Специальности очной формы</li>
+                  <li class="menu__item">Специальности заочной формы</li>
+                  <li class="menu__item">Специальности сокращённой формы</li>
                 </ul>
 
                 <ul class="menu__list">
@@ -64,11 +69,11 @@
 
                 <ul class="menu__list">
                   <span class="menu__list-title">Студенческая жизнь</span>
-                  <li class="menu_item h4">Учебный процесс</li>
-                  <li class="menu_item h4">Социальная поддержка студентов</li>
-                  <li class="menu_item h4">Культурная жизнь</li>
-                  <li class="menu_item h4">Спортивная жизнь</li>
-                  <li class="menu_item h4">Общежития</li>
+                  <li class="menu__item">Учебный процесс</li>
+                  <li class="menu__item">Социальная поддержка студентов</li>
+                  <li class="menu__item">Культурная жизнь</li>
+                  <li class="menu__item">Спортивная жизнь</li>
+                  <li class="menu__item">Общежития</li>
                 </ul>
 
                 <ul class="menu__list">
@@ -147,25 +152,25 @@
 
                 <ul class="menu__list">
                   <span class="menu__list-title">Общая информация</span>
-                  <li class="menu_item h4">Правила примема</li>
-                  <li class="menu_item h4">Порядок приема</li>
+                  <li class="menu__item">Правила приема</li>
+                  <li class="menu__item">Порядок приема</li>
                 </ul>
 
                 <ul class="menu__list">
-                  <span class="menu__list-title">Вступительная компания</span>
-                  <li class="menu_item h4">План приема в БГУИР</li>
-                  <li class="menu_item h4">
+                  <span class="menu__list-title">Вступительная кампания</span>
+                  <li class="menu__item">План приема в БГУИР</li>
+                  <li class="menu__item">
                     Сроки проведения вступительной кампании
                   </li>
-                  <li class="menu_item h4">Статистика поданных заявлений</li>
-                  <li class="menu_item h4">Проходные баллы прошлых лет</li>
-                  <li class="menu_item h4">Документы для поступления</li>
+                  <li class="menu__item">Статистика поданных заявлений</li>
+                  <li class="menu__item">Проходные баллы прошлых лет</li>
+                  <li class="menu__item">Документы для поступления</li>
                 </ul>
 
                 <ul class="menu__list">
                   <span class="menu__list-title">Приемная комиссия</span>
-                  <li class="menu_item h4">Часто задаваемые вопросы</li>
-                  <li class="menu_item h4">Контакты приемной комиссии</li>
+                  <li class="menu__item">Часто задаваемые вопросы</li>
+                  <li class="menu__item">Контакты приемной комиссии</li>
                 </ul>
               </div>
             </div>
@@ -203,33 +208,59 @@
           </button>
           <div class="menu__mobile-block hidden">
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">Факультеты и специальности</span>
-              <li class="menu_item">Специальности очной формы</li>
-              <li class="menu_item">Специальности заочной формы</li>
-              <li class="menu_item">Специальности сокращённой формы</li>
+              <a class="menu__list-title">Факультеты и специальности</a>
+              <li class="menu__item menu__item--mobile">
+                <a href="">
+                  Специальности очной формы
+                </a>
+                </li>
+              <li class="menu__item menu__item--mobile">
+              <a href="">Специальности заочной формы</a>  
+              </li>
+              <li class="menu__item menu__item--mobile">
+              <a href="">
+                Специальности сокращённой формы
+              </a>  
+              </li>
             </ul>
 
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">МРТИ-БГУИР</span>
+              <a class="menu__list-title">МРТИ-БГУИР</a>
             </ul>
 
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">10 причин выбрать БГУИР</span>
+              <a class="menu__list-title">10 причин выбрать БГУИР</a>
             </ul>
 
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title"
-                >Дополнительная военная специальность</span
+              <a class="menu__list-title"
+                >Дополнительная военная специальность</a
               >
             </ul>
 
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">Студенческая жизнь</span>
-              <li class="menu_item">Учебный процесс</li>
-              <li class="menu_item">Социальная поддержка студентов</li>
-              <li class="menu_item">Культурная жизнь</li>
-              <li class="menu_item">Спортивная жизнь</li>
-              <li class="menu_item">Общежития</li>
+              <a class="menu__list-title">Студенческая жизнь</a>
+              <li class="menu__item menu__item--mobile">
+              <a href="">
+                Учебный процесс
+              </a>  
+              </li>
+              <li class="menu__item menu__item--mobile">
+              <a href="">Социальная поддержка студентов</a>  
+              </li>
+              <li class="menu__item menu__item--mobile">
+                <a href="">
+                  Культурная жизнь
+                </a>
+              </li>
+              <li class="menu__item menu__item--mobile">
+                <a href="">Спортивная жизнь</a>
+              </li>
+              <li class="menu__item menu__item--mobile">
+                <a href="">
+                  Общежития
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -241,11 +272,11 @@
           </button>
           <div class="menu__mobile-block hidden">
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">Подготовительные курсы</span>
+              <a class="menu__list-title">Подготовительные курсы</a>
             </ul>
 
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">Репетиционное тестирование</span>
+              <a class="menu__list-title">Репетиционное тестирование</a>
             </ul>
           </div>
 
@@ -257,11 +288,11 @@
           </button>
           <div class="menu__mobile-block hidden">
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">Подготовительные курсы</span>
+              <a class="menu__list-title">Подготовительные курсы</a>
             </ul>
 
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">Репетиционное тестирование</span>
+              <a class="menu__list-title">Репетиционное тестирование</a>
             </ul>
           </div>
 
@@ -273,7 +304,7 @@
           </button>
           <div class="menu__mobile-block hidden">
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">Подготовительные курсы</span>
+              <a class="menu__list-title">Подготовительные курсы</a>
             </ul>
 
             <ul class="menu__list menu__list--mibile">
@@ -289,11 +320,11 @@
           </button>
           <div class="menu__mobile-block hidden">
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">Подготовительные курсы</span>
+              <a class="menu__list-title">Подготовительные курсы</a>
             </ul>
 
             <ul class="menu__list menu__list--mibile">
-              <span class="menu__list-title">Репетиционное тестирование</span>
+              <a class="menu__list-title">Репетиционное тестирование</a>
             </ul>
           </div>
         </div>
@@ -503,17 +534,33 @@
     </main>
     <footer class="footer">
       <div class="wrapper footer__wrapper">
-        <img class="footer__banner" src="./img/footer_links/bsuir.png" />
-        <img class="footer__banner" src="./img/footer_links/biturBY.png" />
-        <img class="footer__banner" src="./img/footer_links/molTV.png" />
-        <img class="footer__banner" src="./img/footer_links/fin.png" />
-        <img class="footer__banner" src="./img/footer_links/cw.png" />
-        <img class="footer__banner" src="./img/footer_links/minObr.png" />
-        <img class="footer__banner" src="./img/footer_links/exportBY.png" />
+        <a href="">
+          <img class="footer__banner" src="./img/footer_links/bsuir.png" />
+        </a>
+        <a href="">
+          <img class="footer__banner" src="./img/footer_links/biturBY.png" />
+        </a>
+        <a href="">
+          <img class="footer__banner" src="./img/footer_links/molTV.png" />
+        </a>
+        <a href="">
+           <img class="footer__banner" src="./img/footer_links/fin.png" />
+        </a>
+        <a href="">
+          <img class="footer__banner" src="./img/footer_links/cw.png" />
+        </a>
+        <a href="">
+          <img class="footer__banner" src="./img/footer_links/minObr.png" />
+        </a>
+        <a href="">
+         <img class="footer__banner" src="./img/footer_links/exportBY.png" />
+        </a>
       </div>
       <div class="footer__all-size">
         <div class="wrapper footer__wrapper--info">
-          <img class="logo footer__logo" src="./img/logo.png" alt="" />
+          <a href="./index.html">
+          <img class="logo footer__logo" src="./img/logo.svg" alt="" />
+          </a>
           <div class="footer__content-box">
             <div class="information footer__information">
               <span class="footer__description">
@@ -537,10 +584,10 @@
             </div>
           </div>
           <div class="acc footer__acc">
-            <a href="" class="acc__link">
+            <a href="" class="acc__link footer__acc-opacity">
               <img src="./img/instagram.png" alt="" />
             </a>
-            <a href="" class="acc__link">
+            <a href="" class="acc__link footer__acc-opacity">
               <img src="./img/vk.png" alt="" />
             </a>
           </div>
@@ -548,11 +595,11 @@
       </div>
     </footer>
 
-    <div class="popup hidden">
+    <div class="popup hidden__opacity">
       <div class="popup__body">
         <a class="popup__close"><img src="./img/close.svg" alt=""></a>
         <div class="popup__content">
-          <button class="button popup__btn">
+          <button class="button button--active popup__btn">
             <img class="popup__btn-img" src="./img/btn_img.png" />
             Личный кабинет
           </button>

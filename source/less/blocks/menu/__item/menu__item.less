@@ -1,7 +1,9 @@
-.menu_item {
+.menu__item {
   margin-left: 24px;
   text-transform: none;
   margin-bottom: 2px;
+  font-size: @f16;
+  line-height: @fl16;
 
   &:hover {
     color: @menu_act;
@@ -9,8 +11,10 @@
 }
 
 @media screen and (max-width: 767px) {
-  .menu_item {
+  .menu__item {
     font-size: @f16;
     line-height: @fl16;
   }
 }
+
+@import url("./__item--mobile/menu__item--mobile.less");
