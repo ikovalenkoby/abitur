@@ -695,7 +695,6 @@ a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: auto;
     width: 90%;
   }
 }
@@ -734,7 +733,7 @@ a {
     margin-bottom: 12px;
   }
   .footer__description:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -846,7 +845,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 32px 27px 21px 27px;
+  padding: 28px 27px 21px 27px;
 }
 .popup__btn {
   display: -webkit-box;
@@ -863,7 +862,7 @@ a {
   margin-right: 24px;
 }
 .popup__list {
-  margin-top: 32px;
+  margin-top: 28px;
   list-style: none;
   font-size: 1.5rem;
   line-height: 1.9rem;
