@@ -35,14 +35,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //popup
   function openPopup() {
-    popup.classList.remove("hidden");
-    popup.classList.add("show__flex");
+    popup.classList.remove("hidden__opacity");
+    popup.classList.add("show__opacity");
     document.body.style.overflow = "hidden";
   }
 
   function closePopup() {
-    popup.classList.remove("show__flex");
-    popup.classList.add("hidden");
+    popup.classList.remove("show__opacity");
+    popup.classList.add("hidden__opacity");
     document.body.style.overflow = "";
   }
 
