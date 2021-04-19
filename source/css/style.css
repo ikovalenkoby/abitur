@@ -135,60 +135,82 @@
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
 }
-.h1 {
+h1 {
   font-size: 2.8rem;
   line-height: 3.6rem;
+  color: #0e0b0b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 24px;
+}
+h1:before {
+  content: "";
+  width: 10px;
+  height: 17px;
+  background: url("../../img/h1.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 10px;
 }
 @media screen and (max-width: 1239px) {
-  .h1 {
+  h1 {
     font-size: 2.4rem;
     line-height: 3.1rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .h1 {
+  h1 {
     font-size: 2rem;
     line-height: 2.6rem;
   }
+  h1:before {
+    width: 6px;
+    height: 15px;
+  }
 }
-.h2 {
+h2 {
   font-size: 2.4rem;
   line-height: 3.1rem;
 }
 @media screen and (max-width: 1239px) {
-  .h2 {
+  h2 {
     font-size: 2rem;
     line-height: 2.6rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .h2 {
+  h2 {
     font-size: 1.8rem;
     line-height: 2.3rem;
   }
 }
-.h3 {
+h3 {
   font-size: 2rem;
   line-height: 2.6rem;
 }
 @media screen and (max-width: 1239px) {
-  .h3 {
+  h3 {
     font-size: 1.8rem;
     line-height: 2.3rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .h3 {
+  h3 {
     font-size: 1.6rem;
     line-height: 2.1rem;
   }
 }
-.h4 {
+h4 {
   font-size: 1.6rem;
   line-height: 2.1rem;
 }
 @media screen and (max-width: 767px) {
-  .h4 {
+  h4 {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
@@ -897,9 +919,28 @@ a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin-bottom: 24px;
 }
 .gallery img {
   width: 100%;
+}
+@media screen and (max-width: 1239px) {
+  .gallery {
+    margin-bottom: 16px;
+  }
+}
+.calendar {
+  margin: 0 60px 40px 32px;
+}
+@media screen and (max-width: 1239px) {
+  .calendar {
+    margin: 0 30px 16px 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .calendar {
+    margin: 0 14px 32px;
+  }
 }
 .nomain-content {
   max-width: 1280px;

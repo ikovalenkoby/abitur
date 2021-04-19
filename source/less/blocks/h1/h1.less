@@ -1,18 +1,38 @@
-.h1 {
+h1 {
   font-size: 2.8rem;
   line-height: 3.6rem;
+  color: @h1;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 24px;
+
+  &:before {
+    content: "";
+    width: 10px;
+    height: 17px;
+    background: url("../../img/h1.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 10px;
+  }
 }
 
 @media screen and (max-width: 1239px) {
-  .h1 {
+  h1 {
     font-size: 2.4rem;
     line-height: 3.1rem;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .h1 {
+  h1 {
     font-size: 2rem;
     line-height: 2.6rem;
+
+    &:before {
+      width: 6px;
+      height: 15px;
+    }
   }
 }
