@@ -1,7 +1,7 @@
 .menu__list-title {
   display: flex;
   align-items: baseline;
-  margin-bottom: 4px;
+  margin-bottom: 0;
   padding-left: 11px;
   position: relative;
   font-size: @f14;
@@ -21,5 +21,12 @@
 
   &:hover {
     color: @menu_act;
+  }
+}
+
+@media screen and (max-width: 1239px) {
+  .menu__list-title {
+    font-size: @f12;
+    line-height: @fl12;
   }
 }
