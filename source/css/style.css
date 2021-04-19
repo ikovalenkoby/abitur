@@ -97,7 +97,7 @@
 .html {
   font-size: 10px;
   height: 100%;
-  font-family: IBM Plex Sans;
+  font-family: "IBM Plex Sans", sans-serif, "Arial";
 }
 .body {
   height: 100%;
@@ -634,8 +634,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   background: #464e6a;
 }
 @media screen and (max-width: 676px) {
@@ -643,10 +643,6 @@
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
-}
-.menu__img--active {
-  -webkit-transform: rotate(-90deg) !important;
-          transform: rotate(-90deg) !important;
 }
 .menu__img {
   width: 5px;
@@ -657,6 +653,10 @@
   position: absolute;
   right: -15px;
   top: 4px;
+}
+.menu__img--active {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .menu__mobile-block {
   background: #f9fcff;
