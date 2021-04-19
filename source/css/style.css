@@ -845,8 +845,17 @@ a {
           flex-direction: column;
 }
 .main-content {
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main-content__body {
+  margin: 20px 32px;
 }
 @media screen and (max-width: 1239px) {
   .main-content {
@@ -854,6 +863,9 @@ a {
         -ms-flex-positive: 1;
             flex-grow: 1;
     width: 100%;
+  }
+  .main-content__body {
+    margin: 10px 12px;
   }
 }
 .gallery {
