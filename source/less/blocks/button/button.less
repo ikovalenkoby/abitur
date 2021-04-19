@@ -1,7 +1,15 @@
 .button {
   background: @btn;
   border: none;
-  font-family: IBM Plex Sans;
+  color: @icon;
+  font-size: @f15;
+  line-height: @fl15;
+  padding: 7px;
+  text-transform: uppercase;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:focus {
     outline: 0;
@@ -11,7 +19,32 @@
 
   &:hover {
     cursor: pointer;
+    background: @button-hover;
+  }
+
+  &--corner {
+    background: @btn url("./../img/button-corner.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    padding-left: 30px;
+  }
+
+  &--corner:hover {
+    background: @button-hover url("./../img/button-corner.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
   }
 }
 
-@import url("./--active/button--active.less");
+@media screen and (max-width: 1239px) {
+  .button {
+    height: 40px;
+    font-size: @f12;
+    line-height: @fl12;
+
+    &--corner {
+      padding-left: 25px;
+    }
+  }
+}
