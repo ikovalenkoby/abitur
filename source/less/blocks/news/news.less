@@ -1,0 +1,160 @@
+.news {
+  width: 67%;
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  &__date {
+    position: absolute;
+    background-color: @news-date;
+    color: @wite;
+    font-size: @f14;
+    padding: 4px 7px 6px;
+  }
+
+  &__number,
+  &__month {
+    display: block;
+    text-align: center;
+  }
+
+  &__number {
+    font-size: calc(@f16 + 0.2rem);
+    font-weight: bold;
+    line-height: @fl16;
+  }
+
+  &__month {
+    line-height: @f10;
+  }
+
+  &__link-img {
+    margin-bottom: 8px;
+  }
+
+  &__img {
+    width: 256px;
+    height: 135px;
+  }
+
+  &__description {
+    display: block;
+    text-transform: uppercase;
+    color: @h1;
+    font-size: @f14;
+    line-height: @fl14;
+    max-height: 70px;
+    overflow-y: hidden;
+    width: 256px;
+  }
+
+  &__description:hover {
+    color: @circle;
+  }
+}
+
+@media screen and (max-width: 1148px) {
+  .news {
+    width: 62%;
+
+    &__date {
+      font-size: @f14;
+    }
+
+    &__number {
+      font-size: @f16;
+      line-height: @fl16;
+    }
+
+    &__month {
+      line-height: @f10;
+    }
+
+    &__img {
+      width: 188px;
+      height: 99px;
+    }
+
+    &__description {
+      font-size: @f14;
+      line-height: @fl14;
+      max-height: 92px;
+      width: 188px;
+    }
+  }
+}
+
+@media screen and (max-width: 914px) {
+  .news {
+    width: 54%;
+
+    &__item:last-child {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .news {
+    width: 45%;
+
+    &__item {
+      width: 100%;
+    }
+
+    &__date {
+      font-size: @f14;
+    }
+
+    &__number {
+      font-size: calc(@f16 + 0.2rem);
+      line-height: @fl16;
+    }
+
+    &__month {
+      line-height: @f10;
+    }
+
+    &__link-img {
+      margin-bottom: 8px;
+    }
+
+    &__img {
+      width: 256px;
+      height: 135px;
+    }
+
+    &__description {
+      font-size: @f14;
+      line-height: @fl14;
+      max-height: 70px;
+      overflow-y: hidden;
+      width: 256px;
+    }
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .news {
+    width: 100%;
+    margin: 0 14px 32px;
+
+    &__item:last-child {
+      display: block;
+    }
+
+    &__img {
+      width: 256px;
+      height: 135px;
+    }
+  }
+}
+

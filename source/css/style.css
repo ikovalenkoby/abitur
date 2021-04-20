@@ -939,6 +939,141 @@ a {
     margin: 0 14px 32px;
   }
 }
+.news {
+  width: 67%;
+}
+.news__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.news__item {
+  position: relative;
+  margin-bottom: 24px;
+}
+.news__date {
+  position: absolute;
+  background-color: #464E6A;
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 4px 7px 6px;
+}
+.news__number,
+.news__month {
+  display: block;
+  text-align: center;
+}
+.news__number {
+  font-size: calc(1.6rem + 0.2rem);
+  font-weight: bold;
+  line-height: 2.1rem;
+}
+.news__month {
+  line-height: 1rem;
+}
+.news__link-img {
+  margin-bottom: 8px;
+}
+.news__img {
+  width: 256px;
+  height: 135px;
+}
+.news__description {
+  display: block;
+  text-transform: uppercase;
+  color: #0e0b0b;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  max-height: 70px;
+  overflow-y: hidden;
+  width: 256px;
+}
+.news__description:hover {
+  color: #5f688b;
+}
+@media screen and (max-width: 1148px) {
+  .news {
+    width: 62%;
+  }
+  .news__date {
+    font-size: 1.4rem;
+  }
+  .news__number {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+  .news__month {
+    line-height: 1rem;
+  }
+  .news__img {
+    width: 188px;
+    height: 99px;
+  }
+  .news__description {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    max-height: 92px;
+    width: 188px;
+  }
+}
+@media screen and (max-width: 914px) {
+  .news {
+    width: 54%;
+  }
+  .news__item:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .news {
+    width: 45%;
+  }
+  .news__item {
+    width: 100%;
+  }
+  .news__date {
+    font-size: 1.4rem;
+  }
+  .news__number {
+    font-size: calc(1.6rem + 0.2rem);
+    line-height: 2.1rem;
+  }
+  .news__month {
+    line-height: 1rem;
+  }
+  .news__link-img {
+    margin-bottom: 8px;
+  }
+  .news__img {
+    width: 256px;
+    height: 135px;
+  }
+  .news__description {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    max-height: 70px;
+    overflow-y: hidden;
+    width: 256px;
+  }
+}
+@media screen and (max-width: 522px) {
+  .news {
+    width: 100%;
+    margin: 0 14px 32px;
+  }
+  .news__item:last-child {
+    display: block;
+  }
+  .news__img {
+    width: 256px;
+    height: 135px;
+  }
+}
 .nomain-content {
   max-width: 1280px;
   margin: 0 auto;
