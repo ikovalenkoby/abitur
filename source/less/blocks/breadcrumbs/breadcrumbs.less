@@ -1,0 +1,58 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+
+  & img {
+    width: 21px;
+    border: @wite 1px solid;
+    padding-bottom: 2px;
+  }
+
+  & a {
+    display: flex;
+    align-items: center;
+    font-size: @f14;
+    margin-right: 10px;
+    text-decoration: none;
+    color: @icon2;
+  }
+
+  & a::after {
+    content: "";
+    height: 10px;
+    width: 5px;
+    background: url('../img/grey_arrow.svg') right top repeat-y transparent;
+    padding-right: 10px;
+    background-size: contain;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+    color: @additional;
+  }
+
+  & a:hover img {
+    border-bottom: @icon2 1px solid;
+  }
+
+  & a:focus {
+    outline: 0;
+  }
+
+  & span {
+    font-size: @f14;
+    color: @additional;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumbs {
+    margin-bottom: 20px;
+
+    & a,
+    & span {
+      font-size: @f12;
+    }
+  }
+}

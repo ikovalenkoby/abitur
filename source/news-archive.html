@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html class="html">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title></title>
+  <meta name="description" content=""/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <script defer src="./js/script.js"></script>
+</head>
+<body class="body">
+<header class="header">
+  <div class="wrapper header__wrapper">
+    <a href="./index.html">
+      <img class="logo" src="./img/logo.svg" alt=""/>
+    </a>
+    <form class="search-form header__search-form" action="">
+      <input
+        class="search-form__input h4"
+        type="text"
+        placeholder="Поиск"
+      />
+      <button class="button search-form__button">
+        <svg class="search-form__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="./img/search_sprite.svg#search"></use>
+        </svg>
+        <!-- <img src="./img/search-img.svg" alt="" class="search-form__img" /> -->
+      </button>
+    </form>
+
+    <button class="button button--corner header__links">
+      ПОПУЛЯРНЫЕ ССЫЛКИ
+      <div class="header__links-circle">
+        <img src="./img/arrow.svg" class="header__links-arrow"/>
+      </div>
+    </button>
+  </div>
+
+  <nav class="menu">
+    <div class="wrapper header__wrapper--menu">
+      <ul class="menu__block">
+        <span>ОБ УНИВЕРСИТЕТЕ</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Факультеты и специальности</span
+                  >
+              <li class="menu__item">Специальности очной формы</li>
+              <li class="menu__item">Специальности заочной формы</li>
+              <li class="menu__item">Специальности сокращённой формы</li>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">МРТИ-БГУИР</span>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">10 причин выбрать БГУИР</span>
+            </ul>
+
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Дополнительная военная специальность</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Студенческая жизнь</span>
+              <li class="menu__item">Учебный процесс</li>
+              <li class="menu__item">Социальная поддержка студентов</li>
+              <li class="menu__item">Культурная жизнь</li>
+              <li class="menu__item">Спортивная жизнь</li>
+              <li class="menu__item">Общежития</li>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Расположение корпусов</span>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block">
+        <span>ПОДГОТОВКА К ПОСТУПЛЕНИЮ</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+              <span class="menu__list-title">Подготовительные курсы</span>
+            </ul>
+
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Репетиционное тестирование</span
+                  >
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block">
+        <span>Централизованное тестирование</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Порядок регистрации на ЦТ</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Организация ЦТ</span>
+            </ul>
+
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Регистрация иностранных граждан</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Регистрация на ЦТ</span>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">График ЦТ</span>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Выдача сертификатов ЦТ</span>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block">
+        <span>Приёмная кампания</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Поступление в магистратуру</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Иностранным абитуриентам</span>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Алгоритм абитуриента</span>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Общая информация</span>
+              <li class="menu__item">Правила приема</li>
+              <li class="menu__item">Порядок приема</li>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Вступительная кампания</span>
+              <li class="menu__item">План приема в БГУИР</li>
+              <li class="menu__item">
+                Сроки проведения вступительной кампании
+              </li>
+              <li class="menu__item">Статистика поданных заявлений</li>
+              <li class="menu__item">Проходные баллы прошлых лет</li>
+              <li class="menu__item">Документы для поступления</li>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Приемная комиссия</span>
+              <li class="menu__item">Часто задаваемые вопросы</li>
+              <li class="menu__item"><a href="departments.html"> Контакты приемной комиссии </a></li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block">
+        <span>Профессиональная ориентация</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Профориентационная диагностика</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+                  <span class="menu__list-title">Дифференциально-диагностический опросник</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">On-line вебинары</span>
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+    <div class="wrapper header__wrapper--mobile">
+      <button class="button menu__btn">
+            <span class="menu__btn-text">
+              Об университете
+              <img src="./img/arrow.svg" class="menu__img"/>
+            </span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Факультеты и специальности</a>
+          <li class="menu__item menu__item--mobile">
+            <a href="">
+              Специальности очной формы
+            </a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">Специальности заочной формы</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">
+              Специальности сокращённой формы
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">МРТИ-БГУИР</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">10 причин выбрать БГУИР</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title"
+          >Дополнительная военная специальность</a
+          >
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Студенческая жизнь</a>
+          <li class="menu__item menu__item--mobile">
+            <a href="">
+              Учебный процесс
+            </a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">Социальная поддержка студентов</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">
+              Культурная жизнь
+            </a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">Спортивная жизнь</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">
+              Общежития
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="button menu__btn">
+            <span class="menu__btn-text">
+              ПОДГОТОВКА К ПОСТУПЛЕНИЮ
+              <img src="./img/arrow.svg" class="menu__img"/>
+            </span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Подготовительные курсы</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Репетиционное тестирование</a>
+        </ul>
+      </div>
+
+      <button class="button menu__btn">
+            <span class="menu__btn-text">
+              Централизованное тестирование
+              <img src="./img/arrow.svg" class="menu__img"/>
+            </span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Подготовительные курсы</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Репетиционное тестирование</a>
+        </ul>
+      </div>
+
+      <button class="button menu__btn">
+            <span class="menu__btn-text">
+              Приёмная кампания
+              <img src="./img/arrow.svg" class="menu__img"/>
+            </span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Подготовительные курсы</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <span class="menu__list-title">Репетиционное тестирование</span>
+        </ul>
+      </div>
+
+      <button class="button menu__btn">
+            <span class="menu__btn-text">
+              Профессиональная ориентация
+              <img src="./img/arrow.svg" class="menu__img"/>
+            </span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Подготовительные курсы</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Репетиционное тестирование</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="nomain-content">
+  <div class="breadcrumbs">
+    <a href="index.html"><img src="img/home.svg"></a>
+    <a href="index.html">Проверка ссылки</a>
+    <span>Архив </span>
+  </div>
+  <!--начало списка новостей -->
+  <table>
+    <tbody>
+    <tr>
+      <td align="left">
+        <h1>Архив новостей</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="background-color:#ededed;height:130px;padding:10px 50px; display: none; ">
+          <form class="form-wrapper1" action="/online/tnj2/one_rubric.jsp" method="post">
+            <!--		<form action="/online/tnj2/one_rubric.jsp" method="post"> -->
+            <input type="hidden" name="PageID" value="94597">
+            <input type="hidden" name="menuItemID" value="-1">
+            <input type="hidden" name="lang" value="ru">
+            <input type="hidden" name="resID" value="100229">
+            <input type="hidden" name="pid" value="100229">
+            <input type="hidden" name="tnj_type" value="2">
+            <input type="hidden" name="rid" value="102243">
+            <input type="hidden" name="ord_type" value="-1">
+
+
+            <div class="wrap">
+              <input class="news_text" type="Text" name="what_find" size="43" maxlength="255" value="">
+              <input class="news_sub" type="submit" name="search" value="  Поиск  " checked=""
+                     onclick="return search_onsubmit(this.form)">
+            </div>
+            <div class="rad"><input style="margin-left:0" type="Radio" name="where_search" value="0" checked="">&nbsp;только
+              в текущей рубрике
+            </div>
+            <div class="rad"><input type="Radio" name="where_search" value="1">&nbsp;во всех рубриках</div>
+            <!-- ------------------------------ -->
+
+          </form>
+        </div>
+        <table width="100%" cellspacing="0" cellpadding="6">
+          <tbody>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">21.04.2021</span> | <a
+              href="/ru/news/106494-v-bguir-proshla-vstrecha-s-predsedatelem-minskogo-gorodskogo-ispolnitelnogo-komiteta">В
+              БГУИР прошла встреча с председателем Минского городского исполнительного комитета</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">20.04.2021</span> | <a
+              href="/ru/news/106492-v-bguir-prodolzhaetsya-tsikl-seminarov-brend-uchenogo">В БГУИР продолжается цикл
+              семинаров "Бренд ученого"</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">19.04.2021</span> | <a
+              href="/ru/news/106484-bguir-prinyal-uchastie-v-respublikanskom-subbotnike">БГУИР принял участие в
+              республиканском субботнике</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">19.04.2021</span> | <a
+              href="/ru/news/106482-studenty-bguir-obladateli-spetsialnykh-diplomov-iii-respublikanskogo-konkursa-mediasfera-2021">Студенты
+              БГУИР - обладатели специальных дипломов III Республиканского конкурса "Медиасфера-2021"</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">19.04.2021</span> | <a
+              href="/ru/news/106480-bguir-prinyal-uchastie-v-xix-respublikanskoy-vystavke-nauchno-metodicheskoy-literatury--pedagogicheskogo-opyta-i-tvorchestva-uchascheysya-molodezhi">БГУИР
+              принял участие в выставке научно-методической литературы, педагогического опыта и творчества учащейся
+              молодежи</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">14.04.2021</span> | <a
+              href="/ru/news/106471-bguir-na-konkurse-studenty-bezopasnost-buduschee">БГУИР на конкурсе "Студенты.
+              Безопасность. Будущее"</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">14.04.2021</span> | <a
+              href="/ru/news/106467-bguir-vydany-sertifikaty-sootvetstviya-sistemy-menedzhmenta-kachestva">БГУИР выданы
+              сертификаты соответствия системы менеджмента качества</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">13.04.2021</span> | <a
+              href="/ru/news/106460-konkurs-stemov-zelenyy-kaktus-onlayn-otkryto-golosovanie-za-luchshuyu-teatralnuyu-miniatyuru">
+              Конкурс СТЭМов "Зеленый кактус" онлайн: открыто голосование за лучшую театральную миниатюру</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">13.04.2021</span> | <a
+              href="/ru/news/106459-v-bguir-vstretili-magistrantov-iz-kitaya">В БГУИР встретили магистрантов из
+              Китая</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">12.04.2021</span> | <a
+              href="/ru/news/106457-bguir-prinyal-uchastie-v-respublikanskoy-aktsii-nedelya-lesa">БГУИР принял участие в
+              республиканской акции "Неделя леса"</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">09.04.2021</span> | <a
+              href="/ru/news/106450-xix-respublikanskoy-vystavki-nauchno-metodicheskoy-literatury-pedagogicheskogo-opyta-i-tvorchestva-uchascheysya-molodezhi">XIX
+              выставка научно-методической литературы, педагогического опыта и творчества учащейся молодежи</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">09.04.2021</span> | <a
+              href="/ru/news/106448-prepodavateli-universiteta-khanchzhou-dyantszy-provodyat-onlayn-lektsii-dlya-magistrantov-bguir">Преподаватели
+              университета Ханчжоу Дяньцзы проводят онлайн-лекции для магистрантов БГУИР</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">08.04.2021</span> | <a
+              href="/ru/news/106446-bguir-posetila-delegatsiya-islamskoy-respubliki-pakistan">БГУИР посетила делегация
+              Исламской Республики Пакистан </a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">08.04.2021</span> | <a
+              href="/ru/news/106445-rektor-bguir-o-priemnoy-kampanii-2021">Ректор БГУИР о приемной кампании-2021</a>
+            </td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">07.04.2021</span> | <a
+              href="/ru/news/106420-deputaty-v-pervom-chtenii-prinyali-izmeneniya-v-kodeks-ob-obrazovanii">Депутаты в
+              первом чтении приняли изменения в Кодекс об образовании</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">06.04.2021</span> | <a
+              href="/ru/news/106356-pervokursnik-abiturientu-chego-zhdat-ot-ucheby-v-bguir-i-studencheskoy-zhizni">Первокурсник
+              абитуриенту: чего ждать от учебы в БГУИР и студенческой жизни</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">05.04.2021</span> | <a
+              href="/ru/news/106393-tvorcheskie-kollektivy-bguir-nagrazhdeny-na-suzore">Творческие коллективы БГУИР
+              награждены на районном этапе фестиваля народного творчества «СУЗОР’Е»</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">05.04.2021</span> | <a
+              href="/ru/news/106392-den-otkrytykh-dverey-v-bguir">День открытых дверей в БГУИР</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">02.04.2021</span> | <a
+              href="/ru/news/106387-bguir-zanesen-na-dosku-pocheta-sovetskogo-rayona-g-minska">БГУИР занесен на доску
+              почета Советского района г.Минска</a></td>
+          </tr>
+          <tr align="left">
+
+            <td valign="middle" align="center"></td>
+            <td class="er" valign="middle"><span style="color:#676767">01.04.2021</span> | <a
+              href="/ru/news/106217-den-otkrytykh-dverey-v-bguir">День открытых дверей в БГУИР</a></td>
+          </tr>
+          <tr>
+            <td style="color:#575757;font-size:15px;padding:13px 0;" colspan="2" nowrap="" align="center">1 - 20 из
+              1348
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">
+        <div class="back_news" style="float:right">
+          <a
+            href="/online/tnj2/one_rubric.jsp?PageID=94597&amp;resID=100229&amp;lang=ru&amp;tnj_type=2&amp;start_from=20&amp;ord_type=-1&amp;what_find=%25&amp;pid=100229&amp;rid=102243">вперед&gt;&gt;</a>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</main>
+<footer class="footer">
+  <div class="wrapper footer__wrapper">
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/bsuir.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/biturBY.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/molTV.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/fin.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/cw.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/minObr.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/exportBY.png"/>
+    </a>
+  </div>
+  <div class="footer__all-size">
+    <div class="wrapper footer__wrapper--info">
+      <a href="./index.html">
+        <img class="logo footer__logo" src="./img/logo.svg" alt=""/>
+      </a>
+      <div class="footer__content-box">
+        <div class="information footer__information">
+              <span class="footer__description">
+                <p>Юридический адрес:</p>
+                220013 г. Минск, ул. П. Бровки, 6
+              </span>
+          <span class="footer__description">
+                <p>Телефон приемной комиссии:</p>
+                +375 17 293-88-15
+              </span>
+        </div>
+        <div class="information footer__information">
+              <span class="footer__description">
+                <p>Время работы:</p>
+                09.00 - 18.00
+              </span>
+          <span class="footer__description">
+                <p>Email:</p>
+                <a href="#" class="footer__link">prcom@bsuir.by</a>
+              </span>
+        </div>
+      </div>
+      <div class="acc footer__acc">
+        <a href="" class="acc__link footer__acc-opacity">
+          <img src="./img/instagram.png" alt=""/>
+        </a>
+        <a href="" class="acc__link footer__acc-opacity">
+          <img src="./img/vk.png" alt=""/>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="popup hidden__opacity">
+  <div class="popup__body">
+    <a class="popup__close"><img src="./img/close.svg" alt=""></a>
+    <div class="popup__content">
+      <button class="button button--corner popup__btn">
+        Личный кабинет
+      </button>
+      <ul class="popup__list">
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/spetial.svg"/>
+          <a class="popup__link" href="">Специальности</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/programmer.svg"/>
+          <a class="popup__link" href="">Учиться на программиста</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/courses.svg"/>
+          <a class="popup__link" href="">подготовительные курсы</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/day.svg"/>
+          <a class="popup__link" href="">Дневное</a>
+        </li>
+        <li class="popup__list-item">
+          <img
+            class="popup__link-img"
+            src="./img/popup/correspondence.svg"
+          />
+          <a class="popup__link" href="">заочное</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/distance.svg"/>
+          <a class="popup__link" href="">Дистанционное</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/abbraviated.svg"/>
+          <a class="popup__link" href="">Сокращённое</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/too_learn.svg"/>
+          <a class="popup__link" href="">Второе высшее</a>
+        </li>
+      </ul>
+    </div>
+    <div class="popup__content popup__content--bg">
+      <ul class="popup__list popup__list--untop">
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite">
+            проходные балы прошлых лет
+          </a>
+        </li>
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite"> План приёма </a>
+        </li>
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite">Общежитие</a>
+        </li>
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite">
+            Репетиционное тестирование
+          </a>
+        </li>
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite">
+            Поступление в магистратуру
+          </a>
+        </li>
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite">
+            Иностранным абитуриентам
+          </a>
+        </li>
+      </ul>
+      <div class="popup__info">
+        <div class="information popup__information">
+              <span class="popup__contacts">
+                <p>Юридический адрес:</p>
+                220013 г. Минск, ул. П. Бровки, 6
+                <p>
+                  <a href="#" class="popup__link popup__link--wite popup__link--footer">
+                    Схема корпусов
+                  </a>
+                </p>
+              </span>
+          <span class="popup__contacts">
+                <p>Телефон приемной комиссии:</p>
+                +375 17 293-88-15
+              </span>
+        </div>
+        <div class="information popup__information">
+              <span class="popup__contacts">
+                <p>Время работы:</p>
+                09.00 - 18.00
+              </span>
+          <span class="popup__contacts popup__contacts--unmargin">
+                <p>Email:</p>
+                <a href="#" class="popup__link popup__link--wite popup__link--footer">
+                  prcom@bsuir.by
+                </a>
+              </span>
+        </div>
+        <div class="acc popup__acc">
+          <a href="" class="acc__link">
+            <img src="./img/instagram.png" alt=""/>
+          </a>
+          <a href="" class="acc__link">
+            <img src="./img/vk.png" alt=""/>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

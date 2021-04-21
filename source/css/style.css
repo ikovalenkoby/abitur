@@ -108,12 +108,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif, "Arial";
+}
+a {
+  color: #5f688b;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .body {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
 }
 .show__flex {
   display: -webkit-box;
@@ -148,7 +164,7 @@ h1::before {
   content: "";
   width: 10px;
   height: 17px;
-  background: url("../../img/h1.svg");
+  background: url("../img/h1.svg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -684,7 +700,7 @@ h4 {
 .menu__mobile-block:last-child {
   border-bottom: 2px solid #464e6a9e;
 }
-a {
+.menu__mobile-block a {
   text-decoration: none;
   color: #4d4d4d;
 }
@@ -963,10 +979,12 @@ a {
   font-size: 1.6rem;
 }
 .news__archive-links::after {
-  content: "\1F812";
-  padding-left: 10px;
+  content: " \1F812";
   font-weight: bold;
-  font-size: calc(1.6rem+0.2rem);
+  font-size: calc(1.6rem + 0.2rem);
+}
+.news__archive-links:hover::after {
+  text-decoration: none;
 }
 .news__item {
   position: relative;
@@ -1098,18 +1116,84 @@ a {
   }
 }
 .nomain-content {
-  max-width: 1280px;
+  max-width: 1240px;
   margin: 0 auto;
-}
-@media screen and (max-width: 1239px) {
-  .nomain-content {
-    margin: 22px 32px;
-  }
+  width: 100%;
+  padding: 24px 32px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 @media screen and (max-width: 768px) {
   .nomain-content {
-    margin: 15px 12px;
+    padding: 15px 12px;
   }
+}
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+.breadcrumbs img {
+  width: 21px;
+  border: #ffffff 1px solid;
+  padding-bottom: 2px;
+}
+.breadcrumbs a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #4d4d4d;
+}
+.breadcrumbs a::after {
+  content: "";
+  height: 10px;
+  width: 5px;
+  background: url('../img/grey_arrow.svg') right top repeat-y transparent;
+  padding-right: 10px;
+  background-size: contain;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+  color: #464e6a;
+}
+.breadcrumbs a:hover img {
+  border-bottom: #4d4d4d 1px solid;
+}
+.breadcrumbs a:focus {
+  outline: 0;
+}
+.breadcrumbs span {
+  font-size: 1.4rem;
+  color: #464e6a;
+}
+@media screen and (max-width: 767px) {
+  .breadcrumbs {
+    margin-bottom: 20px;
+  }
+  .breadcrumbs a,
+  .breadcrumbs span {
+    font-size: 1.2rem;
+  }
+}
+.nomain-content table > table {
+  margin-top: 0 !important;
+}
+.nomain-content table > div {
+  display: none !important;
+}
+.er {
+  padding-bottom: 5px;
 }
 .popup__body {
   width: 389px;
@@ -1255,9 +1339,6 @@ a {
 }
 .show {
   display: block;
-}
-* {
-  font-family: "IBM Plex Sans", sans-serif, "Arial";
 }
 
 /*# sourceMappingURL=style.css.map */

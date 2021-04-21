@@ -19,10 +19,13 @@
   }
 
   &__archive-links::after {
-    content: "\1F812";
-    padding-left: 10px;
+    content: " \1F812";
     font-weight: bold;
-    font-size: calc(@f16+ 0.2rem);
+    font-size: calc(@f16 + 0.2rem);
+  }
+
+  &__archive-links:hover::after {
+    text-decoration: none;
   }
 
   &__item {

@@ -9,7 +9,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
-  return gulp.src("source/less/*.less")
+  return gulp.src("source/less/*archive-news.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
@@ -30,7 +30,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/less/**/*archive-news.less", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
   gulp.watch("source/game-html/*.html").on("change", server.reload);
 });
