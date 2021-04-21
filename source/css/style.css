@@ -163,7 +163,7 @@ h1::before {
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 2rem;
-    line-height: 2.6rem;
+    line-height: 2.1rem;
   }
   h1::before {
     width: 6px;
@@ -949,6 +949,25 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.news__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.news__archive-links {
+  margin-left: auto;
+  color: #4b4b4b;
+  font-size: 1.6rem;
+}
+.news__archive-links::after {
+  content: "\1F812";
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: calc(1.6rem+0.2rem);
+}
 .news__item {
   position: relative;
   margin-bottom: 24px;
@@ -990,7 +1009,8 @@ a {
   overflow-y: hidden;
   width: 256px;
 }
-.news__description:hover {
+.news__description:hover,
+.news__archive-links:hover {
   color: #5f688b;
 }
 @media screen and (max-width: 1148px) {
@@ -1026,12 +1046,18 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 698px) {
   .news {
     width: 45%;
   }
   .news__item {
     width: 100%;
+  }
+  .news__archive-links {
+    font-size: 1.4rem;
+  }
+  .news__archive-links::after {
+    padding-left: 5px;
   }
   .news__date {
     font-size: 1.4rem;
@@ -1058,7 +1084,7 @@ a {
     width: 256px;
   }
 }
-@media screen and (max-width: 522px) {
+@media screen and (max-width: 568px) {
   .news {
     width: 100%;
     margin: 0 14px 32px;
