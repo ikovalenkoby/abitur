@@ -573,20 +573,14 @@ h4 {
   width: -moz-max-content;
   width: max-content;
   list-style: none;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   max-width: 290px;
 }
 .menu__list:last-child {
   margin-bottom: 0;
 }
-@media screen and (max-width: 1239px) {
-  .menu__list {
-    margin-bottom: 10px;
-  }
-}
 @media screen and (max-width: 768px) {
   .menu__list {
-    margin-bottom: 10px;
     width: 100%;
     min-width: 290px;
   }
@@ -606,7 +600,7 @@ h4 {
 }
 .menu__list-title::before {
   position: absolute;
-  top: 2px;
+  top: 9px;
   left: 0;
   content: "";
   width: 6px;
@@ -1191,6 +1185,10 @@ h4 {
 .news-list__links:hover {
   color: #5f688b;
 }
+/*сокрытие формы поиска по архиву новостей*/
+.form_wrapper1 {
+  display: none;
+}
 @media screen and (max-width: 864px) {
   .news-list {
     margin-right: 0;
@@ -1304,10 +1302,15 @@ h4 {
 }
 .popup__body {
   width: 389px;
-  max-height: 580px;
+  max-height: 870px;
   overflow-y: auto;
   background: #f9fcff;
   position: relative;
+}
+@media screen and (max-width: 1300px) {
+  .popup__body {
+    max-height: 580px;
+  }
 }
 .popup__content--bg {
   background: #464e6a;

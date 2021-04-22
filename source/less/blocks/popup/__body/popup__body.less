@@ -1,7 +1,13 @@
 .popup__body {
   width: 389px;
-  max-height: 580px;
+  max-height: 870px;
   overflow-y: auto;
   background: @icon;
   position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+  .popup__body {
+    max-height: 580px;
+  }
 }
