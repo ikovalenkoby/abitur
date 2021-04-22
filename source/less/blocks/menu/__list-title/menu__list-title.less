@@ -1,15 +1,14 @@
 .menu__list-title {
-  display: flex;
-  align-items: baseline;
   margin-bottom: 0;
   padding-left: 11px;
   position: relative;
   font-size: @f14;
   line-height: @fl14;
+  font-weight: 500;
 
   &::before {
     position: absolute;
-    top: 6px;
+    top: 2px;
     left: 0;
     content: "";
     width: 6px;
@@ -28,5 +27,21 @@
   .menu__list-title {
     font-size: @f12;
     line-height: @fl12;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu__list-title {
+    display: block;
+    font-size: @f14;
+    line-height: @fl14;
+    margin-bottom: 8px;
+
+    &::before {
+      position: absolute;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+    }
   }
 }
