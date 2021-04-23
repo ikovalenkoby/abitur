@@ -1,0 +1,55 @@
+.grey-button {
+  width: 100%;
+  background-color: @circle;
+  text-align: left;
+  text-transform: none;
+  justify-content: flex-start;
+  padding-left: 20px;
+  /*  padding-top: 0;
+    padding-bottom: 0;*/
+  padding-right: 5px;
+  border-bottom: 1px solid @wite;
+  height: auto;
+
+  & div {
+    display: flex;
+    flex-grow: 1;
+    padding-right: 20px;
+  }
+
+  &::after {
+    content: "";
+    height: 26px;
+    width: 26px;
+    background: transparent url("../img/arrow.svg") no-repeat center;
+    margin-left: auto;
+    transform: rotate(90deg) scale(0.5);
+  }
+
+  &--active {
+    background-color: @additional;
+  }
+
+  &--active::after {
+    content: "";
+    height: 26px;
+    width: 26px;
+    background: transparent url("../img/arrow.svg") no-repeat center;
+    margin-left: auto;
+    transform: rotate(-90deg) scale(0.5);
+  }
+
+  &__block {
+    padding: 20px;
+    background-color: @icon;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grey-button {
+    &__block {
+      padding: 10px;
+      background-color: @icon;
+    }
+  }
+}

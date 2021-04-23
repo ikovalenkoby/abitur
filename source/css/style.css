@@ -504,8 +504,8 @@ h4 {
 @media screen and (max-width: 1239px) {
   .button {
     height: 40px;
-    font-size: 1rem;
-    line-height: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
   .button--corner {
     padding-left: 25px;
@@ -1220,6 +1220,61 @@ h4 {
         flex-wrap: wrap-reverse;
   }
 }
+.grey-button {
+  width: 100%;
+  background-color: #5f688b;
+  text-align: left;
+  text-transform: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 20px;
+  /*  padding-top: 0;
+    padding-bottom: 0;*/
+  padding-right: 5px;
+  border-bottom: 1px solid #ffffff;
+  height: auto;
+}
+.grey-button div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 20px;
+}
+.grey-button::after {
+  content: "";
+  height: 26px;
+  width: 26px;
+  background: transparent url("../img/arrow.svg") no-repeat center;
+  margin-left: auto;
+  -webkit-transform: rotate(90deg) scale(0.5);
+          transform: rotate(90deg) scale(0.5);
+}
+.grey-button--active {
+  background-color: #464e6a;
+}
+.grey-button--active::after {
+  content: "";
+  height: 26px;
+  width: 26px;
+  background: transparent url("../img/arrow.svg") no-repeat center;
+  margin-left: auto;
+  -webkit-transform: rotate(-90deg) scale(0.5);
+          transform: rotate(-90deg) scale(0.5);
+}
+.grey-button__block {
+  padding: 20px;
+  background-color: #f9fcff;
+}
+@media screen and (max-width: 800px) {
+  .grey-button__block {
+    padding: 10px;
+    background-color: #f9fcff;
+  }
+}
 .nomain-content {
   max-width: 1240px;
   margin: 0 auto;
@@ -1228,10 +1283,14 @@ h4 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
 @media screen and (max-width: 768px) {
   .nomain-content {
     padding: 15px 12px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 }
 .breadcrumbs {
