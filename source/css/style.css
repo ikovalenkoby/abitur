@@ -531,7 +531,9 @@ h4 {
   cursor: pointer;
 }
 .menu__block:hover .menu__hidden-box {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media screen and (max-width: 1239px) {
   .menu__block {
