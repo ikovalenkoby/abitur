@@ -6,23 +6,31 @@
   font-size: @f16;
   font-weight: bold;
   display: flex;
-}
 
-.toggler + div {
-  display: none;
-  padding: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.toggler:after {
-  content: ' 	\002B';
-  padding-left: 10px;
-  color: @additional;
-  font-size: @f22;
-  font-weight: bold;
-  margin-left: auto;
+  & + div {
+    display: none;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &:after {
+    content: "\002B";
+    padding-left: 10px;
+    color: @additional;
+    font-size: @f22;
+    font-weight: bold;
+    margin-left: auto;
+  }
 }
 
 .no-active:after {
-  content: '\2212';
+  content: "\2212";
+}
+
+@media screen and (max-width: 400px) {
+  .toggler {
+    font-size: @f14;
+    padding: 10px 15px;
+  }
 }

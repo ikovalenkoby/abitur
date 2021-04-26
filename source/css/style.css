@@ -1295,7 +1295,7 @@ h4 {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .toggler:after {
-  content: ' 	\002B';
+  content: "\002B";
   padding-left: 10px;
   color: #464e6a;
   font-size: 2.2rem;
@@ -1303,7 +1303,13 @@ h4 {
   margin-left: auto;
 }
 .no-active:after {
-  content: '\2212';
+  content: "\2212";
+}
+@media screen and (max-width: 400px) {
+  .toggler {
+    font-size: 1.4rem;
+    padding: 10px 15px;
+  }
 }
 .nomain-content {
   max-width: 1240px;
