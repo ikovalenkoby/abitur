@@ -80,3 +80,9 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+//toggler
+$(".toggler").click(function () {
+  $(this).next().toggle("slow");
+  $(this).closest('p.toggler').toggleClass("no-active");
+});

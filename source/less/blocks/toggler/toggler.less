@@ -1,0 +1,28 @@
+.toggler {
+  width: 100%;
+  padding: 16px 20px;
+  border: 3px solid @circle;
+  margin-top: 12px;
+  font-size: @f16;
+  font-weight: bold;
+  display: flex;
+}
+
+.toggler + div {
+  display: none;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggler:after {
+  content: ' 	\002B';
+  padding-left: 10px;
+  color: @additional;
+  font-size: @f22;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.no-active:after {
+  content: '\2212';
+}
