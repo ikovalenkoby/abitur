@@ -1311,6 +1311,38 @@ h4 {
     padding: 10px 15px;
   }
 }
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.filter__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.filter__input {
+  display: none;
+}
+.filter label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
+  position: absolute;
+}
+.filter span::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
+  position: absolute;
+}
 .nomain-content {
   max-width: 1240px;
   margin: 0 auto;

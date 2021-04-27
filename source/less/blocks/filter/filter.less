@@ -1,0 +1,29 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__label {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  & label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+    position: absolute;
+  }
+
+  & span::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+    position: absolute;
+  }
+}

@@ -337,37 +337,38 @@
   </div>
   <h1>Проходные баллы 2020 года</h1>
   <form class="filter">
-    <label class="filter__label"><input class="filter__input" type="checkbox"> Бюджет</label>
-    <label class="filter__label"><input class="filter__input" type="checkbox"> Платно</label>
+    <input id="budget" class="filter__input" type="checkbox"><label class="filter__label" for="budget"> Бюджет</label>
+    <input id="paid" class="filter__input" type="checkbox"><label for="paid" class="filter__label">Платно</label>
     <div class="filter__checkselect checkselect">
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
-                                                             value="1"> ФКП</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
-                                                             value="2"> ФИТУ</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
-                                                             value="3"> ФРЭ</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
-                                                             value="4"> ФКСиС</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
-                                                             value="5"> ФИК</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
-                                                             value="6"> ИЭФ</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
-                                                             value="7"> ВФ</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
-                                                             value="8"> ИИТ</label>
+      <input id="fkp" class="filter__input" type="checkbox" name="faculties[]"
+             value="1"><label for="fkp" class="filter__label checkselect__label"> ФКП</label>
+      <input id="fitu" class="filter__input" type="checkbox" name="faculties[]" value="2"><label for="fitu"
+                                                                                                 class="filter__label checkselect__label">
+      ФИТУ</label>
+      <input id="fre" class="filter__input" type="checkbox" name="faculties[]" value="3"><label for="fre"
+                                                                                                class="filter__label checkselect__label">
+      ФРЭ</label>
+      <input id="fksis" class="filter__input" type="checkbox" name="faculties[]" value="4"><label for="fksis" class="filter__label checkselect__label"> ФКСиС</label>
+      <input id="fik" class="filter__input" type="checkbox" name="faculties[]"
+             value="5"><label for="fik" class="filter__label checkselect__label"> ФИК</label>
+      <input id="ief" class="filter__input" type="checkbox" name="faculties[]"
+             value="6"><label for="ief" class="filter__label checkselect__label"> ИЭФ</label>
+      <input id="vf" class="filter__input" type="checkbox" name="faculties[]"
+             value="7"><label for="vf" class="filter__label checkselect__label"> ВФ</label>
+      <input id="iit" class="filter__input" type="checkbox" name="faculties[]"
+             value="8"><label for="iit" class="filter__label checkselect__label"> ИИТ</label>
     </div>
     <div class="filter__checkselect checkselect">
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="forms[]"
-                                                             value="1"> Дневная</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="forms[]"
-                                                             value="2"> Заочная</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="forms[]"
-                                                             value="3"> Дневная сокр.</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="forms[]"
-                                                             value="4"> Заочная сокр.</label>
-      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="forms[]"
-                                                             value="5"> Дистанционная</label>
+      <input id="day" class="filter__input" type="checkbox" name="forms[]"
+             value="1"><label for="day" class="filter__label checkselect__label"> Дневная</label>
+      <input id="zaoch" class="filter__input" type="checkbox" name="forms[]"
+             value="2"><label for="zaoch" class="filter__label checkselect__label"> Заочная</label>
+      <input id="shortday" class="filter__input" type="checkbox" name="forms[]"
+             value="3"><label for="shortday" class="filter__label checkselect__label"> Дневная сокр.</label>
+      <input id="shortzaoch" class="filter__input" type="checkbox" name="forms[]"
+             value="4"><label for="shortzaoch" class="filter__label checkselect__label"> Заочная сокр.</label>
+      <input id="distant" class="filter__input" type="checkbox" name="forms[]"
+             value="5"><label for="distant" class="filter__label checkselect__label"> Дистанционная</label>
     </div>
     <button class="button button--forms" type="submit">Показать</button>
     <button class="button button--forms button--reset" type="reset">Сброс</button>
