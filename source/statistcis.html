@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html class="html">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title></title>
+  <meta name="description" content=""/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body class="body">
+<header class="header">
+  <div class="wrapper header__wrapper">
+    <a href="./index.html">
+      <img class="logo" src="./img/logo.svg" alt=""/>
+    </a>
+    <form class="search-form header__search-form" action="">
+      <input
+        class="search-form__input h4"
+        type="text"
+        placeholder="Поиск"
+      />
+      <button class="button search-form__button">
+        <svg class="search-form__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="./img/search_sprite.svg#search"></use>
+        </svg>
+        <!-- <img src="./img/search-img.svg" alt="" class="search-form__img" /> -->
+      </button>
+    </form>
+
+    <button class="button button--corner header__links">
+      ПОПУЛЯРНЫЕ ССЫЛКИ
+      <div class="header__links-circle">
+        <img src="./img/arrow.svg" class="header__links-arrow"/>
+      </div>
+    </button>
+  </div>
+
+  <nav class="menu">
+    <div class="wrapper header__wrapper--menu">
+      <ul class="menu__block">
+        <span>ОБ УНИВЕРСИТЕТЕ</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Факультеты и специальности</span
+                  >
+              <li class="menu__item">Специальности очной формы</li>
+              <li class="menu__item">Специальности заочной формы</li>
+              <li class="menu__item">Специальности сокращённой формы</li>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">МРТИ-БГУИР</span>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">10 причин выбрать БГУИР</span>
+            </ul>
+
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Дополнительная военная специальность</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Студенческая жизнь</span>
+              <li class="menu__item">Учебный процесс</li>
+              <li class="menu__item">Социальная поддержка студентов</li>
+              <li class="menu__item">Культурная жизнь</li>
+              <li class="menu__item">Спортивная жизнь</li>
+              <li class="menu__item">Общежития</li>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Расположение корпусов</span>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block">
+        <span>ПОДГОТОВКА К ПОСТУПЛЕНИЮ</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+              <span class="menu__list-title">Подготовительные курсы</span>
+            </ul>
+
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Репетиционное тестирование</span
+                  >
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block">
+        <span>Централизованное тестирование</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Порядок регистрации на ЦТ</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Организация ЦТ</span>
+            </ul>
+
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Регистрация иностранных граждан</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Регистрация на ЦТ</span>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">График ЦТ</span>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Выдача сертификатов ЦТ</span>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block">
+        <span>Приёмная кампания</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Поступление в магистратуру</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Иностранным абитуриентам</span>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Алгоритм абитуриента</span>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Общая информация</span>
+              <li class="menu__item">Правила приема</li>
+              <li class="menu__item">Порядок приема</li>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Вступительная кампания</span>
+              <li class="menu__item">План приема в БГУИР</li>
+              <li class="menu__item">
+                Сроки проведения вступительной кампании
+              </li>
+              <li class="menu__item">Статистика поданных заявлений</li>
+              <li class="menu__item">Проходные баллы прошлых лет</li>
+              <li class="menu__item">Документы для поступления</li>
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">Приемная комиссия</span>
+              <li class="menu__item">Часто задаваемые вопросы</li>
+              <li class="menu__item"><a href="departments.html"> Контакты приемной комиссии </a></li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block">
+        <span>Профессиональная ориентация</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+                  <span class="menu__list-title"
+                  >Профориентационная диагностика</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+                  <span class="menu__list-title">Дифференциально-диагностический опросник</span
+                  >
+            </ul>
+
+            <ul class="menu__list">
+              <span class="menu__list-title">On-line вебинары</span>
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+    <div class="wrapper header__wrapper--mobile">
+      <button class="button menu__btn">
+            <span class="menu__btn-text">
+              Об университете
+              <img src="./img/arrow.svg" class="menu__img"/>
+            </span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Факультеты и специальности</a>
+          <li class="menu__item menu__item--mobile">
+            <a href="">
+              Специальности очной формы
+            </a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">Специальности заочной формы</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">
+              Специальности сокращённой формы
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">МРТИ-БГУИР</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">10 причин выбрать БГУИР</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title"
+          >Дополнительная военная специальность</a
+          >
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Студенческая жизнь</a>
+          <li class="menu__item menu__item--mobile">
+            <a href="">
+              Учебный процесс
+            </a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">Социальная поддержка студентов</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">
+              Культурная жизнь
+            </a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">Спортивная жизнь</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="">
+              Общежития
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="button menu__btn">
+            <span class="menu__btn-text">
+              ПОДГОТОВКА К ПОСТУПЛЕНИЮ
+              <img src="./img/arrow.svg" class="menu__img"/>
+            </span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Подготовительные курсы</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Репетиционное тестирование</a>
+        </ul>
+      </div>
+
+      <button class="button menu__btn">
+            <span class="menu__btn-text">
+              Централизованное тестирование
+              <img src="./img/arrow.svg" class="menu__img"/>
+            </span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Подготовительные курсы</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Репетиционное тестирование</a>
+        </ul>
+      </div>
+
+      <button class="button menu__btn">
+            <span class="menu__btn-text">
+              Приёмная кампания
+              <img src="./img/arrow.svg" class="menu__img"/>
+            </span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Подготовительные курсы</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <span class="menu__list-title">Репетиционное тестирование</span>
+        </ul>
+      </div>
+
+      <button class="button menu__btn">
+            <span class="menu__btn-text">
+              Профессиональная ориентация
+              <img src="./img/arrow.svg" class="menu__img"/>
+            </span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Подготовительные курсы</a>
+        </ul>
+
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title">Репетиционное тестирование</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="nomain-content">
+  <div class="breadcrumbs">
+    <a href="index.html"><img src="img/home.svg"></a>
+    <a href="index.html">Приемная компания</a>
+    <span>Баллы 2020 года</span>
+  </div>
+  <h1>Проходные баллы 2020 года</h1>
+  <form class="filter">
+    <label class="filter__label"><input class="filter__input" type="checkbox"> Бюджет</label>
+    <label class="filter__label"><input class="filter__input" type="checkbox"> Платно</label>
+    <div class="filter__checkselect checkselect">
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
+                                                             value="1"> ФКП</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
+                                                             value="2"> ФИТУ</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
+                                                             value="3"> ФРЭ</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
+                                                             value="4"> ФКСиС</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
+                                                             value="5"> ФИК</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
+                                                             value="6"> ИЭФ</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
+                                                             value="7"> ВФ</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="faculties[]"
+                                                             value="8"> ИИТ</label>
+    </div>
+    <div class="filter__checkselect checkselect">
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="forms[]"
+                                                             value="1"> Дневная</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="forms[]"
+                                                             value="2"> Заочная</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="forms[]"
+                                                             value="3"> Дневная сокр.</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="forms[]"
+                                                             value="4"> Заочная сокр.</label>
+      <label class="filter__label checkselect__label"><input class="filter__input" type="checkbox" name="forms[]"
+                                                             value="5"> Дистанционная</label>
+    </div>
+    <button class="button button--forms" type="submit">Показать</button>
+    <button class="button button--forms button--reset" type="reset">Сброс</button>
+  </form>
+  <div class="scroll">
+    <table class="table table--bordered">
+      <thead>
+      <tr>
+        <th rowspan="2" class="table__column-spec">
+          Специальность
+        </th>
+        <th rowspan="2" class="table__column-kval">
+          Квалификация
+        </th>
+        <th colspan="2" class="table__column-day">
+          Дневная
+        </th>
+        <th colspan="2" class="table__column-zaoch">
+          Заочная
+        </th>
+        <th colspan="2" class="table__column-shortday">
+          Дневная сокращенная
+        </th>
+        <th colspan="2" class="table__column-shortzaoch">
+          Заочная сокращенная
+        </th>
+        <th colspan="2" class="table__column-distant">
+          Дистанционная
+        </th>
+      </tr>
+      <tr>
+        <th class="table__column-day table__column-day--budget">
+          <div class="table__sort-wrapper"><span>бюдж.</span>
+            <div class="table__sort-icons">
+              <svg class="table__sort-icon table__sort-icon--active">
+                <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+              </svg>
+              <svg class="table__sort-icon">
+                <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+              </svg>
+            </div>
+          </div>
+        </th>
+        <th class="table__column-day table__column-day--paid">
+          <div class="table__sort-wrapper"><span>платн.</span>
+            <div class="table__sort-icons">
+              <svg class="table__sort-icon table__sort-icon--active">
+                <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+              </svg>
+              <svg class="table__sort-icon">
+                <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+              </svg>
+            </div>
+          </div>
+        </th>
+        <th class="table__column-zaoch table__column-zaoch--budget">
+          <div class="table__sort-wrapper"><span>бюдж.</span>
+            <div class="table__sort-icons">
+              <svg class="table__sort-icon table__sort-icon--active">
+                <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+              </svg>
+              <svg class="table__sort-icon">
+                <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+              </svg>
+            </div>
+          </div>
+        </th>
+        <th class="table__column-zaoch table__column-zaoch--paid">
+          <div class="table__sort-wrapper"><span>платн.</span>
+            <div class="table__sort-icons">
+              <svg class="table__sort-icon table__sort-icon--active">
+                <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+              </svg>
+              <svg class="table__sort-icon">
+                <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+              </svg>
+            </div>
+          </div>
+        </th>
+        <th class="table__column-shortday table__column-shortday--budget">
+          <div class="table__sort-wrapper"><span>бюдж.</span>
+            <div class="table__sort-icons">
+              <svg class="table__sort-icon table__sort-icon--active">
+                <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+              </svg>
+              <svg class="table__sort-icon">
+                <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+              </svg>
+            </div>
+          </div>
+        </th>
+        <th class="table__column-shortday table__column-shortday--paid">
+          <div class="table__sort-wrapper"><span>платн.</span>
+            <div class="table__sort-icons">
+              <svg class="table__sort-icon table__sort-icon--active">
+                <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+              </svg>
+              <svg class="table__sort-icon">
+                <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+              </svg>
+            </div>
+          </div>
+        </th>
+        <th class="table__column-shortzaoch table__column-shortzaoch--budget">
+          <div class="table__sort-wrapper"><span>бюдж.</span>
+            <div class="table__sort-icons">
+              <svg class="table__sort-icon table__sort-icon--active">
+                <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+              </svg>
+              <svg class="table__sort-icon">
+                <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+              </svg>
+            </div>
+          </div>
+        </th>
+        <th class="table__column-shortzaoch table__column-shortzaoch--paid">
+          <div class="table__sort-wrapper"><span>платн.</span>
+            <div class="table__sort-icons">
+              <svg class="table__sort-icon table__sort-icon--active">
+                <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+              </svg>
+              <svg class="table__sort-icon">
+                <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+              </svg>
+            </div>
+          </div>
+        </th>
+        <th class="table__column-distant table__column-distant--paid">
+          <div class="table__sort-wrapper"><span>платн.</span>
+            <div class="table__sort-icons">
+              <svg class="table__sort-icon table__sort-icon--active">
+                <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+              </svg>
+              <svg class="table__sort-icon">
+                <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+              </svg>
+            </div>
+          </div>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="table__row-fkp">
+        <td class="table__column-spec table__td-fkp">
+          <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
+          и компьютерное проектирование радиоэлектронных средств</a>
+        </td>
+        <td class="table__column-kval table__td-fkp">
+          Инженер по радиоэлектронике
+        </td>
+        <td class="table__column-day--budget table__td-fkp">
+          25
+        </td>
+        <td class="table__column-day--paid table__td-fkp">
+          5
+        </td>
+        <td class="table__column-zaoch--budget table__td-fkp">
+          &nbsp;
+        </td>
+        <td class="table__column-zaoch--paid table__td-fkp">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--budget table__td-fkp">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--paid table__td-fkp">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--budget table__td-fkp">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--paid table__td-fkp">
+          &nbsp;
+        </td>
+        <td class="table__column-distant--paid table__td-fkp">
+          &nbsp;
+        </td>
+      </tr>
+      <tr class="table__row-fitu">
+        <td class="table__column-spec table__td-fitu">
+          <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
+          и компьютерное проектирование радиоэлектронных средств</a>
+        </td>
+        <td class="table__column-kval table__td-fitu">
+          Инженер по радиоэлектронике
+        </td>
+        <td class="table__column-day--budget table__td-fitu">
+          25
+        </td>
+        <td class="table__column-day--paid table__td-fitu">
+          5
+        </td>
+        <td class="table__column-zaoch--budget table__td-fitu">
+          &nbsp;
+        </td>
+        <td class="table__column-zaoch--paid table__td-fitu">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--budget table__td-fitu">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--paid table__td-fitu">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--budget table__td-fitu">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--paid table__td-fitu">
+          &nbsp;
+        </td>
+        <td class="table__column-distant--paid table__td-fitu">
+          20
+        </td>
+      </tr>
+      <tr class="table__row-fre">
+        <td class="table__column-spec table__td-fre">
+          <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
+          и компьютерное проектирование радиоэлектронных средств</a>
+        </td>
+        <td class="table__column-kval table__td-fre">
+          Инженер по радиоэлектронике
+        </td>
+        <td class="table__column-day--budget table__td-fre">
+          25
+        </td>
+        <td class="table__column-day--paid table__td-fre">
+          5
+        </td>
+        <td class="table__column-zaoch--budget table__td-fre">
+          &nbsp;
+        </td>
+        <td class="table__column-zaoch--paid table__td-fre">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--budget table__td-fre">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--paid table__td-fre">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--budget table__td-fre">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--paid table__td-fre">
+          &nbsp;
+        </td>
+        <td class="table__column-distant--paid table__td-fre">
+          &nbsp;
+        </td>
+      </tr>
+      <tr class="table__row-fksis">
+        <td class="table__column-spec table__td-fksis">
+          <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
+          и компьютерное проектирование радиоэлектронных средств</a>
+        </td>
+        <td class="table__column-kval table__td-fksis">
+          Инженер по радиоэлектронике
+        </td>
+        <td class="table__column-day--budget table__td-fksis">
+          25
+        </td>
+        <td class="table__column-day--paid table__td-fksis">
+          5
+        </td>
+        <td class="table__column-zaoch--budget table__td-fksis">
+          &nbsp;
+        </td>
+        <td class="table__column-zaoch--paid table__td-fksis">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--budget table__td-fksis">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--paid table__td-fksis">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--budget table__td-fksis">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--paid table__td-fksis">
+          &nbsp;
+        </td>
+        <td class="table__column-distant--paid table__td-fksis">
+          &nbsp;
+        </td>
+      </tr>
+      <tr class="table__row-fik">
+        <td class="table__column-spec table__td-fik">
+          <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
+          и компьютерное проектирование радиоэлектронных средств</a>
+        </td>
+        <td class="table__column-kval table__td-fik">
+          Инженер по радиоэлектронике
+        </td>
+        <td class="table__column-day--budget table__td-fik">
+          25
+        </td>
+        <td class="table__column-day--paid table__td-fik">
+          5
+        </td>
+        <td class="table__column-zaoch--budget table__td-fik">
+          &nbsp;
+        </td>
+        <td class="table__column-zaoch--paid table__td-fik">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--budget table__td-fik">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--paid table__td-fik">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--budget table__td-fik">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--paid table__td-fik">
+          &nbsp;
+        </td>
+        <td class="table__column-distant--paid table__td-fik">
+          &nbsp;
+        </td>
+      </tr>
+      <tr class="table__row-ief">
+        <td class="table__column-spec table__td-ief">
+          <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
+          и компьютерное проектирование радиоэлектронных средств</a>
+        </td>
+        <td class="table__column-kval table__td-ief">
+          Инженер по радиоэлектронике
+        </td>
+        <td class="table__column-day--budget table__td-ief">
+          25
+        </td>
+        <td class="table__column-day--paid table__td-ief">
+          5
+        </td>
+        <td class="table__column-zaoch--budget table__td-ief">
+          &nbsp;
+        </td>
+        <td class="table__column-zaoch--paid table__td-ief">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--budget table__td-ief">
+          &nbsp;
+        </td>
+        <td class="table__column-shortday--paid table__td-ief">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--budget table__td-ief">
+          &nbsp;
+        </td>
+        <td class="table__column-shortzaoch--paid table__td-ief">
+          &nbsp;
+        </td>
+        <td class="table__column-distant--paid table__td-ief">
+          &nbsp;
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+<footer class="footer">
+  <div class="wrapper footer__wrapper">
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/bsuir.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/biturBY.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/molTV.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/fin.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/cw.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/minObr.png"/>
+    </a>
+    <a href="">
+      <img class="footer__banner" src="./img/footer_links/exportBY.png"/>
+    </a>
+  </div>
+  <div class="footer__all-size">
+    <div class="wrapper footer__wrapper--info">
+      <a href="./index.html">
+        <img class="logo footer__logo" src="./img/logo.svg" alt=""/>
+      </a>
+      <div class="footer__content-box">
+        <div class="information footer__information">
+              <span class="footer__description">
+                <p>Юридический адрес:</p>
+                220013 г. Минск, ул. П. Бровки, 6
+              </span>
+          <span class="footer__description">
+                <p>Телефон приемной комиссии:</p>
+                +375 17 293-88-15
+              </span>
+        </div>
+        <div class="information footer__information">
+              <span class="footer__description">
+                <p>Время работы:</p>
+                09.00 - 18.00
+              </span>
+          <span class="footer__description">
+                <p>Email:</p>
+                <a href="#" class="footer__link">prcom@bsuir.by</a>
+              </span>
+        </div>
+      </div>
+      <div class="acc footer__acc">
+        <a href="" class="acc__link footer__acc-opacity">
+          <img src="./img/instagram.png" alt=""/>
+        </a>
+        <a href="" class="acc__link footer__acc-opacity">
+          <img src="./img/vk.png" alt=""/>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="popup hidden__opacity">
+  <div class="popup__body">
+    <a class="popup__close"><img src="./img/close.svg" alt=""></a>
+    <div class="popup__content">
+      <button class="button button--corner popup__btn">
+        Личный кабинет
+      </button>
+      <ul class="popup__list">
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/spetial.svg"/>
+          <a class="popup__link" href="">Специальности</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/programmer.svg"/>
+          <a class="popup__link" href="">Учиться на программиста</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/courses.svg"/>
+          <a class="popup__link" href="">подготовительные курсы</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/day.svg"/>
+          <a class="popup__link" href="">Дневное</a>
+        </li>
+        <li class="popup__list-item">
+          <img
+            class="popup__link-img"
+            src="./img/popup/correspondence.svg"
+          />
+          <a class="popup__link" href="">заочное</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/distance.svg"/>
+          <a class="popup__link" href="">Дистанционное</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/abbraviated.svg"/>
+          <a class="popup__link" href="">Сокращённое</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="./img/popup/too_learn.svg"/>
+          <a class="popup__link" href="">Второе высшее</a>
+        </li>
+      </ul>
+    </div>
+    <div class="popup__content popup__content--bg">
+      <ul class="popup__list popup__list--untop">
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite">
+            проходные балы прошлых лет
+          </a>
+        </li>
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite"> План приёма </a>
+        </li>
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite">Общежитие</a>
+        </li>
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite">
+            Репетиционное тестирование
+          </a>
+        </li>
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite">
+            Поступление в магистратуру
+          </a>
+        </li>
+        <li class="popup__list-item">
+          <a href="" class="popup__link popup__link--wite">
+            Иностранным абитуриентам
+          </a>
+        </li>
+      </ul>
+      <div class="popup__info">
+        <div class="information popup__information">
+              <span class="popup__contacts">
+                <p>Юридический адрес:</p>
+                220013 г. Минск, ул. П. Бровки, 6
+                <p>
+                  <a href="#" class="popup__link popup__link--wite popup__link--footer">
+                    Схема корпусов
+                  </a>
+                </p>
+              </span>
+          <span class="popup__contacts">
+                <p>Телефон приемной комиссии:</p>
+                +375 17 293-88-15
+              </span>
+        </div>
+        <div class="information popup__information">
+              <span class="popup__contacts">
+                <p>Время работы:</p>
+                09.00 - 18.00
+              </span>
+          <span class="popup__contacts popup__contacts--unmargin">
+                <p>Email:</p>
+                <a href="#" class="popup__link popup__link--wite popup__link--footer">
+                  prcom@bsuir.by
+                </a>
+              </span>
+        </div>
+        <div class="acc popup__acc">
+          <a href="" class="acc__link">
+            <img src="./img/instagram.png" alt=""/>
+          </a>
+          <a href="" class="acc__link">
+            <img src="./img/vk.png" alt=""/>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
