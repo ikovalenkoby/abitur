@@ -35,6 +35,40 @@
     background-repeat: no-repeat;
     background-position: top left;
   }
+
+  &--forms {
+    background: @btn url("./../img/button-corner.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    padding-left: 14px;
+    font-size: @f14;
+    width: 15%;
+    min-width: 120px;
+    height: 40px;
+  }
+
+  &--forms:hover {
+    background: @button-hover url("./../img/button-corner.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+  }
+
+  &--reset {
+    background: @reset url("./../img/button-reset-corner.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    margin-left: 2.5%;
+  }
+
+  &--reset:hover {
+    background: @reset-hover url("./../img/button-reset-corner.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+  }
 }
 
 @media screen and (max-width: 1239px) {

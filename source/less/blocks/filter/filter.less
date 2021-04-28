@@ -1,29 +1,92 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 
   &__label {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+
+  &__label:last-of-type {
+    margin-right: 1.6%;
   }
 
   &__input {
     display: none;
   }
 
-  & label::before {
+  &__label::before {
     content: "";
-    width: 18px;
-    height: 18px;
-    border: 1px solid black;
-    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(70, 78, 106, 0.2);
+    margin-right: 5px;
   }
 
-  & span::before {
+  &__input:checked + &__label::before {
     content: "";
-    width: 18px;
-    height: 18px;
-    border: 1px solid black;
-    position: absolute;
+    background: @news-date url("../img/check.svg") no-repeat center;
+    border: 1px solid rgba(70, 78, 106, 0.2);
+  }
+
+  & button:nth-of-type(2) {
+    margin-left: auto;
+  }
+
+  &__checkselect:nth-of-type(2n) {
+    margin-left: 1.6%;
+  }
+
+  & button:nth-last-child(2) {
+    margin-left: auto;
+  }
+
+  & button:last-child {
+    margin-left: 2.5%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .filter {
+    font-size: @f12;
+    line-height: @fl12;
+    justify-content: space-between;
+
+    &__checkselect {
+      width: 25%;
+    }
+
+    & button {
+      width: 30%;
+      margin-top: 10px;
+    }
+
+    & button:nth-last-child(2) {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .filter {
+    font-size: @f12;
+    line-height: @fl12;
+    justify-content: space-between;
+
+    &__checkselect {
+      width: 25%;
+    }
+
+    & button {
+      width: 30%;
+      margin-top: 10px;
+    }
+
+    & button:nth-last-child(2) {
+      margin-left: 0;
+    }
   }
 }
