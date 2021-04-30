@@ -1,24 +1,120 @@
+@column-fixed-width: 240px;
+
 .table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  box-shadow: 5px 0 8px rgba(0, 0, 0, 0.07);
 
-
-  &__column-day--budget {
-    display:none;
+  & > tbody > tr > td,
+  & > tbody > tr > th,
+  & > tfoot > tr > td,
+  & > tfoot > tr > th,
+  & > thead > tr > td,
+  & > thead > tr > th {
+    padding: 7px;
+    vertical-align: middle;
+    border-top: 1px solid @line;
   }
 
-  &__column-day {
-    display:none;
+  &--bordered {
+    border: 1px solid @line;
+  }
+
+  &--bordered > tbody > tr > td,
+  &--bordered > tbody > tr > th,
+  &--bordered > tfoot > tr > td,
+  &--bordered > tfoot > tr > th,
+  &--bordered > thead > tr > td,
+  &--bordered > thead > tr > th {
+    border: 1px solid @line;
+    border-top-color: @line;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    text-align: center;
+  }
+
+  &__column-day--budget,
+  &__column-day--paid,
+  &__column-zaoch--budget,
+  &__column-zaoch--paid,
+  &__column-shortday--budget,
+  &__column-shortday--paid,
+  &__column-shortzaoch--budget,
+  &__column-shortzaoch--paid,
+  &__column-distant--paid {
+    font-weight: bold;
+  }
+
+  &__column-distant {
+    word-break: break-word;
+    width: 74px;
+    min-width: 74px;
+  }
+
+  &__sort-wrapper {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__sort-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 5px;
+  }
+
+  &__sort-icon {
+    width: 8px;
+    height: 8px;
+    fill: @line;
+  }
+
+  &__sort-icon--active {
+    fill: @additional;
   }
 }
 
-.table--bordered > tbody > tr > td,
-.table--bordered > tbody > tr > th,
-.table--bordered > tfoot > tr > td,
-.table--bordered > tfoot > tr > th,
-.table--bordered > thead > tr > td,
-.table--bordered > thead > tr > th {
-  border: 1px solid #ddd;
-  border-top-color: rgb(221, 221, 221);
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
+@media screen and (max-width: 1000px) {
+  .table {
+    width: 100%;
+
+    &__column-spec {
+      border-left: 3px solid #d0d0d0;
+      border-bottom: 1px solid #d0d0d0;
+      position: absolute;
+      width: @column-fixed-width;
+      left: 0;
+      top: auto;
+      line-height: 1.1;
+    }
+
+    & > tbody > tr > td,
+    & > tbody > tr > th,
+    & > tfoot > tr > td,
+    & > tfoot > tr > th,
+    & > thead > tr > td,
+    & > thead > tr > th {
+      padding: 7px;
+    }
+  }
+
+  th.table__column-spec {
+    height: 70px;
+  }
+
+
+  .scroll {
+    width: calc(100% - @column-fixed-width);
+    margin-left: @column-fixed-width;
+    overflow: auto;
+  }
+
+  .table-wrapper {
+    position: relative;
+  }
+
+  .scroll table tr {
+    height: 61px;
+  }
 }

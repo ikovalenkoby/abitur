@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 80px 80px repeat(2, 190px) minmax(140px, auto) 120px;
   grid-gap: 10px;
+  margin-bottom: 20px;
 
   &__label {
     display: flex;
@@ -49,7 +50,6 @@
     font-size: @f12;
     line-height: @fl12;
     grid-template-columns: 80px 80px minmax(20px, auto) 170px 180px;
-  /*  grid-template-rows: 80px 80px repeat(2, 190px) minmax(140px, auto) 120px;*/
 
     &__checkselect:first-of-type {
       grid-column-start: 4;
@@ -86,12 +86,15 @@
 
 @media screen and (max-width: 420px) {
   .filter {
-    grid-template-columns: minmax(175px, auto) minmax(80px, auto);
+    grid-template-columns: minmax(165px, auto) minmax(80px, auto);
+    grid-gap: 10px;
 
     &__checkselect:nth-of-type(2) {
       grid-column-start: 1;
     }
 
+    & button:nth-last-child(2) {
+      margin-left: 0;
+    }
   }
 }
-

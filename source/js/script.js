@@ -133,4 +133,3 @@ $(".toggler").click(function () {
   };
 })(jQuery);
 $('.checkselect').checkselect();
-
