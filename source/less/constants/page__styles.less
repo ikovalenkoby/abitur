@@ -17,6 +17,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "IBM Plex Sans", sans-serif, "Arial";
+  color: @h1;
 }
 
 a {
@@ -26,6 +27,21 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/*страница Поиска*/
+
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b,
+.gs-result .gs-title,
+.gcsc-find-more-on-google,
+.gcsc-find-more-on-google-magnifier,
+.gcsc-find-more-on-google-magnifie {
+  color: @circle !important;
+  text-decoration: none;
+  fill: @btn !important;
 }
 
 @media screen and (max-width: 768px) {
