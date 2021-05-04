@@ -52,6 +52,11 @@
     min-width: 74px;
   }
 
+  &__column-day--empty {
+    display: none;
+    border: none !important;
+  }
+
   &__sort-wrapper {
     display: flex;
     cursor: pointer;
@@ -101,6 +106,10 @@
     & > thead > tr > td,
     & > thead > tr > th {
       padding: 7px;
+    }
+
+    &__column-day--empty {
+      display: table-cell;
     }
   }
 
