@@ -121,10 +121,10 @@ html {
 }
 a {
   color: #5f688b;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 /*страница Поиска*/
 .gs-webResult.gs-result a.gs-title:link,
@@ -522,7 +522,7 @@ h4 {
   background-size: contain;
   padding-left: 14px;
   font-size: 1.4rem;
-  width: 25%;
+  width: 29%;
   min-width: 120px;
   height: 40px;
 }
@@ -717,6 +717,11 @@ h4 {
 }
 .menu__hidden-box a {
   color: #4d4d4d;
+  text-decoration: none;
+}
+.menu__hidden-box a:hover {
+  color: #96b2ed;
+  text-decoration: underline;
 }
 .menu__block:last-of-type .menu__hidden-box,
 .menu__block:nth-last-child(2) .menu__hidden-box {
@@ -981,6 +986,9 @@ h4 {
 }
 .acc__link:last-child {
   padding-bottom: 0;
+}
+.acc__link:hover img {
+  opacity: 0.4;
 }
 .acc {
   display: -webkit-box;
@@ -1419,7 +1427,7 @@ h4 {
   .filter {
     font-size: 1.2rem;
     line-height: 1.6rem;
-    grid-template-columns: 80px 80px minmax(20px, auto) 170px 180px;
+    grid-template-columns: 80px 80px minmax(20px, auto) 190px 190px;
   }
   .filter__checkselect:first-of-type {
     grid-column-start: 4;
@@ -1558,6 +1566,7 @@ h4 {
   border-collapse: collapse;
   -webkit-box-shadow: 5px 0 8px rgba(0, 0, 0, 0.07);
           box-shadow: 5px 0 8px rgba(0, 0, 0, 0.07);
+  /*подсветка разных факультетов*/
 }
 .table > tbody > tr > td,
 .table > tbody > tr > th,
@@ -1566,6 +1575,12 @@ h4 {
 .table > thead > tr > td,
 .table > thead > tr > th {
   padding: 7px;
+  vertical-align: middle;
+  border-top: 1px solid #464e6a6b;
+}
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 7px 4px;
   vertical-align: middle;
   border-top: 1px solid #464e6a6b;
 }
@@ -1605,7 +1620,12 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .table__sort-icons {
   display: -webkit-box;
@@ -1618,15 +1638,46 @@ h4 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 .table__sort-icon {
-  width: 8px;
-  height: 8px;
+  display: block;
+  cursor: pointer;
+  padding: 0 3px;
+  line-height: 1;
+}
+.table__sort-icon:hover {
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+}
+.table__sort-icon svg {
+  width: 10px;
+  height: 10px;
   fill: #464e6a6b;
 }
-.table__sort-icon--active {
+.table__sort-icon--active svg {
   fill: #464e6a;
+}
+.table__row-fkp {
+  background-color: #F7FFF5;
+}
+.table__row-fitu {
+  background-color: #FFFBF5;
+}
+.table__row-fre {
+  background-color: #FDFFF5;
+}
+.table__row-fksis {
+  background-color: #F5FFF9;
+}
+.table__row-fik {
+  background-color: #F5FFFF;
+}
+.table__row-ief {
+  background-color: #F5F9FF;
+}
+.table > tbody > tr > td.table__column-spec {
+  text-align: left;
 }
 @media screen and (max-width: 1000px) {
   .table {
@@ -1640,6 +1691,9 @@ h4 {
     left: 0;
     top: auto;
     line-height: 1.1;
+  }
+  .table > thead .table__column-spec {
+    height: 122px;
   }
   .table > tbody > tr > td,
   .table > tbody > tr > th,
@@ -1662,6 +1716,12 @@ h4 {
   }
   .scroll table tr {
     height: 61px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 }
 .nomain-content {

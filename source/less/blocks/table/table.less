@@ -16,6 +16,13 @@
     border-top: 1px solid @line;
   }
 
+  & > thead > tr > td,
+  & > thead > tr > th {
+    padding: 7px 4px;
+    vertical-align: middle;
+    border-top: 1px solid @line;
+  }
+
   &--bordered {
     border: 1px solid @line;
   }
@@ -54,25 +61,67 @@
 
   &__sort-wrapper {
     display: flex;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
   }
 
   &__sort-icons {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 5px;
+    margin-left: 2px;
   }
 
   &__sort-icon {
-    width: 8px;
-    height: 8px;
+    display: block;
+    cursor: pointer;
+    padding: 0 3px;
+    line-height: 1;
+  }
+
+  &__sort-icon:hover {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  }
+
+
+  &__sort-icon svg{
+    width: 10px;
+    height: 10px;
     fill: @line;
   }
 
-  &__sort-icon--active {
+  &__sort-icon--active svg{
     fill: @additional;
   }
+
+/*подсветка разных факультетов*/
+  &__row-fkp {
+    background-color: @fkp;
+  }
+
+  &__row-fitu {
+    background-color: @fitu;
+  }
+
+  &__row-fre {
+    background-color: @fre;
+  }
+
+  &__row-fksis {
+    background-color: @fksis;
+  }
+
+  &__row-fik {
+    background-color: @fik;
+  }
+
+  &__row-ief {
+    background-color: @ief;
+  }
+}
+
+.table > tbody > tr > td.table__column-spec {
+  text-align: left;
 }
 
 @media screen and (max-width: 1000px) {
@@ -87,6 +136,10 @@
       left: 0;
       top: auto;
       line-height: 1.1;
+    }
+
+    & > thead &__column-spec {
+      height: 122px;
     }
 
     & > tbody > tr > td,
@@ -106,6 +159,7 @@
 
   .scroll {
     width: calc(100% - @column-fixed-width);
+    // width: 100%;
     margin-left: @column-fixed-width;
     overflow: auto;
   }
@@ -116,5 +170,12 @@
 
   .scroll table tr {
     height: 61px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 }
