@@ -99,6 +99,31 @@
     fill: @additional;
   }
 
+  .table__column-blocks {
+    display: none;
+    flex-direction: column;
+  }
+
+  .table__block-cell {
+    padding: 7px;
+    border: 1px solid #464e6a6b;
+    border-top-color: #464e6a6b;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    text-align: center;
+    width: 180px;
+    font-size: @f14;
+    line-height: @fl14;
+  }
+
+  .table__special-cell {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 /*подсветка разных факультетов*/
   &__row-fkp {
     background-color: @fkp;
@@ -129,22 +154,52 @@
   text-align: left;
 }
 
+.table__column-blocks {
+  display: none;
+  flex-direction: column;
+}
+
+.table__block-cell {
+  padding: 7px;
+  border: 1px solid #464e6a6b;
+  border-top-color: #464e6a6b;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  text-align: center;
+  width: 180px;
+  font-size: @f14;
+  line-height: @fl14;
+}
+
+.table__special-cell {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1000px) {
   .table {
     width: 100%;
 
     &__column-spec {
-      border-left: 3px solid #d0d0d0;
-      border-bottom: 1px solid #d0d0d0;
-      position: absolute;
-      width: @column-fixed-width;
-      left: 0;
-      top: auto;
-      line-height: 1.1;
+      // border-left: 3px solid #d0d0d0;
+      // border-bottom: 1px solid #d0d0d0;
+      // position: absolute;
+      // width: @column-fixed-width;
+      // left: 0;
+      // top: auto;
+      // line-height: 1.1;
+      display: none;
     }
 
     & > thead &__column-spec {
       height: 122px;
+    }
+
+    &__column-day--empty {
+      display: table-cell;
     }
 
     & > tbody > tr > td,
@@ -155,26 +210,27 @@
     & > thead > tr > th {
       padding: 7px;
     }
-
-    &__column-day--empty {
-      display: table-cell;
-    }
   }
 
-  th.table__column-spec {
-    height: 70px;
+  .table__column-blocks {
+    display: flex;
   }
 
+
+  // th.table__column-spec {
+  //   height: 70px;
+  // }
 
   .scroll {
-    width: calc(100% - @column-fixed-width);
+    // width: calc(100% - @column-fixed-width);
     // width: 100%;
-    margin-left: @column-fixed-width;
+    // margin-left: @column-fixed-width;
     overflow: auto;
   }
 
   .table-wrapper {
-    position: relative;
+    // position: relative;
+    display: flex;
   }
 
   .scroll table tr {
