@@ -79,57 +79,106 @@ window.addEventListener("DOMContentLoaded", () => {
       closePopup();
     }
   });
-});
 
-//toggler
-$(".toggler").click(function () {
-  $(this).next().toggle("slow");
-  $(this).closest('p.toggler').toggleClass("no-active");
-});
+  //toggler
+  $(".toggler").click(function () {
+    $(this).next().toggle("slow");
+    $(this).closest("p.toggler").toggleClass("no-active");
+  });
 
-//checkselect
-(function($) {
-  function setChecked(target) {
-    var checked = $(target).find("input[type='checkbox']:checked").length;
-    if (checked) {
-      $(target).find('select option:first').html('Выбрано: ' + checked);
-    } else {
-      $(target).find('select option:first').html('Факультеты');
+  //checkselect
+  (function ($) {
+    function setChecked(target) {
+      var checked = $(target).find("input[type='checkbox']:checked").length;
+      if (checked) {
+        $(target)
+          .find("select option:first")
+          .html("Выбрано: " + checked);
+      } else {
+        $(target).find("select option:first").html("Факультеты");
+      }
+    }
+
+    $.fn.checkselect = function () {
+      this.wrapInner('<div class="checkselect-popup"></div>');
+      this.prepend(
+        '<div class="checkselect-control">' +
+          '<select class="form-control"><option></option></select>' +
+          '<div class="checkselect-over"></div>' +
+          "</div>"
+      );
+
+      this.each(function () {
+        setChecked(this);
+      });
+      this.find('input[type="checkbox"]').click(function () {
+        setChecked($(this).parents(".checkselect"));
+      });
+    };
+  })(jQuery);
+  $(".checkselect").checkselect();
+
+  //table
+  const columnBox = document.querySelector(".table__column-blocks"),
+    filterBox = document.querySelector(".filter"),
+    filterBtn = filterBox.querySelector("[data-send]");
+
+  function columnRender() {
+    const mediaQuery = window.matchMedia("(max-width: 1000px)");
+
+    if (mediaQuery.matches) {
+      const tableRow = document.querySelectorAll(".table tr");
+      columnBox.innerHTML = "";
+      tableRow.forEach((row, i) => {
+        const cellContent = row.querySelector(".table__column-spec");
+        if (cellContent != null) {
+          const newCell = document.createElement("div");
+
+          if (i == 0) {
+            newCell.style.height = `${
+              document.querySelector(".table thead").clientHeight
+            }px`;
+            newCell.classList.add("table__special-cell");
+          }
+
+          newCell.classList.add("table__block-cell");
+          newCell.innerHTML = cellContent.innerHTML;
+          columnBox.append(newCell);
+
+          if (row.parentNode.tagName.toLowerCase() == "tbody") {
+            setHeight(newCell, row);
+          }
+        }
+      });
     }
   }
 
-  $.fn.checkselect = function() {
-    this.wrapInner('<div class="checkselect-popup"></div>');
-    this.prepend(
-      '<div class="checkselect-control">' +
-      '<select class="form-control"><option></option></select>' +
-      '<div class="checkselect-over"></div>' +
-      '</div>'
-    );
+  function setHeight(cell, row) {
+    if (row.offsetHeight > cell.offsetHeight) {
+      cell.style.height = `${row.offsetHeight}px`;
+    } else if (row.offsetHeight < cell.offsetHeight) {
+      row.style.height = `${cell.offsetHeight}px`;
+    }
+  }
 
-    this.each(function(){
-      setChecked(this);
-    });
-    this.find('input[type="checkbox"]').click(function(){
-      setChecked($(this).parents('.checkselect'));
-    });
+  columnRender();
 
-  /*  this.parent().find('.checkselect-control').on('click', function(){
-      $popup = $(this).next();
-      $('.checkselect-popup').not($popup).css('display', 'none');
-      if ($popup.is(':hidden')) {
-        $popup.css('display', 'block');
-        $(this).find('select').focus();
-      } else {
-        $popup.css('display', 'none');
+  filterBox.addEventListener("click", (e) => {
+    const mediaQuery = window.matchMedia("(max-width: 1000px)");
+
+    if (mediaQuery.matches) {
+      if (e.target === filterBtn) {
+        e.preventDefault();
+        columnRender();
       }
-    });
+    }
+  });
 
-    $('html, body').on('click', function(e){
-      if ($(e.target).closest('.checkselect').length == 0){
-        $('.checkselect-popup').css('display', 'none');
-      }
-    });*/
-  };
-})(jQuery);
-$('.checkselect').checkselect();
+  window.addEventListener("resize", () => {
+    const mediaQuery = window.matchMedia("(max-width: 1000px)");
+
+    if (mediaQuery.matches) {
+      columnRender();
+    }
+  });
+});
