@@ -129,8 +129,10 @@ window.addEventListener("DOMContentLoaded", () => {
     if (mediaQuery.matches) {
       const tableRow = document.querySelectorAll(".table tr");
       columnBox.innerHTML = "";
+
       tableRow.forEach((row, i) => {
         const cellContent = row.querySelector(".table__column-spec");
+
         if (cellContent != null) {
           const newCell = document.createElement("div");
 
@@ -147,6 +149,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
           if (row.parentNode.tagName.toLowerCase() == "tbody") {
             setHeight(newCell, row);
+            newCell.classList.add(row.className);
           }
         }
       });
