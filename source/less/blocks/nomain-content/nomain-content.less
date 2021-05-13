@@ -6,8 +6,15 @@
   flex-grow: 1;
   font-size: @f14;
   line-height: @fl14;
-}
 
+  & ul {
+    margin-left: 15px;
+  }
+
+  & li::marker {
+    color: @additional;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .nomain-content {

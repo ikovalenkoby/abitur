@@ -1,0 +1,14 @@
+.flex-row {
+  display: flex;
+
+  & > img {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -16,13 +16,18 @@
     margin-left: auto;
     color: @text;
     font-size: @f16;
+    text-decoration: none;
   }
 
   &__archive-links::after {
     content: "\2192";
     font-weight: bold;
-    font-size: calc(1.9em + 0.2rem);
+    font-size: calc(1.6em + 0.2rem);
     font-family: "Arial";
+  }
+
+  &__archive-links:hover{
+    color: @link;
   }
 
   &__archive-links:hover::after {
@@ -77,11 +82,12 @@
     max-height: 70px;
     overflow-y: hidden;
     width: 256px;
+    text-decoration: none;
   }
 
-  &__description:hover,
-  &__archive-links:hover {
-    color: @circle;
+  &__description:hover {
+    color: @link;
+   text-decoration: underline;
   }
 }
 

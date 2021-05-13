@@ -23,7 +23,11 @@
         placeholder="Поиск"
       />
       <button class="button search-form__button">
-        <svg class="search-form__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg
+          class="search-form__img"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
           <use xlink:href="./img/search_sprite.svg#search"></use>
         </svg>
         <!-- <img src="./img/search-img.svg" alt="" class="search-form__img" /> -->
@@ -170,7 +174,9 @@
             <ul class="menu__list">
               <span class="menu__list-title">Приемная комиссия</span>
               <li class="menu__item">Часто задаваемые вопросы</li>
-              <li class="menu__item"><a href="departments.html"> Контакты приемной комиссии </a></li>
+              <li class="menu__item">
+                <a href="departments.html"> Контакты приемной комиссии </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -186,7 +192,8 @@
             </ul>
 
             <ul class="menu__list">
-                  <span class="menu__list-title">Дифференциально-диагностический опросник</span
+                  <span class="menu__list-title"
+                  >Дифференциально-диагностический опросник</span
                   >
             </ul>
 
@@ -209,17 +216,13 @@
         <ul class="menu__list menu__list--mibile">
           <a class="menu__list-title">Факультеты и специальности</a>
           <li class="menu__item menu__item--mobile">
-            <a href="">
-              Специальности очной формы
-            </a>
+            <a href=""> Специальности очной формы </a>
           </li>
           <li class="menu__item menu__item--mobile">
             <a href="">Специальности заочной формы</a>
           </li>
           <li class="menu__item menu__item--mobile">
-            <a href="">
-              Специальности сокращённой формы
-            </a>
+            <a href=""> Специальности сокращённой формы </a>
           </li>
         </ul>
 
@@ -240,25 +243,19 @@
         <ul class="menu__list menu__list--mibile">
           <a class="menu__list-title">Студенческая жизнь</a>
           <li class="menu__item menu__item--mobile">
-            <a href="">
-              Учебный процесс
-            </a>
+            <a href=""> Учебный процесс </a>
           </li>
           <li class="menu__item menu__item--mobile">
             <a href="">Социальная поддержка студентов</a>
           </li>
           <li class="menu__item menu__item--mobile">
-            <a href="">
-              Культурная жизнь
-            </a>
+            <a href=""> Культурная жизнь </a>
           </li>
           <li class="menu__item menu__item--mobile">
             <a href="">Спортивная жизнь</a>
           </li>
           <li class="menu__item menu__item--mobile">
-            <a href="">
-              Общежития
-            </a>
+            <a href=""> Общежития </a>
           </li>
         </ul>
       </div>
@@ -331,169 +328,357 @@
 </header>
 <main class="nomain-content">
   <div class="breadcrumbs">
-    <a href="index.html"><img src="img/home.svg"></a>
+    <a href="index.html"><img src="img/home.svg"/></a>
     <a href="index.html">Приемная компания</a>
     <span>Баллы 2020 года</span>
   </div>
   <h1>Проходные баллы 2020 года</h1>
   <form class="filter">
-    <input id="budget" class="filter__input" type="checkbox"><label class="filter__label" for="budget"> Бюджет</label>
-    <input id="paid" class="filter__input" type="checkbox"><label for="paid" class="filter__label">Платно</label>
+    <input id="budget" class="filter__input" type="checkbox"/><label
+    class="filter__label"
+    for="budget"
+  >
+    Бюджет</label
+  >
+    <input id="paid" class="filter__input" type="checkbox"/><label
+    for="paid"
+    class="filter__label"
+  >Платно</label
+  >
     <div class="filter__checkselect checkselect">
-      <input id="fkp" class="filter__input" type="checkbox" name="faculties[]" value="1"><label for="fkp" class="filter__label checkselect__label"> ФКП</label>
-      <input id="fitu" class="filter__input" type="checkbox" name="faculties[]" value="2"><label for="fitu" class="filter__label checkselect__label">ФИТУ</label>
-      <input id="fre" class="filter__input" type="checkbox" name="faculties[]" value="3"><label for="fre" class="filter__label checkselect__label">
-      ФРЭ</label>
-      <input id="fksis" class="filter__input" type="checkbox" name="faculties[]" value="4"><label for="fksis" class="filter__label checkselect__label">
-      ФКСиС</label>
-      <input id="fik" class="filter__input" type="checkbox" name="faculties[]" value="5"><label for="fik" class="filter__label checkselect__label"> ФИК</label>
-      <input id="ief" class="filter__input" type="checkbox" name="faculties[]" value="6"><label for="ief" class="filter__label checkselect__label"> ИЭФ</label>
-      <input id="vf" class="filter__input" type="checkbox" name="faculties[]" value="7"><label for="vf" class="filter__label checkselect__label"> ВФ</label>
-      <input id="iit" class="filter__input" type="checkbox" name="faculties[]" value="8"><label for="iit" class="filter__label checkselect__label"> ИИТ</label>
+      <input
+        id="fkp"
+        class="filter__input"
+        type="checkbox"
+        name="faculties[]"
+        value="1"
+      /><label for="fkp" class="filter__label checkselect__label">
+      ФКП</label
+    >
+      <input
+        id="fitu"
+        class="filter__input"
+        type="checkbox"
+        name="faculties[]"
+        value="2"
+      /><label for="fitu" class="filter__label checkselect__label"
+    >ФИТУ</label
+    >
+      <input
+        id="fre"
+        class="filter__input"
+        type="checkbox"
+        name="faculties[]"
+        value="3"
+      /><label for="fre" class="filter__label checkselect__label">
+      ФРЭ</label
+    >
+      <input
+        id="fksis"
+        class="filter__input"
+        type="checkbox"
+        name="faculties[]"
+        value="4"
+      /><label for="fksis" class="filter__label checkselect__label">
+      ФКСиС</label
+    >
+      <input
+        id="fik"
+        class="filter__input"
+        type="checkbox"
+        name="faculties[]"
+        value="5"
+      /><label for="fik" class="filter__label checkselect__label">
+      ФИК</label
+    >
+      <input
+        id="ief"
+        class="filter__input"
+        type="checkbox"
+        name="faculties[]"
+        value="6"
+      /><label for="ief" class="filter__label checkselect__label">
+      ИЭФ</label
+    >
+      <input
+        id="vf"
+        class="filter__input"
+        type="checkbox"
+        name="faculties[]"
+        value="7"
+      /><label for="vf" class="filter__label checkselect__label"> ВФ</label>
+      <input
+        id="iit"
+        class="filter__input"
+        type="checkbox"
+        name="faculties[]"
+        value="8"
+      /><label for="iit" class="filter__label checkselect__label">
+      ИИТ</label
+    >
     </div>
     <div class="filter__checkselect checkselect">
-      <input id="day" class="filter__input" type="checkbox" name="forms[]" value="1"><label for="day" class="filter__label checkselect__label"> Дневная</label>
-      <input id="zaoch" class="filter__input" type="checkbox" name="forms[]" value="2"><label for="zaoch" class="filter__label checkselect__label"> Заочная</label>
-      <input id="shortday" class="filter__input" type="checkbox" name="forms[]" value="3"><label for="shortday" class="filter__label checkselect__label"> Дневная сокр.</label>
-      <input id="shortzaoch" class="filter__input" type="checkbox" name="forms[]" value="4"><label for="shortzaoch" class="filter__label checkselect__label"> Заочная сокр.</label>
-      <input id="distant" class="filter__input" type="checkbox" name="forms[]" value="5"><label for="distant" class="filter__label checkselect__label"> Дистанционная</label>
+      <input
+        id="day"
+        class="filter__input"
+        type="checkbox"
+        name="forms[]"
+        value="1"
+      /><label for="day" class="filter__label checkselect__label">
+      Дневная</label
+    >
+      <input
+        id="zaoch"
+        class="filter__input"
+        type="checkbox"
+        name="forms[]"
+        value="2"
+      /><label for="zaoch" class="filter__label checkselect__label">
+      Заочная</label
+    >
+      <input
+        id="shortday"
+        class="filter__input"
+        type="checkbox"
+        name="forms[]"
+        value="3"
+      /><label for="shortday" class="filter__label checkselect__label">
+      Дневная сокр.</label
+    >
+      <input
+        id="shortzaoch"
+        class="filter__input"
+        type="checkbox"
+        name="forms[]"
+        value="4"
+      /><label for="shortzaoch" class="filter__label checkselect__label">
+      Заочная сокр.</label
+    >
+      <input
+        id="distant"
+        class="filter__input"
+        type="checkbox"
+        name="forms[]"
+        value="5"
+      /><label for="distant" class="filter__label checkselect__label">
+      Дистанционная</label
+    >
     </div>
     <button class="button button--forms" type="submit">Показать</button>
-    <button class="button button--forms button--reset" type="reset">Сброс</button>
+    <button class="button button--forms button--reset" type="reset">
+      Сброс
+    </button>
   </form>
   <div class="table-wrapper">
     <div class="scroll">
       <table class="table table--bordered">
         <thead>
         <tr>
-          <th rowspan="2" class="table__column-spec">
-            Специальность
-          </th>
-          <th rowspan="2" class="table__column-kval">
-            Квалификация
-          </th>
-          <th colspan="2" class="table__column-day">
-            Дневная
-          </th>
-          <th colspan="2" class="table__column-zaoch">
-            Заочная
-          </th>
+          <th rowspan="2" class="table__column-spec">Специальность</th>
+          <th rowspan="2" class="table__column-kval">Квалификация</th>
+          <th colspan="2" class="table__column-day">Дневная</th>
+          <th colspan="2" class="table__column-zaoch">Заочная</th>
           <th colspan="2" class="table__column-shortday">
             Дневная сокращенная
           </th>
           <th colspan="2" class="table__column-shortzaoch">
             Заочная сокращенная
           </th>
-          <th colspan="2" class="table__column-distant">
-            Дистанционная
-          </th>
+          <th colspan="2" class="table__column-distant">Дистанционная</th>
         </tr>
         <tr>
+          <th colspan="2" class="table__column-day--empty"></th>
           <th class="table__column-day table__column-day--budget">
-            <div class="table__sort-wrapper"><span>бюдж.</span>
+            <div class="table__sort-wrapper">
+              <span>бюдж.</span>
               <div class="table__sort-icons">
-                <svg class="table__sort-icon table__sort-icon--active">
-                  <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+                <span class="table__sort-icon table__sort-icon--active">
+                <svg>
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-up"
+                  ></use>
                 </svg>
-                <svg class="table__sort-icon">
-                  <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+                </span>
+                <span class="table__sort-icon">
+                <svg>
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-down"
+                  ></use>
                 </svg>
+                </span>
               </div>
             </div>
           </th>
           <th class="table__column-day table__column-day--paid">
-            <div class="table__sort-wrapper"><span>платн.</span>
+            <div class="table__sort-wrapper">
+              <span>платн.</span>
               <div class="table__sort-icons">
-                <svg class="table__sort-icon table__sort-icon--active">
-                  <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
-                </svg>
-                <svg class="table__sort-icon">
-                  <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
-                </svg>
+                      <span class="table__sort-icon table__sort-icon--active">
+                      <svg>
+                        <use
+                          xlink:href="./img/site_sprite.svg#triangle-up"></use>
+                      </svg>
+                      </span>
+                <span class="table__sort-icon">
+                      <svg>
+                        <use
+                          xlink:href="./img/site_sprite.svg#triangle-down"
+                        ></use>
+                      </svg>
+                        </span>
               </div>
             </div>
           </th>
           <th class="table__column-zaoch table__column-zaoch--budget">
-            <div class="table__sort-wrapper"><span>бюдж.</span>
+            <div class="table__sort-wrapper">
+              <span>бюдж.</span>
               <div class="table__sort-icons">
-                <svg class="table__sort-icon table__sort-icon--active">
-                  <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+               <span class="table__sort-icon">
+                <svg>
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-up"
+                  ></use>
                 </svg>
-                <svg class="table__sort-icon">
-                  <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+               </span>
+                <span class="table__sort-icon">
+                <svg>
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-down"
+                  ></use>
                 </svg>
+                </span>
               </div>
             </div>
           </th>
           <th class="table__column-zaoch table__column-zaoch--paid">
-            <div class="table__sort-wrapper"><span>платн.</span>
+            <div class="table__sort-wrapper">
+              <span>платн.</span>
               <div class="table__sort-icons">
-                <svg class="table__sort-icon table__sort-icon--active">
-                  <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+                <span class="table__sort-icon table__sort-icon--active">
+                <svg>
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-up"
+                  ></use>
                 </svg>
-                <svg class="table__sort-icon">
-                  <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+                </span>
+                  <span class="table__sort-icon table__sort-icon--active">
+                <svg>
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-down"
+                  ></use>
                 </svg>
+                  </span>
               </div>
             </div>
           </th>
-          <th class="table__column-shortday table__column-shortday--budget">
-            <div class="table__sort-wrapper"><span>бюдж.</span>
+          <th
+            class="table__column-shortday table__column-shortday--budget"
+          >
+            <div class="table__sort-wrapper">
+              <span>бюдж.</span>
               <div class="table__sort-icons">
-                <svg class="table__sort-icon table__sort-icon--active">
-                  <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+                <span class="table__sort-icon table__sort-icon--active">
+                <svg>
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-up"
+                  ></use>
                 </svg>
-                <svg class="table__sort-icon">
-                  <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+                </span>
+                  <span class="table__sort-icon table__sort-icon--active">
+                <svg >
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-down"
+                  ></use>
                 </svg>
+                  </span>
               </div>
             </div>
           </th>
           <th class="table__column-shortday table__column-shortday--paid">
-            <div class="table__sort-wrapper"><span>платн.</span>
+            <div class="table__sort-wrapper">
+              <span>платн.</span>
               <div class="table__sort-icons">
-                <svg class="table__sort-icon table__sort-icon--active">
-                  <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+                <span class="table__sort-icon table__sort-icon--active">
+                <svg >
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-up"
+                  ></use>
                 </svg>
-                <svg class="table__sort-icon">
-                  <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+                </span>
+                <span class="table__sort-icon table__sort-icon--active">
+                <svg >
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-down"
+                  ></use>
                 </svg>
+                </span>
               </div>
             </div>
           </th>
-          <th class="table__column-shortzaoch table__column-shortzaoch--budget">
-            <div class="table__sort-wrapper"><span>бюдж.</span>
+          <th
+            class="table__column-shortzaoch table__column-shortzaoch--budget"
+          >
+            <div class="table__sort-wrapper">
+              <span>бюдж.</span>
               <div class="table__sort-icons">
-                <svg class="table__sort-icon table__sort-icon--active">
-                  <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+                <span class="table__sort-icon table__sort-icon--active">
+                <svg >
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-up"
+                  ></use>
                 </svg>
-                <svg class="table__sort-icon">
-                  <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+                </span>
+                  <span class="table__sort-icon">
+                <svg >
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-down"
+                  ></use>
                 </svg>
+                    </span>
               </div>
             </div>
           </th>
-          <th class="table__column-shortzaoch table__column-shortzaoch--paid">
-            <div class="table__sort-wrapper"><span>платн.</span>
+          <th
+            class="table__column-shortzaoch table__column-shortzaoch--paid"
+          >
+            <div class="table__sort-wrapper">
+              <span>платн.</span>
               <div class="table__sort-icons">
-                <svg class="table__sort-icon table__sort-icon--active">
-                  <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+                <span class="table__sort-icon table__sort-icon--active">
+                <svg >
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-up"
+                  ></use>
                 </svg>
-                <svg class="table__sort-icon">
-                  <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+                </span>
+                <span class="table__sort-icon">
+                <svg >
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-down"
+                  ></use>
                 </svg>
+                </span>
               </div>
             </div>
           </th>
           <th class="table__column-distant table__column-distant--paid">
-            <div class="table__sort-wrapper"><span>платн.</span>
+            <div class="table__sort-wrapper">
+              <span>платн.</span>
               <div class="table__sort-icons">
-                <svg class="table__sort-icon table__sort-icon--active">
-                  <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+                <span class="table__sort-icon">
+                <svg >
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-up"
+                  ></use>
                 </svg>
-                <svg class="table__sort-icon">
-                  <use xlink:href="./img/site_sprite.svg#triangle-down"></use>
+                </span>
+                <span class="table__sort-icon">
+                <svg >
+                  <use
+                    xlink:href="./img/site_sprite.svg#triangle-down"
+                  ></use>
                 </svg>
+                  </span>
               </div>
             </div>
           </th>
@@ -502,24 +687,22 @@
         <tbody>
         <tr class="table__row-fkp">
           <td class="table__column-spec table__td-fkp">
-            <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
-            и компьютерное проектирование радиоэлектронных средств</a>
+            <strong>ФКП: </strong
+            ><a
+            href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv"
+          >Моделирование и компьютерное проектирование
+            радиоэлектронных средств</a
+          >
           </td>
           <td class="table__column-kval table__td-fkp">
             Инженер по радиоэлектронике
           </td>
-          <td class="table__column-day--budget table__td-fkp">
-            25
-          </td>
-          <td class="table__column-day--paid table__td-fkp">
-            5
-          </td>
+          <td class="table__column-day--budget table__td-fkp">25</td>
+          <td class="table__column-day--paid table__td-fkp">5</td>
           <td class="table__column-zaoch--budget table__td-fkp">
             &nbsp;
           </td>
-          <td class="table__column-zaoch--paid table__td-fkp">
-            &nbsp;
-          </td>
+          <td class="table__column-zaoch--paid table__td-fkp">&nbsp;</td>
           <td class="table__column-shortday--budget table__td-fkp">
             &nbsp;
           </td>
@@ -538,24 +721,22 @@
         </tr>
         <tr class="table__row-fitu">
           <td class="table__column-spec table__td-fitu">
-            <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
-            и компьютерное проектирование радиоэлектронных средств</a>
+            <strong>ФКП: </strong
+            ><a
+            href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv"
+          >Моделирование и компьютерное проектирование
+            радиоэлектронных средств</a
+          >
           </td>
           <td class="table__column-kval table__td-fitu">
             Инженер по радиоэлектронике
           </td>
-          <td class="table__column-day--budget table__td-fitu">
-            25
-          </td>
-          <td class="table__column-day--paid table__td-fitu">
-            5
-          </td>
+          <td class="table__column-day--budget table__td-fitu">25</td>
+          <td class="table__column-day--paid table__td-fitu">5</td>
           <td class="table__column-zaoch--budget table__td-fitu">
             &nbsp;
           </td>
-          <td class="table__column-zaoch--paid table__td-fitu">
-            &nbsp;
-          </td>
+          <td class="table__column-zaoch--paid table__td-fitu">&nbsp;</td>
           <td class="table__column-shortday--budget table__td-fitu">
             &nbsp;
           </td>
@@ -568,30 +749,26 @@
           <td class="table__column-shortzaoch--paid table__td-fitu">
             &nbsp;
           </td>
-          <td class="table__column-distant--paid table__td-fitu">
-            20
-          </td>
+          <td class="table__column-distant--paid table__td-fitu">20</td>
         </tr>
         <tr class="table__row-fre">
           <td class="table__column-spec table__td-fre">
-            <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
-            и компьютерное проектирование радиоэлектронных средств</a>
+            <strong>ФКП: </strong
+            ><a
+            href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv"
+          >Моделирование и компьютерное проектирование
+            радиоэлектронных средств</a
+          >
           </td>
           <td class="table__column-kval table__td-fre">
             Инженер по радиоэлектронике
           </td>
-          <td class="table__column-day--budget table__td-fre">
-            25
-          </td>
-          <td class="table__column-day--paid table__td-fre">
-            5
-          </td>
+          <td class="table__column-day--budget table__td-fre">25</td>
+          <td class="table__column-day--paid table__td-fre">5</td>
           <td class="table__column-zaoch--budget table__td-fre">
             &nbsp;
           </td>
-          <td class="table__column-zaoch--paid table__td-fre">
-            &nbsp;
-          </td>
+          <td class="table__column-zaoch--paid table__td-fre">&nbsp;</td>
           <td class="table__column-shortday--budget table__td-fre">
             &nbsp;
           </td>
@@ -610,18 +787,18 @@
         </tr>
         <tr class="table__row-fksis">
           <td class="table__column-spec table__td-fksis">
-            <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
-            и компьютерное проектирование радиоэлектронных средств</a>
+            <strong>ФКП: </strong
+            ><a
+            href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv"
+          >Моделирование и компьютерное проектирование
+            радиоэлектронных средств</a
+          >
           </td>
           <td class="table__column-kval table__td-fksis">
             Инженер по радиоэлектронике
           </td>
-          <td class="table__column-day--budget table__td-fksis">
-            25
-          </td>
-          <td class="table__column-day--paid table__td-fksis">
-            5
-          </td>
+          <td class="table__column-day--budget table__td-fksis">25</td>
+          <td class="table__column-day--paid table__td-fksis">5</td>
           <td class="table__column-zaoch--budget table__td-fksis">
             &nbsp;
           </td>
@@ -646,24 +823,22 @@
         </tr>
         <tr class="table__row-fik">
           <td class="table__column-spec table__td-fik">
-            <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
-            и компьютерное проектирование радиоэлектронных средств</a>
+            <strong>ФКП: </strong
+            ><a
+            href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv"
+          >Моделирование и компьютерное проектирование
+            радиоэлектронных средств</a
+          >
           </td>
           <td class="table__column-kval table__td-fik">
             Инженер по радиоэлектронике
           </td>
-          <td class="table__column-day--budget table__td-fik">
-            25
-          </td>
-          <td class="table__column-day--paid table__td-fik">
-            5
-          </td>
+          <td class="table__column-day--budget table__td-fik">25</td>
+          <td class="table__column-day--paid table__td-fik">5</td>
           <td class="table__column-zaoch--budget table__td-fik">
             &nbsp;
           </td>
-          <td class="table__column-zaoch--paid table__td-fik">
-            &nbsp;
-          </td>
+          <td class="table__column-zaoch--paid table__td-fik">&nbsp;</td>
           <td class="table__column-shortday--budget table__td-fik">
             &nbsp;
           </td>
@@ -682,24 +857,22 @@
         </tr>
         <tr class="table__row-ief">
           <td class="table__column-spec table__td-ief">
-            <strong>ФКП: </strong><a href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv">Моделирование
-            и компьютерное проектирование радиоэлектронных средств</a>
+            <strong>ФКП: </strong
+            ><a
+            href="/modelirovanie-i-kompyuternoe-proektirovanie-radioelektronnykh-sredstv"
+          >Моделирование и компьютерное проектирование
+            радиоэлектронных средств</a
+          >
           </td>
           <td class="table__column-kval table__td-ief">
             Инженер по радиоэлектронике
           </td>
-          <td class="table__column-day--budget table__td-ief">
-            25
-          </td>
-          <td class="table__column-day--paid table__td-ief">
-            5
-          </td>
+          <td class="table__column-day--budget table__td-ief">25</td>
+          <td class="table__column-day--paid table__td-ief">5</td>
           <td class="table__column-zaoch--budget table__td-ief">
             &nbsp;
           </td>
-          <td class="table__column-zaoch--paid table__td-ief">
-            &nbsp;
-          </td>
+          <td class="table__column-zaoch--paid table__td-ief">&nbsp;</td>
           <td class="table__column-shortday--budget table__td-ief">
             &nbsp;
           </td>
@@ -719,247 +892,247 @@
         </tbody>
       </table>
       <!-- <table class="table table--bordered">
-         <thead>
-         <tr>
-           <th rowspan="2" class="table__column-spec">
-             Специальность
-           </th>
-           <th rowspan="2" class="table__column-kval">
-             Квалификация
-           </th>
-           <th colspan="2" class="table__column-day">
-             Дневная
-           </th>
-           <th colspan="2" class="table__column-zaoch">
-             Заочная
-           </th>
-           <th colspan="2" class="table__column-shortday">
-             Дневная сокращенная
-           </th>
-           <th colspan="2" class="table__column-shortzaoch">
-             Заочная сокращенная
-           </th>
-           <th colspan="2" class="table__column-distant">
-             Дистанционная
-           </th>
-         </tr>
-         <tr>
-           <th class="table__column-day table__column-day--budget">
-             <div class="table__sort-wrapper"><span>бюдж.</span>
-               <div class="table__sort-icons">
-                 <svg class="table__sort-icon" onclick="sortData(this, true)">
-                   <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
-                 </svg>
-                 <svg class="table__sort-icon" onclick="sortData(this, false)">
-                   <use xlink:href="img/site_sprite.svg#triangle-down"></use>
-                 </svg>
-               </div>
-             </div>
-           </th>
-           <th class="table__column-day table__column-day--paid">
-             <div class="table__sort-wrapper"><span>платн.</span>
-               <div class="table__sort-icons">
-                 <svg class="table__sort-icon" onclick="sortData(this, true)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
-                 </svg>
-                 <svg class="table__sort-icon" onclick="sortData(this, false)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
-                 </svg>
-               </div>
-             </div>
-           </th>
-           <th class="table__column-zaoch table__column-zaoch--budget">
-             <div class="table__sort-wrapper"><span>бюдж.</span>
-               <div class="table__sort-icons">
-                 <svg class="table__sort-icon" onclick="sortData(this, true)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
-                 </svg>
-                 <svg class="table__sort-icon" onclick="sortData(this, false)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
-                 </svg>
-               </div>
-             </div>
-           </th>
-           <th class="table__column-zaoch table__column-zaoch--paid">
-             <div class="table__sort-wrapper"><span>платн.</span>
-               <div class="table__sort-icons">
-                 <svg class="table__sort-icon" onclick="sortData(this, true)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
-                 </svg>
-                 <svg class="table__sort-icon" onclick="sortData(this, false)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
-                 </svg>
-               </div>
-             </div>
-           </th>
-           <th class="table__column-shortday table__column-shortday--budget">
-             <div class="table__sort-wrapper"><span>бюдж.</span>
-               <div class="table__sort-icons">
-                 <svg class="table__sort-icon" onclick="sortData(this, true)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
-                 </svg>
-                 <svg class="table__sort-icon" onclick="sortData(this, false)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
-                 </svg>
-               </div>
-             </div>
-           </th>
-           <th class="table__column-shortday table__column-shortday--paid">
-             <div class="table__sort-wrapper"><span>платн.</span>
-               <div class="table__sort-icons">
-                 <svg class="table__sort-icon" onclick="sortData(this, true)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
-                 </svg>
-                 <svg class="table__sort-icon" onclick="sortData(this, false)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
-                 </svg>
-               </div>
-             </div>
-           </th>
-           <th class="table__column-shortzaoch table__column-shortzaoch--budget">
-             <div class="table__sort-wrapper"><span>бюдж.</span>
-               <div class="table__sort-icons">
-                 <svg class="table__sort-icon" onclick="sortData(this, true)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
-                 </svg>
-                 <svg class="table__sort-icon" onclick="sortData(this, false)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
-                 </svg>
-               </div>
-             </div>
-           </th>
-           <th class="table__column-shortzaoch table__column-shortzaoch--paid">
-             <div class="table__sort-wrapper"><span>платн.</span>
-               <div class="table__sort-icons">
-                 <svg class="table__sort-icon" onclick="sortData(this, true)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
-                 </svg>
-                 <svg class="table__sort-icon" onclick="sortData(this, false)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
-                 </svg>
-               </div>
-             </div>
-           </th>
-           <th class="table__column-distant table__column-distant--paid">
-             <div class="table__sort-wrapper"><span>платн.</span>
-               <div class="table__sort-icons">
-                 <svg class="table__sort-icon" onclick="sortData(this, true)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
-                 </svg>
-                 <svg class="table__sort-icon" onclick="sortData(this, false)">
-                   <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
-                 </svg>
-               </div>
-             </div>
-           </th>
-         </tr>
-         </thead>
-         <tbody>
-         <tr class="table__row-fkp" id="0">
-           <td class="table__column-spec table__td-fkp">
-             <strong>ФКП: </strong><a href="http://111">Моделирование и компьютерное проектирование радиоэлектронных
-             средств</a></td>
-           <td class="table__column-kval table__td-fkp">
-             Инженер по радиоэлектронике
-           </td>
-           <td class="table__column-day--budget table__td-fkp">
-             35
-           </td>
-           <td class="table__column-day--paid table__td-fkp">
-             15
-           </td>
-           <td class="table__column-zaoch--budget table__td-fkp">
-             5
-           </td>
-           <td class="table__column-zaoch--paid table__td-fkp">
-             &nbsp;
-           </td>
-           <td class="table__column-shortday--budget table__td-fkp">
-             &nbsp;
-           </td>
-           <td class="table__column-shortday--paid table__td-fkp">
-             &nbsp;
-           </td>
-           <td class="table__column-shortzaoch--budget table__td-fkp">
-             &nbsp;
-           </td>
-           <td class="table__column-shortzaoch--paid table__td-fkp">
-             &nbsp;
-           </td>
-           <td class="table__column-distant--paid table__td-fkp">
-             &nbsp;
-           </td>
-         </tr>
-         <tr class="table__row-fitu" id="1">
-           <td class="table__column-spec table__td-fitu">
-             <strong>ФИТиУ: </strong><a href="http://222">Автоматизированные системы обработки информации</a></td>
-           <td class="table__column-kval table__td-fitu">
-             Инженер по информационным технологиям
-           </td>
-           <td class="table__column-day--budget table__td-fitu">
-             60
-           </td>
-           <td class="table__column-day--paid table__td-fitu">
-             60
-           </td>
-           <td class="table__column-zaoch--budget table__td-fitu">
-             &nbsp;
-           </td>
-           <td class="table__column-zaoch--paid table__td-fitu">
-             &nbsp;
-           </td>
-           <td class="table__column-shortday--budget table__td-fitu">
-             &nbsp;
-           </td>
-           <td class="table__column-shortday--paid table__td-fitu">
-             &nbsp;
-           </td>
-           <td class="table__column-shortzaoch--budget table__td-fitu">
-             &nbsp;
-           </td>
-           <td class="table__column-shortzaoch--paid table__td-fitu">
-             &nbsp;
-           </td>
-           <td class="table__column-distant--paid table__td-fitu">
-             &nbsp;
-           </td>
-         </tr>
-         <tr class="table__row-fre" id="2">
-           <td class="table__column-spec table__td-fre">
-             <strong>ФРЭ: </strong><a href="http://444"> Микро- и наноэлектронные технологии и системы</a></td>
-           <td class="table__column-kval table__td-fre">
-             Инженер электронной техники
-           </td>
-           <td class="table__column-day--budget table__td-fre">
-             25
-           </td>
-           <td class="table__column-day--paid table__td-fre">
-             5
-           </td>
-           <td class="table__column-zaoch--budget table__td-fre">
-             &nbsp;
-           </td>
-           <td class="table__column-zaoch--paid table__td-fre">
-             &nbsp;
-           </td>
-           <td class="table__column-shortday--budget table__td-fre">
-             &nbsp;
-           </td>
-           <td class="table__column-shortday--paid table__td-fre">
-             &nbsp;
-           </td>
-           <td class="table__column-shortzaoch--budget table__td-fre">
-             &nbsp;
-           </td>
-           <td class="table__column-shortzaoch--paid table__td-fre">
-             &nbsp;
-           </td>
-           <td class="table__column-distant--paid table__td-fre">
-             &nbsp;
-           </td>
-         </tr>
-         </tbody>
-       </table> -->
+     <thead>
+     <tr>
+       <th rowspan="2" class="table__column-spec">
+         Специальность
+       </th>
+       <th rowspan="2" class="table__column-kval">
+         Квалификация
+       </th>
+       <th colspan="2" class="table__column-day">
+         Дневная
+       </th>
+       <th colspan="2" class="table__column-zaoch">
+         Заочная
+       </th>
+       <th colspan="2" class="table__column-shortday">
+         Дневная сокращенная
+       </th>
+       <th colspan="2" class="table__column-shortzaoch">
+         Заочная сокращенная
+       </th>
+       <th colspan="2" class="table__column-distant">
+         Дистанционная
+       </th>
+     </tr>
+     <tr>
+       <th class="table__column-day table__column-day--budget">
+         <div class="table__sort-wrapper"><span>бюдж.</span>
+           <div class="table__sort-icons">
+             <svg class="table__sort-icon" onclick="sortData(this, true)">
+               <use xlink:href="./img/site_sprite.svg#triangle-up"></use>
+             </svg>
+             <svg class="table__sort-icon" onclick="sortData(this, false)">
+               <use xlink:href="img/site_sprite.svg#triangle-down"></use>
+             </svg>
+           </div>
+         </div>
+       </th>
+       <th class="table__column-day table__column-day--paid">
+         <div class="table__sort-wrapper"><span>платн.</span>
+           <div class="table__sort-icons">
+             <svg class="table__sort-icon" onclick="sortData(this, true)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
+             </svg>
+             <svg class="table__sort-icon" onclick="sortData(this, false)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
+             </svg>
+           </div>
+         </div>
+       </th>
+       <th class="table__column-zaoch table__column-zaoch--budget">
+         <div class="table__sort-wrapper"><span>бюдж.</span>
+           <div class="table__sort-icons">
+             <svg class="table__sort-icon" onclick="sortData(this, true)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
+             </svg>
+             <svg class="table__sort-icon" onclick="sortData(this, false)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
+             </svg>
+           </div>
+         </div>
+       </th>
+       <th class="table__column-zaoch table__column-zaoch--paid">
+         <div class="table__sort-wrapper"><span>платн.</span>
+           <div class="table__sort-icons">
+             <svg class="table__sort-icon" onclick="sortData(this, true)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
+             </svg>
+             <svg class="table__sort-icon" onclick="sortData(this, false)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
+             </svg>
+           </div>
+         </div>
+       </th>
+       <th class="table__column-shortday table__column-shortday--budget">
+         <div class="table__sort-wrapper"><span>бюдж.</span>
+           <div class="table__sort-icons">
+             <svg class="table__sort-icon" onclick="sortData(this, true)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
+             </svg>
+             <svg class="table__sort-icon" onclick="sortData(this, false)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
+             </svg>
+           </div>
+         </div>
+       </th>
+       <th class="table__column-shortday table__column-shortday--paid">
+         <div class="table__sort-wrapper"><span>платн.</span>
+           <div class="table__sort-icons">
+             <svg class="table__sort-icon" onclick="sortData(this, true)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
+             </svg>
+             <svg class="table__sort-icon" onclick="sortData(this, false)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
+             </svg>
+           </div>
+         </div>
+       </th>
+       <th class="table__column-shortzaoch table__column-shortzaoch--budget">
+         <div class="table__sort-wrapper"><span>бюдж.</span>
+           <div class="table__sort-icons">
+             <svg class="table__sort-icon" onclick="sortData(this, true)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
+             </svg>
+             <svg class="table__sort-icon" onclick="sortData(this, false)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
+             </svg>
+           </div>
+         </div>
+       </th>
+       <th class="table__column-shortzaoch table__column-shortzaoch--paid">
+         <div class="table__sort-wrapper"><span>платн.</span>
+           <div class="table__sort-icons">
+             <svg class="table__sort-icon" onclick="sortData(this, true)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
+             </svg>
+             <svg class="table__sort-icon" onclick="sortData(this, false)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
+             </svg>
+           </div>
+         </div>
+       </th>
+       <th class="table__column-distant table__column-distant--paid">
+         <div class="table__sort-wrapper"><span>платн.</span>
+           <div class="table__sort-icons">
+             <svg class="table__sort-icon" onclick="sortData(this, true)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-up"></use>
+             </svg>
+             <svg class="table__sort-icon" onclick="sortData(this, false)">
+               <use xlink:href="/online/layouts/501/img/site_sprite.svg#triangle-down"></use>
+             </svg>
+           </div>
+         </div>
+       </th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr class="table__row-fkp" id="0">
+       <td class="table__column-spec table__td-fkp">
+         <strong>ФКП: </strong><a href="http://111">Моделирование и компьютерное проектирование радиоэлектронных
+         средств</a></td>
+       <td class="table__column-kval table__td-fkp">
+         Инженер по радиоэлектронике
+       </td>
+       <td class="table__column-day--budget table__td-fkp">
+         35
+       </td>
+       <td class="table__column-day--paid table__td-fkp">
+         15
+       </td>
+       <td class="table__column-zaoch--budget table__td-fkp">
+         5
+       </td>
+       <td class="table__column-zaoch--paid table__td-fkp">
+         &nbsp;
+       </td>
+       <td class="table__column-shortday--budget table__td-fkp">
+         &nbsp;
+       </td>
+       <td class="table__column-shortday--paid table__td-fkp">
+         &nbsp;
+       </td>
+       <td class="table__column-shortzaoch--budget table__td-fkp">
+         &nbsp;
+       </td>
+       <td class="table__column-shortzaoch--paid table__td-fkp">
+         &nbsp;
+       </td>
+       <td class="table__column-distant--paid table__td-fkp">
+         &nbsp;
+       </td>
+     </tr>
+     <tr class="table__row-fitu" id="1">
+       <td class="table__column-spec table__td-fitu">
+         <strong>ФИТиУ: </strong><a href="http://222">Автоматизированные системы обработки информации</a></td>
+       <td class="table__column-kval table__td-fitu">
+         Инженер по информационным технологиям
+       </td>
+       <td class="table__column-day--budget table__td-fitu">
+         60
+       </td>
+       <td class="table__column-day--paid table__td-fitu">
+         60
+       </td>
+       <td class="table__column-zaoch--budget table__td-fitu">
+         &nbsp;
+       </td>
+       <td class="table__column-zaoch--paid table__td-fitu">
+         &nbsp;
+       </td>
+       <td class="table__column-shortday--budget table__td-fitu">
+         &nbsp;
+       </td>
+       <td class="table__column-shortday--paid table__td-fitu">
+         &nbsp;
+       </td>
+       <td class="table__column-shortzaoch--budget table__td-fitu">
+         &nbsp;
+       </td>
+       <td class="table__column-shortzaoch--paid table__td-fitu">
+         &nbsp;
+       </td>
+       <td class="table__column-distant--paid table__td-fitu">
+         &nbsp;
+       </td>
+     </tr>
+     <tr class="table__row-fre" id="2">
+       <td class="table__column-spec table__td-fre">
+         <strong>ФРЭ: </strong><a href="http://444"> Микро- и наноэлектронные технологии и системы</a></td>
+       <td class="table__column-kval table__td-fre">
+         Инженер электронной техники
+       </td>
+       <td class="table__column-day--budget table__td-fre">
+         25
+       </td>
+       <td class="table__column-day--paid table__td-fre">
+         5
+       </td>
+       <td class="table__column-zaoch--budget table__td-fre">
+         &nbsp;
+       </td>
+       <td class="table__column-zaoch--paid table__td-fre">
+         &nbsp;
+       </td>
+       <td class="table__column-shortday--budget table__td-fre">
+         &nbsp;
+       </td>
+       <td class="table__column-shortday--paid table__td-fre">
+         &nbsp;
+       </td>
+       <td class="table__column-shortzaoch--budget table__td-fre">
+         &nbsp;
+       </td>
+       <td class="table__column-shortzaoch--paid table__td-fre">
+         &nbsp;
+       </td>
+       <td class="table__column-distant--paid table__td-fre">
+         &nbsp;
+       </td>
+     </tr>
+     </tbody>
+   </table> -->
     </div>
   </div>
 </main>
@@ -1028,7 +1201,7 @@
 
 <div class="popup hidden__opacity">
   <div class="popup__body">
-    <a class="popup__close"><img src="./img/close.svg" alt=""></a>
+    <a class="popup__close"><img src="./img/close.svg" alt=""/></a>
     <div class="popup__content">
       <button class="button button--corner popup__btn">
         Личный кабинет
@@ -1106,7 +1279,10 @@
                 <p>Юридический адрес:</p>
                 220013 г. Минск, ул. П. Бровки, 6
                 <p>
-                  <a href="#" class="popup__link popup__link--wite popup__link--footer">
+                  <a
+                    href="#"
+                    class="popup__link popup__link--wite popup__link--footer"
+                  >
                     Схема корпусов
                   </a>
                 </p>
@@ -1123,7 +1299,10 @@
               </span>
           <span class="popup__contacts popup__contacts--unmargin">
                 <p>Email:</p>
-                <a href="#" class="popup__link popup__link--wite popup__link--footer">
+                <a
+                  href="#"
+                  class="popup__link popup__link--wite popup__link--footer"
+                >
                   prcom@bsuir.by
                 </a>
               </span>
@@ -1137,10 +1316,8 @@
           </a>
         </div>
       </div>
-
     </div>
   </div>
 </div>
-
 </body>
 </html>
