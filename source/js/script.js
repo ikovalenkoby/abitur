@@ -133,7 +133,7 @@ window.addEventListener("DOMContentLoaded", () => {
       tableRow.forEach((row, i) => {
         const cellContent = row.querySelector(".table__column-spec");
 
-        if (cellContent != null) {
+        if (cellContent != null && row.style.display != "none") {
           const newCell = document.createElement("div");
 
           if (i == 0) {
