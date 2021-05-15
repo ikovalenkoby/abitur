@@ -1313,6 +1313,10 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.two-columns--grey {
+  background-color: #EDEDED;
+  padding: 32px 32px 14px 32px;
+}
 .two-columns > div {
   width: 48%;
   margin-bottom: 10px;
@@ -1743,22 +1747,28 @@ h4 {
           align-items: center;
 }
 .table__row-fkp {
-  background-color: #F7FFF5;
+  background-color: #f7fff5;
 }
 .table__row-fitu {
-  background-color: #FFFBF5;
+  background-color: #fffbf5;
 }
 .table__row-fre {
-  background-color: #FDFFF5;
+  background-color: #fdfff5;
 }
 .table__row-fksis {
-  background-color: #F5FFF9;
+  background-color: #f5fff9;
 }
 .table__row-fik {
-  background-color: #F5FFFF;
+  background-color: #f5ffff;
 }
 .table__row-ief {
-  background-color: #F5F9FF;
+  background-color: #f5f9ff;
+}
+.table__row-vf {
+  background-color: #f5fffa;
+}
+.table__row-iit {
+  background-color: #f9f5ff;
 }
 .table > tbody > tr > td.table__column-spec {
   text-align: left;
