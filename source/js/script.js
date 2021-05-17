@@ -119,69 +119,69 @@ window.addEventListener("DOMContentLoaded", () => {
   $(".checkselect").checkselect();
 
   //table
-  const columnBox = document.querySelector(".table__column-blocks"),
-    filterBox = document.querySelector(".filter"),
-    filterBtn = filterBox.querySelector("[data-send]");
+  const tbody = document.querySelector(".table tbody");
+  let tableRows;
+  let tableArr = [];
 
-  function columnRender() {
-    const mediaQuery = window.matchMedia("(max-width: 1000px)");
+  function getRows() {
+    tableRows = document.querySelectorAll(".table tbody tr");
+  }
 
-    if (mediaQuery.matches) {
-      const tableRow = document.querySelectorAll(".table tr");
-      columnBox.innerHTML = "";
+  function getMatrix() {
+    getRows();
+    tableRows.forEach((row) => {
+      tableArr.push(row.querySelectorAll("td"));
+    });
+  }
 
-      tableRow.forEach((row, i) => {
-        const cellContent = row.querySelector(".table__column-spec");
+  function setCellAtribut() {
+    getMatrix();
+    tableRows.forEach((row, i) => {
+      tableArr[i].forEach((cell, j) => {
+        cell.setAttribute("data-id-cell", j);
+      });
+    });
+  }
 
-        if (cellContent != null && row.style.display != "none") {
-          const newCell = document.createElement("div");
-
-          if (i == 0) {
-            newCell.style.height = `${
-              document.querySelector(".table thead").clientHeight
-            }px`;
-            newCell.classList.add("table__special-cell");
-          }
-
-          newCell.classList.add("table__block-cell");
-          newCell.innerHTML = cellContent.innerHTML;
-          columnBox.append(newCell);
-
-          if (row.parentNode.tagName.toLowerCase() == "tbody") {
-            setHeight(newCell, row);
-            newCell.classList.add(row.className);
-          }
+  function checkCellNumbers(e) {
+    setCellAtribut();
+    tableRows.forEach((row, i) => {
+      tableArr[i].forEach((cell) => {
+        if (e.target == cell) {
+          let x = +cell.getAttribute("data-id-cell");
+          deleteColorCell();
+          setColorCell(row, i, x);
         }
       });
-    }
+    });
   }
 
-  function setHeight(cell, row) {
-    if (row.offsetHeight > cell.offsetHeight) {
-      cell.style.height = `${row.offsetHeight}px`;
-    } else if (row.offsetHeight < cell.offsetHeight) {
-      row.style.height = `${cell.offsetHeight}px`;
-    }
+  function deleteColorCell() {
+    tableArr.forEach((row) => {
+      row.forEach((cell) => {
+        cell.classList.remove("table__row-fitu--active");
+        cell.classList.remove("table__row-fksis--active");
+        cell.classList.remove("table__row-fre--active");
+        cell.classList.remove("table__row-ief--active");
+        cell.classList.remove("table__row-fik--active");
+        cell.classList.remove("table__row-iit--active");
+        cell.classList.remove("table__row-vf--active");
+        cell.classList.remove("table__row-fkp--active");
+      });
+    });
   }
 
-  columnRender();
+  function setColorCell(row, rowID, cellID) {
+    if (cellID != 0) {
+      for (let i = rowID; i >= 0; i--) {
+        tableArr[i][cellID].classList.add(`${row.className}--active`);
+      }
 
-  filterBox.addEventListener("click", (e) => {
-    const mediaQuery = window.matchMedia("(max-width: 1000px)");
-
-    if (mediaQuery.matches) {
-      if (e.target === filterBtn) {
-        e.preventDefault();
-        columnRender();
+      for (let i = cellID; i >= 0; i--) {
+        tableArr[rowID][i].classList.add(`${row.className}--active`);
       }
     }
-  });
+  }
 
-  window.addEventListener("resize", () => {
-    const mediaQuery = window.matchMedia("(max-width: 1000px)");
-
-    if (mediaQuery.matches) {
-      columnRender();
-    }
-  });
+  tbody.addEventListener("mouseover", checkCellNumbers);
 });

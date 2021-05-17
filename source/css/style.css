@@ -501,7 +501,7 @@ h4 {
 }
 .button:hover {
   cursor: pointer;
-  background: #6E779A;
+  background: #6e779a;
 }
 .button--corner {
   background: #2d344d url("../img/button-corner.svg");
@@ -511,7 +511,7 @@ h4 {
   padding-left: 30px;
 }
 .button--corner:hover {
-  background: #6E779A url("../img/button-corner.svg");
+  background: #6e779a url("../img/button-corner.svg");
   background-repeat: no-repeat;
   background-position: top left;
 }
@@ -527,20 +527,20 @@ h4 {
   height: 40px;
 }
 .button--forms:hover {
-  background: #6E779A url("../img/button-corner.svg");
+  background: #6e779a url("../img/button-corner.svg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: contain;
 }
 .button--reset {
-  background: #4D2D2D url("../img/button-reset-corner.svg");
+  background: #4d2d2d url("../img/button-reset-corner.svg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: contain;
   margin-left: 2.5%;
 }
 .button--reset:hover {
-  background: #C79E9E url("../img/button-reset-corner.svg");
+  background: #c79e9e url("../img/button-reset-corner.svg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: contain;
@@ -1101,7 +1101,7 @@ h4 {
 }
 .news__date {
   position: absolute;
-  background-color: #464E6A;
+  background-color: #464e6a;
   color: #ffffff;
   font-size: 1.4rem;
   padding: 4px 7px 6px;
@@ -1314,7 +1314,7 @@ h4 {
           justify-content: space-between;
 }
 .two-columns--grey {
-  background-color: #EDEDED;
+  background-color: #ededed;
   padding: 32px 32px 14px 32px;
 }
 .two-columns > div {
@@ -1445,7 +1445,7 @@ h4 {
 }
 .filter__input:checked + .filter__label::before {
   content: "";
-  background: #464E6A url("../img/check.svg") no-repeat center;
+  background: #464e6a url("../img/check.svg") no-repeat center;
   border: 1px solid rgba(70, 78, 106, 0.2);
 }
 .filter__checkselect:nth-of-type(2n) {
@@ -1749,26 +1749,50 @@ h4 {
 .table__row-fkp {
   background-color: #f7fff5;
 }
+.table__row-fkp--active {
+  background-color: #8df07d;
+}
 .table__row-fitu {
   background-color: #fffbf5;
+}
+.table__row-fitu--active {
+  background-color: #e8d31a;
 }
 .table__row-fre {
   background-color: #fdfff5;
 }
+.table__row-fre--active {
+  background-color: #f4ffca;
+}
 .table__row-fksis {
   background-color: #f5fff9;
+}
+.table__row-fksis--active {
+  background-color: #acffcd;
 }
 .table__row-fik {
   background-color: #f5ffff;
 }
+.table__row-fik--active {
+  background-color: #a4ffff;
+}
 .table__row-ief {
   background-color: #f5f9ff;
+}
+.table__row-ief--active {
+  background-color: #93beff;
 }
 .table__row-vf {
   background-color: #f5fffa;
 }
+.table__row-vf--active {
+  background-color: #99ffcc;
+}
 .table__row-iit {
   background-color: #f9f5ff;
+}
+.table__row-iit--active {
+  background-color: #b788ff;
 }
 .table > tbody > tr > td.table__column-spec {
   text-align: left;
