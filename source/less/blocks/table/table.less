@@ -88,14 +88,13 @@
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
   }
 
-
-  &__sort-icon svg{
+  &__sort-icon svg {
     width: 10px;
     height: 10px;
     fill: @line;
   }
 
-  &__sort-icon--active svg{
+  &__sort-icon--active svg {
     fill: @additional;
   }
 
@@ -124,37 +123,61 @@
     align-items: center;
   }
 
-/*подсветка разных факультетов*/
+  /*подсветка разных факультетов*/
   &__row-fkp {
     background-color: @fkp;
+    &--active {
+      background-color: @fkp-act;
+    }
   }
 
   &__row-fitu {
     background-color: @fitu;
+    &--active {
+      background-color: @fitu-act;
+    }
   }
 
   &__row-fre {
     background-color: @fre;
+    &--active {
+      background-color: @fre-act;
+    }
   }
 
   &__row-fksis {
     background-color: @fksis;
+    &--active {
+      background-color: @fksis-act;
+    }
   }
 
   &__row-fik {
     background-color: @fik;
+    &--active {
+      background-color: @fik-act;
+    }
   }
 
   &__row-ief {
     background-color: @ief;
+    &--active {
+      background-color: @ief-act;
+    }
   }
 
   &__row-vf {
     background-color: @vf;
+    &--active {
+      background-color: @vf-act;
+    }
   }
 
   &__row-iit {
     background-color: @iit;
+    &--active {
+      background-color: @iit-act;
+    }
   }
 }
 
@@ -223,7 +246,6 @@
   .table__column-blocks {
     display: flex;
   }
-
 
   // th.table__column-spec {
   //   height: 70px;
