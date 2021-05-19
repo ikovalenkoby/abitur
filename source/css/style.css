@@ -1014,6 +1014,8 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
 .main-content__body {
   margin: 20px 32px;
@@ -1028,6 +1030,21 @@ h4 {
   .main-content__body {
     margin: 10px 12px;
   }
+}
+.main-content__list {
+  margin-left: 18px;
+  margin-bottom: 16px;
+}
+.main-content__list li {
+  list-style-type: "— ";
+}
+.main-content--no-wrapp {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .gallery {
   -webkit-box-flex: 1;
@@ -2113,6 +2130,87 @@ h4 {
 }
 .show {
   display: block;
+}
+.margin-p {
+  margin-bottom: 16px;
+}
+.margin-p--half-width {
+  width: 50%;
+}
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.test__answer-block {
+  width: 384px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #464e6a;
+  margin-bottom: 18px;
+}
+.test__answer-number {
+  width: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #464e6a;
+  color: #f9fcff;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  padding: 0 2px 0 2px;
+}
+.test__answer-list {
+  list-style: none;
+}
+.test__answer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 12px 8px 8px;
+}
+.test__answer-item:last-child {
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+.test__answer-radio {
+  display: none;
+}
+.test__answer-title {
+  position: relative;
+  padding-left: 28px;
+}
+.test__answer-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #4b4b4b;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.test__answer-radio:checked + .test__answer-title::before {
+  background-color: #4b4b4b;
+  background-clip: content-box;
+  padding: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
