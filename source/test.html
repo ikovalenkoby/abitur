@@ -438,8 +438,8 @@ function on_load_scroll_to_link()
 <form class="test" name="form1" method="post" action="test.jsp" onsubmit="return checkForm();">
     <input type="hidden" name="resID" value="113227">
     <input type="hidden" name="menuItemID" value="118118">
-			<div class="test__answer-block">
-				<div class="test__answer-number">1</div>
+			<div class="test__answer-block test__answer-block--no-answer">
+				<div class="test__answer-number test__answer-number--no-answer">1</div>
 				<div>
 					<ul class="test__answer-list">
 						<li class="test__answer-item">
@@ -888,13 +888,14 @@ function on_load_scroll_to_link()
 					</ul>
 				</div>
 			</div>
-			<div>
-				<input type=submit name="submit" value="Показать результат" class="resultsButton">
+			<div class="test__btn-wrapper">
+				<button type=submit name="submit" class="button button--corner resultsButton">
+            Показать результат
+        </button>
 			</div>
 </form>
 
 </body>
-</div>
 </main>
 <footer class="footer">
     <div class="wrapper footer__banners">
@@ -992,8 +993,7 @@ $('#slider_banner_container').hover(function() { jssor_slider_banner.$Play(); },
 #slider_banner_img_container div a {
  margin: 0;
 }</style>
-</p>
-<div id="slider_banner_container" style="position: relative; width: 1000px; height: 45px; overflow: hidden; margin: 0 auto;">
+< id="slider_banner_container" style="position: relative; width: 1000px; height: 45px; overflow: hidden; margin: 0 auto;">
 	<!-- Loading Screen -->
 	<div style="position: absolute; top: 0px; left: 0px;" u="loading">
 		<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; top: 0px; left: 0px;width: 100%;height:100%;">
@@ -1002,7 +1002,7 @@ $('#slider_banner_container').hover(function() { jssor_slider_banner.$Play(); },
 			&nbsp;</div>
 	</div>
 	<!-- Slides Container -->
-	<div  class="wrapper footer__wrapper" id="slider_banner_img_container" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 61px; overflow: hidden;" u="slides">
+	
 
 <div>
 			<a href="https://www.bsuir.by/" rel="nofollow" target="_blank">
@@ -1041,7 +1041,7 @@ $('#slider_banner_container').hover(function() { jssor_slider_banner.$Play(); },
 			</div>
 	
 </div>
-	<a href="http://www.jssor.com" style="display: none">javascript carousel</a></div>
+	<a href="http://www.jssor.com" style="display: none">javascript carousel</a>
 
 	<!-- Jssor Slider End --></div>
     <div class="footer__all-size">
