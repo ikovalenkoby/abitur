@@ -1,0 +1,18 @@
+.test__result-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .test__result-line,
+  .test__result-line a {
+    font-size: @f12;
+    line-height: @fl12;
+  }
+}

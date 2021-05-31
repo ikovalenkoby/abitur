@@ -1,0 +1,23 @@
+.test__answer-title {
+  position: relative;
+  padding-left: 28px;
+  max-width: 332px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid @text;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+}
+
+.test__answer-radio:checked + .test__answer-title::before {
+  background-color: @text;
+  background-clip: content-box;
+  padding: 3px;
+}

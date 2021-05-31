@@ -1,0 +1,22 @@
+.test__answer-block {
+  width: 384px;
+  display: flex;
+  border: 2px solid @additional;
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 1279px) {
+  .test__answer-block {
+    width: 344px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .test__answer-block {
+    width: 292px;
+    font-size: @f12;
+    line-height: @fl12;
+  }
+}
+
+@import url("./--no-answer/test__answer-block--no-answer.less");

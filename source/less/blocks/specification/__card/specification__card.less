@@ -1,0 +1,16 @@
+.specification__card {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+@media screen and (max-width: 767px) {
+  .specification__card {
+    width: 100%;
+
+    & div {
+      font-size: @f12;
+      line-height: @fl12;
+    }
+  }
+}
