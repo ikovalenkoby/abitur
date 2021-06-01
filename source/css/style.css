@@ -2301,30 +2301,27 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
 }
-.test__progres-color {
+.test__progres-color-A1 {
   background: #c43d16;
   height: 40px;
   margin-left: 28px;
 }
-.test__progres-color:hover + .reference {
+.test__progres-color-A1:hover + .reference {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.test__progres-color--technick {
-  background: #dc6d02;
-}
-.test__progres-color--other-p {
-  background: #edc596;
-}
-.test__progres-color--sistems {
+.test__progres-color-A1--A2 {
   background: #fd9a7e;
 }
-.test__progres-color--form {
-  background: #fcb500;
-}
-.test__progres-color--human {
+.test__progres-color-A1--B1 {
   background: #edc596;
+}
+.test__progres-color-A1--B2 {
+  background: #dc6d02;
+}
+.test__progres-color-A1--C1 {
+  background: #fcb500;
 }
 .reference {
   position: absolute;
@@ -2343,28 +2340,25 @@ h4 {
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.reference__color {
+.reference__color-A1 {
   height: 16px;
   width: 16px;
-  background: #c43d16;
   margin-right: 8px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  background: #c43d16;
 }
-.reference__color--technick {
-  background: #dc6d02;
-}
-.reference__color--other-p {
-  background: #edc596;
-}
-.reference__color--sistems {
+.reference__color-A1--A2 {
   background: #fd9a7e;
 }
-.reference__color--form {
-  background: #fcb500;
-}
-.reference__color--human {
+.reference__color-A1--B1 {
   background: #edc596;
+}
+.reference__color-A1--B2 {
+  background: #dc6d02;
+}
+.reference__color-A1--C1 {
+  background: #fcb500;
 }
 .reference__title {
   width: 429px;
