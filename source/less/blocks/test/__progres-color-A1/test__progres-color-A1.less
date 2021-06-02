@@ -1,0 +1,27 @@
+.test__progres-color-A1 {
+  background: @A1;
+  height: 40px;
+  margin-right: 28px;
+
+  &:hover + .reference {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .test__progres-color-A1 {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .test__progres-color-A1 {
+    margin-right: 4px;
+    height: 24px;
+  }
+}
+
+@import url("./--A2/test__progres-color-A1--A2.less");
+@import url("./--B1/test__progres-color-A1--B1.less");
+@import url("./--B2/test__progres-color-A1--B2.less");
+@import url("./--C1/test__progres-color-A1--C1.less");
