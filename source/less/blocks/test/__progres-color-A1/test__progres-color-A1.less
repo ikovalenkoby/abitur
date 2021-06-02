@@ -1,10 +1,23 @@
 .test__progres-color-A1 {
   background: @A1;
   height: 40px;
-  margin-left: 28px;
+  margin-right: 28px;
 
   &:hover + .reference {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .test__progres-color-A1 {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .test__progres-color-A1 {
+    margin-right: 4px;
+    height: 24px;
   }
 }
 

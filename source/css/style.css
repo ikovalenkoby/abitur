@@ -2270,6 +2270,19 @@ h4 {
   position: relative;
   margin-bottom: 24px;
 }
+.test__result a {
+  width: 15%;
+}
+@media screen and (max-width: 1279px) {
+  .test__result a {
+    width: 23px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .test__result a {
+    width: 52%;
+  }
+}
 .test__result-line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2300,16 +2313,45 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 85%;
+}
+@media screen and (max-width: 1279px) {
+  .test__progres {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .test__progres {
+    width: 46%;
+  }
 }
 .test__progres-color-A1 {
   background: #c43d16;
   height: 40px;
-  margin-left: 28px;
+  margin-right: 28px;
 }
 .test__progres-color-A1:hover + .reference {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 1279px) {
+  .test__progres-color-A1 {
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .test__progres-color-A1 {
+    margin-right: 4px;
+    height: 24px;
+  }
 }
 .test__progres-color-A1--A2 {
   background: #fd9a7e;
@@ -2340,6 +2382,11 @@ h4 {
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 767px) {
+  .reference {
+    width: 285px;
+  }
+}
 .reference__color-A1 {
   height: 16px;
   width: 16px;
@@ -2347,6 +2394,12 @@ h4 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   background: #c43d16;
+}
+@media screen and (max-width: 767px) {
+  .reference__color-A1 {
+    width: 12px;
+    height: 12px;
+  }
 }
 .reference__color-A1--A2 {
   background: #fd9a7e;
@@ -2368,6 +2421,11 @@ h4 {
   content: "—";
   position: absolute;
   left: -20px;
+}
+@media screen and (max-width: 767px) {
+  .reference__title {
+    width: 210px;
+  }
 }
 .specification {
   display: -webkit-box;
