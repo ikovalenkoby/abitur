@@ -1,928 +1,933 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="wrapper header__wrapper">
-        <a href="/">
-          <img
-            class="logo"
-            src="/m/12_113227_0_54837.svg"
-            hspace="0"
-            vspace="0"
-            border="0"
-            alt="To main page"
-          />
-        </a>
-        <form
-          class="search-form header__search-form"
-          action="/online/search/search_g_abitur.jsp"
-          method="get"
-          accept-charset="utf-8"
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="wrapper header__wrapper">
+    <a href="/">
+      <img
+        class="logo"
+        src="/m/12_113227_0_54837.svg"
+        hspace="0"
+        vspace="0"
+        border="0"
+        alt="To main page"
+      />
+    </a>
+    <form
+      class="search-form header__search-form"
+      action="/online/search/search_g_abitur.jsp"
+      method="get"
+      accept-charset="utf-8"
+    >
+      <input type="hidden" name="resID" value="113227"/>
+      <input type="hidden" name="lang" value="ru"/>
+      <input type="hidden" name="menuItemID" value="-1"/>
+      <input type="hidden" name="noshow" value="1"/>
+      <input
+        class="search-form__input h4"
+        placeholder="Поиск"
+        name="q"
+        OnClick="this.value=''"
+        OnSelect="this.value=''"
+      />
+
+      <button class="button search-form__button">
+        <svg
+          class="search-form__img"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
-          <input type="hidden" name="resID" value="113227" />
-          <input type="hidden" name="lang" value="ru" />
-          <input type="hidden" name="menuItemID" value="-1" />
-          <input type="hidden" name="noshow" value="1" />
-          <input
-            class="search-form__input h4"
-            placeholder="Поиск"
-            name="q"
-            OnClick="this.value=''"
-            OnSelect="this.value=''"
-          />
+          <use
+            xlink:href="/online/layouts/501//img/search_sprite.svg#search"
+          ></use>
+        </svg>
+      </button>
+    </form>
 
-          <button class="button search-form__button">
-            <svg
-              class="search-form__img"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <use
-                xlink:href="/online/layouts/501//img/search_sprite.svg#search"
-              ></use>
-            </svg>
-          </button>
-        </form>
-
-        <button class="button button--corner header__links">
-          ПОПУЛЯРНЫЕ ССЫЛКИ
-          <div class="header__links-circle">
-            <img
-              src="/online/layouts/501//img/arrow.svg"
-              class="header__links-arrow"
-            />
-          </div>
-        </button>
+    <button class="button button--corner header__links">
+      ПОПУЛЯРНЫЕ ССЫЛКИ
+      <div class="header__links-circle">
+        <img
+          src="/online/layouts/501//img/arrow.svg"
+          class="header__links-arrow"
+        />
       </div>
+    </button>
+  </div>
 
-      <nav class="menu">
-        <div class="wrapper header__wrapper--menu">
-          <ul class="menu__block" id="m1" childrenCount="16">
-            <span>Об университете</span>
-            <div class="menu__hidden-box">
-              <div class="menu__wrapper">
-                <ul class="menu__list" counter="1">
+  <nav class="menu">
+    <div class="wrapper header__wrapper--menu">
+      <ul class="menu__block" id="m1" childrenCount="16">
+        <span>Об университете</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list" counter="1">
                   <span class="menu__list-title"
-                    ><a href="/10-prichin-vybrat-bguir" target="_self"
-                      >10 причин выбрать БГУИР</a
-                    ></span
+                  ><a href="/10-prichin-vybrat-bguir" target="_self"
+                  >10 причин выбрать БГУИР</a
+                  ></span
                   >
-                </ul>
-                <ul class="menu__list" counter="2">
-                  <span class="menu__list-title"
-                    ><a href="/mrti-bguir" target="_self">МРТИ-БГУИР</a></span
-                  >
-                </ul>
-                <ul class="menu__list" counter="3">
-                  <span class="menu__list-title"
-                    ><a
-                      href="/dopolnitelnaya-voennaya-spetsialnost"
-                      target="_self"
-                      >Дополнительная военная специальность</a
-                    ></span
-                  >
-                </ul>
-                <ul class="menu__list" counter="4">
-                  <span class="menu__list-title"
-                    ><a href="/skhema-raspolozheniya-korpusov" target="_self"
-                      >Расположение корпусов</a
-                    ></span
-                  >
-                </ul>
-                <ul class="menu__list" counter="5">
-                  <span class="menu__list-title"
-                    ><a href="/fakultety-i-spetsialnosti" target="_self"
-                      >Факультеты и специальности</a
-                    ></span
-                  >
-                  <li class="menu__item">
-                    <a href="/ochnaya-dnevnaya-forma-obucheniya" target="_self"
-                      >Специальности дневной формы</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="/zaochnaya-forma-obucheniya" target="_self"
-                      >Специальности заочной формы</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="/distantsionnoe-obuchenie" target="_self"
-                      >Специальности дистанционной формы</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="/sokraschennaya-forma-obucheniya" target="_self"
-                      >Сокращенная форма обучения</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="/vtoroe-vysshee-obrazovanie" target="_self"
-                      >Второе высшее образование</a
-                    >
-                  </li>
-                </ul>
-                <ul class="menu__list" counter="11">
-                  <span class="menu__list-title"
-                    ><a href="/studencheskaya-zhizn" target="_self"
-                      >Студенческая жизнь</a
-                    ></span
-                  >
-                  <li class="menu__item">
-                    <a href="/kulturnaya-zhizn" target="_self"
-                      >Культурная жизнь</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="/obschezhitiya" target="_self">Общежития</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="/uchebnyy-protsess" target="_self"
-                      >Учебный процесс</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="/sotsialnaya-podderzhka-studentov" target="_self"
-                      >Социальная поддержка студентов</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="/sportivnaya-zhizn" target="_self"
-                      >Спортивная жизнь</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </ul>
-          <ul class="menu__block" id="m2" childrenCount="1">
-            <span>Подготовка к поступлению</span>
-            <div class="menu__hidden-box">
-              <div class="menu__wrapper">
-                <ul class="menu__list" counter="1">
-                  <span class="menu__list-title"
-                    ><a
-                      href="/kursy-k-podgotovke-k-vstupitelnym-ispytaniyam"
-                      target="_self"
-                      >Подготовительные курсы</a
-                    ></span
-                  >
-                </ul>
-              </div>
-            </div>
-          </ul>
-          <ul class="menu__block" id="m3" childrenCount="5">
-            <span>Централизованное тестирование</span>
-            <div class="menu__hidden-box">
-              <div class="menu__wrapper">
-                <ul class="menu__list" counter="1">
-                  <span class="menu__list-title"
-                    ><a
-                      href="/grafik-tsentralizovannogo-testirovaniya-2021"
-                      target="_self"
-                      >График проведения ЦТ</a
-                    ></span
-                  >
-                </ul>
-                <ul class="menu__list" counter="2">
-                  <span class="menu__list-title"
-                    ><a
-                      href="/tsentralizovannoe-testirovanie-2021"
-                      target="_self"
-                      >График работы пункта регистрации</a
-                    ></span
-                  >
-                </ul>
-                <ul class="menu__list" counter="3">
-                  <span class="menu__list-title"
-                    ><a href="/poryadok-registratsii-na-tst-2021" target="_self"
-                      >Порядок регистрации на ЦТ</a
-                    ></span
-                  >
-                </ul>
-                <ul class="menu__list" counter="4">
-                  <span class="menu__list-title"
-                    ><a
-                      href="/registratsiya-inostrannykh-grazhdan-na-tst-2021"
-                      target="_self"
-                      >Регистрация иностранных граждан</a
-                    ></span
-                  >
-                </ul>
-                <ul class="menu__list" counter="5">
-                  <span class="menu__list-title"
-                    ><a href="/vydacha-sertifikatov-tst-2021" target="_self"
-                      >Выдача сертификатов ЦТ</a
-                    ></span
-                  >
-                </ul>
-              </div>
-            </div>
-          </ul>
-          <ul class="menu__block" id="m4" childrenCount="16">
-            <span>Приёмная кампания</span>
-            <div class="menu__hidden-box">
-              <div class="menu__wrapper">
-                <ul class="menu__list" counter="1">
-                  <span class="menu__list-title"
-                    ><a
-                      href="https://www.bsuir.by/ru/magistratura/dlya-postupayuschikh"
-                      target="_blank"
-                      >Поступление в магистратуру</a
-                    ></span
-                  >
-                </ul>
-                <ul class="menu__list" counter="2">
-                  <span class="menu__list-title"
-                    ><a
-                      href="https://www.bsuir.by/online/showpage.jsp?PageID=94384&amp;resID=100229&amp;lang=ru&amp;menuItemID=121294"
-                      target="_blank"
-                      >Иностранным гражданам</a
-                    ></span
-                  >
-                </ul>
-                <ul class="menu__list" counter="3">
-                  <span class="menu__list-title"
-                    ><a href="/algoritm-abiturienta" target="_self"
-                      >Алгоритм абитуриента</a
-                    ></span
-                  >
-                  <li class="menu__item">
-                    <a href="/pervaya-stupen-rb-polnyy-srok" target="_self"
-                      >Полный срок обучения</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a
-                      href="/pervaya-stupen-rb-sokraschennyy-srok"
-                      target="_self"
-                      >Сокращенный срок обучения</a
-                    >
-                  </li>
-                </ul>
-                <ul class="menu__list" counter="6">
-                  <span class="menu__list-title"
-                    ><a href="/obschaya-informatsiya" target="_self"
-                      >Общая информация</a
-                    ></span
-                  >
-                  <li class="menu__item">
-                    <a href="/pravila-priema" target="_self">Правила приёма</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="/poryadok-priema-v-bguir" target="_self"
-                      >Порядок приёма</a
-                    >
-                  </li>
-                </ul>
-                <ul class="menu__list" counter="9">
-                  <span class="menu__list-title"
-                    ><a
-                      href="/sroki-provedeniya-vstupitelnoy-kampanii"
-                      target="_self"
-                      >Вступительная кампания</a
-                    ></span
-                  >
-                  <li class="menu__item">
-                    <a href="/plan-priema-2021" target="_self"
-                      >План приёма в БГУИР</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a
-                      href="/sroki-provedeniya-vstupitelnoy-kampanii"
-                      target="_self"
-                      >Сроки проведения вступительной кампании</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="/prokhodnye-bally" target="_self"
-                      >Проходные баллы прошлых лет</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="/dokumenty-dlya-postupleniya" target="_self"
-                      >Документы для поступления</a
-                    >
-                  </li>
-                </ul>
-                <ul class="menu__list" counter="14">
-                  <span class="menu__list-title"
-                    ><a href="/priemnaya-komissiya" target="_self"
-                      >Приёмная комиссия</a
-                    ></span
-                  >
-                  <li class="menu__item">
-                    <a href="/kontakty-priyomnoy-komissii" target="_self"
-                      >Контакты отдела сопровождения приемной комиссии</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="/chasto-zadavaemye-voprosy" target="_self"
-                      >Часто задаваемые вопросы</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </ul>
-          <ul class="menu__block" id="m5" childrenCount="2">
-            <span>Профессиональная ориентация</span>
-            <div class="menu__hidden-box">
-              <div class="menu__wrapper">
-                <ul class="menu__list" counter="1">
-                  <span class="menu__list-title"
-                    ><a
-                      href="https://abitur.bsuir.by/ddo/test.jsp"
-                      target="_blank"
-                      >Дифференциально-диагностический опросник</a
-                    ></span
-                  >
-                </ul>
-                <ul class="menu__list" counter="2">
-                  <span class="menu__list-title"
-                    ><a href="/online-vebinary" target="_self"
-                      >On-line вебинары</a
-                    ></span
-                  >
-                </ul>
-              </div>
-            </div>
-          </ul>
-        </div>
-
-        <div class="wrapper header__wrapper--mobile">
-          <button class="button menu__btn" id="m1">
-            <span class="menu__btn-text">
-              Об университете
-              <img class="menu__img" src="/online/layouts/501/img/arrow.svg"
-            /></span>
-          </button>
-          <div class="menu__mobile-block hidden">
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/10-prichin-vybrat-bguir"
-                target="_self"
-                >10 причин выбрать БГУИР</a
-              >
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a class="menu__list-title" href="/mrti-bguir" target="_self"
-                >МРТИ-БГУИР</a
-              >
+            <ul class="menu__list" counter="2">
+                  <span class="menu__list-title"
+                  ><a href="/mrti-bguir" target="_self">МРТИ-БГУИР</a></span
+                  >
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/dopolnitelnaya-voennaya-spetsialnost"
-                target="_self"
-                >Дополнительная военная специальность</a
-              >
+            <ul class="menu__list" counter="3">
+                  <span class="menu__list-title"
+                  ><a
+                    href="/dopolnitelnaya-voennaya-spetsialnost"
+                    target="_self"
+                  >Дополнительная военная специальность</a
+                  ></span
+                  >
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/skhema-raspolozheniya-korpusov"
-                target="_self"
-                >Расположение корпусов</a
-              >
+            <ul class="menu__list" counter="4">
+                  <span class="menu__list-title"
+                  ><a href="/skhema-raspolozheniya-korpusov" target="_self"
+                  >Расположение корпусов</a
+                  ></span
+                  >
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/fakultety-i-spetsialnosti"
-                target="_self"
-                >Факультеты и специальности</a
-              >
-              <li class="menu__item menu__item--mobile">
+            <ul class="menu__list" counter="5">
+                  <span class="menu__list-title"
+                  ><a href="/fakultety-i-spetsialnosti" target="_self"
+                  >Факультеты и специальности</a
+                  ></span
+                  >
+              <li class="menu__item">
                 <a href="/ochnaya-dnevnaya-forma-obucheniya" target="_self"
-                  >Специальности дневной формы</a
+                >Специальности дневной формы</a
                 >
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a href="/zaochnaya-forma-obucheniya" target="_self"
-                  >Специальности заочной формы</a
+                >Специальности заочной формы</a
                 >
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a href="/distantsionnoe-obuchenie" target="_self"
-                  >Специальности дистанционной формы</a
+                >Специальности дистанционной формы</a
                 >
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a href="/sokraschennaya-forma-obucheniya" target="_self"
-                  >Сокращенная форма обучения</a
+                >Сокращенная форма обучения</a
                 >
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a href="/vtoroe-vysshee-obrazovanie" target="_self"
-                  >Второе высшее образование</a
+                >Второе высшее образование</a
                 >
               </li>
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/studencheskaya-zhizn"
-                target="_self"
-                >Студенческая жизнь</a
-              >
-              <li class="menu__item menu__item--mobile">
-                <a href="/kulturnaya-zhizn" target="_self">Культурная жизнь</a>
+            <ul class="menu__list" counter="11">
+                  <span class="menu__list-title"
+                  ><a href="/studencheskaya-zhizn" target="_self"
+                  >Студенческая жизнь</a
+                  ></span
+                  >
+              <li class="menu__item">
+                <a href="/kulturnaya-zhizn" target="_self"
+                >Культурная жизнь</a
+                >
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a href="/obschezhitiya" target="_self">Общежития</a>
               </li>
-              <li class="menu__item menu__item--mobile">
-                <a href="/uchebnyy-protsess" target="_self">Учебный процесс</a>
+              <li class="menu__item">
+                <a href="/uchebnyy-protsess" target="_self"
+                >Учебный процесс</a
+                >
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a href="/sotsialnaya-podderzhka-studentov" target="_self"
-                  >Социальная поддержка студентов</a
+                >Социальная поддержка студентов</a
                 >
               </li>
-              <li class="menu__item menu__item--mobile">
-                <a href="/sportivnaya-zhizn" target="_self">Спортивная жизнь</a>
+              <li class="menu__item">
+                <a href="/sportivnaya-zhizn" target="_self"
+                >Спортивная жизнь</a
+                >
               </li>
             </ul>
           </div>
-          <button class="button menu__btn" id="m2">
-            <span class="menu__btn-text"
-              >Подготовка к поступлению<img
-                class="menu__img"
-                src="/online/layouts/501/img/arrow.svg"
-            /></span>
-          </button>
-          <div class="menu__mobile-block hidden">
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/kursy-k-podgotovke-k-vstupitelnym-ispytaniyam"
-                target="_self"
-                >Подготовительные курсы</a
-              >
+        </div>
+      </ul>
+      <ul class="menu__block" id="m2" childrenCount="1">
+        <span>Подготовка к поступлению</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list" counter="1">
+                  <span class="menu__list-title"
+                  ><a
+                    href="/kursy-k-podgotovke-k-vstupitelnym-ispytaniyam"
+                    target="_self"
+                  >Подготовительные курсы</a
+                  ></span
+                  >
             </ul>
           </div>
-          <button class="button menu__btn" id="m3">
-            <span class="menu__btn-text"
-              >Централизованное тестирование<img
-                class="menu__img"
-                src="/online/layouts/501/img/arrow.svg"
-            /></span>
-          </button>
-          <div class="menu__mobile-block hidden">
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/grafik-tsentralizovannogo-testirovaniya-2021"
-                target="_self"
-                >График проведения ЦТ</a
-              >
+        </div>
+      </ul>
+      <ul class="menu__block" id="m3" childrenCount="5">
+        <span>Централизованное тестирование</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list" counter="1">
+                  <span class="menu__list-title"
+                  ><a
+                    href="/grafik-tsentralizovannogo-testirovaniya-2021"
+                    target="_self"
+                  >График проведения ЦТ</a
+                  ></span
+                  >
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/tsentralizovannoe-testirovanie-2021"
-                target="_self"
-                >График работы пункта регистрации</a
-              >
+            <ul class="menu__list" counter="2">
+                  <span class="menu__list-title"
+                  ><a
+                    href="/tsentralizovannoe-testirovanie-2021"
+                    target="_self"
+                  >График работы пункта регистрации</a
+                  ></span
+                  >
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/poryadok-registratsii-na-tst-2021"
-                target="_self"
-                >Порядок регистрации на ЦТ</a
-              >
+            <ul class="menu__list" counter="3">
+                  <span class="menu__list-title"
+                  ><a href="/poryadok-registratsii-na-tst-2021" target="_self"
+                  >Порядок регистрации на ЦТ</a
+                  ></span
+                  >
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/registratsiya-inostrannykh-grazhdan-na-tst-2021"
-                target="_self"
-                >Регистрация иностранных граждан</a
-              >
+            <ul class="menu__list" counter="4">
+                  <span class="menu__list-title"
+                  ><a
+                    href="/registratsiya-inostrannykh-grazhdan-na-tst-2021"
+                    target="_self"
+                  >Регистрация иностранных граждан</a
+                  ></span
+                  >
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/vydacha-sertifikatov-tst-2021"
-                target="_self"
-                >Выдача сертификатов ЦТ</a
-              >
+            <ul class="menu__list" counter="5">
+                  <span class="menu__list-title"
+                  ><a href="/vydacha-sertifikatov-tst-2021" target="_self"
+                  >Выдача сертификатов ЦТ</a
+                  ></span
+                  >
             </ul>
           </div>
-          <button class="button menu__btn" id="m4">
-            <span class="menu__btn-text"
-              >Приёмная кампания<img
-                class="menu__img"
-                src="/online/layouts/501/img/arrow.svg"
-            /></span>
-          </button>
-          <div class="menu__mobile-block hidden">
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="https://www.bsuir.by/ru/magistratura/dlya-postupayuschikh"
-                target="_blank"
-                >Поступление в магистратуру</a
-              >
+        </div>
+      </ul>
+      <ul class="menu__block" id="m4" childrenCount="16">
+        <span>Приёмная кампания</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list" counter="1">
+                  <span class="menu__list-title"
+                  ><a
+                    href="https://www.bsuir.by/ru/magistratura/dlya-postupayuschikh"
+                    target="_blank"
+                  >Поступление в магистратуру</a
+                  ></span
+                  >
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="https://www.bsuir.by/online/showpage.jsp?PageID=94384&amp;resID=100229&amp;lang=ru&amp;menuItemID=121294"
-                target="_blank"
-                >Иностранным гражданам</a
-              >
+            <ul class="menu__list" counter="2">
+                  <span class="menu__list-title"
+                  ><a
+                    href="https://www.bsuir.by/online/showpage.jsp?PageID=94384&amp;resID=100229&amp;lang=ru&amp;menuItemID=121294"
+                    target="_blank"
+                  >Иностранным гражданам</a
+                  ></span
+                  >
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/algoritm-abiturienta"
-                target="_self"
-                >Алгоритм абитуриента</a
-              >
-              <li class="menu__item menu__item--mobile">
+            <ul class="menu__list" counter="3">
+                  <span class="menu__list-title"
+                  ><a href="/algoritm-abiturienta" target="_self"
+                  >Алгоритм абитуриента</a
+                  ></span
+                  >
+              <li class="menu__item">
                 <a href="/pervaya-stupen-rb-polnyy-srok" target="_self"
-                  >Полный срок обучения</a
+                >Полный срок обучения</a
                 >
               </li>
-              <li class="menu__item menu__item--mobile">
-                <a href="/pervaya-stupen-rb-sokraschennyy-srok" target="_self"
-                  >Сокращенный срок обучения</a
+              <li class="menu__item">
+                <a
+                  href="/pervaya-stupen-rb-sokraschennyy-srok"
+                  target="_self"
+                >Сокращенный срок обучения</a
                 >
               </li>
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/obschaya-informatsiya"
-                target="_self"
-                >Общая информация</a
-              >
-              <li class="menu__item menu__item--mobile">
+            <ul class="menu__list" counter="6">
+                  <span class="menu__list-title"
+                  ><a href="/obschaya-informatsiya" target="_self"
+                  >Общая информация</a
+                  ></span
+                  >
+              <li class="menu__item">
                 <a href="/pravila-priema" target="_self">Правила приёма</a>
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a href="/poryadok-priema-v-bguir" target="_self"
-                  >Порядок приёма</a
+                >Порядок приёма</a
                 >
               </li>
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/sroki-provedeniya-vstupitelnoy-kampanii"
-                target="_self"
-                >Вступительная кампания</a
-              >
-              <li class="menu__item menu__item--mobile">
+            <ul class="menu__list" counter="9">
+                  <span class="menu__list-title"
+                  ><a
+                    href="/sroki-provedeniya-vstupitelnoy-kampanii"
+                    target="_self"
+                  >Вступительная кампания</a
+                  ></span
+                  >
+              <li class="menu__item">
                 <a href="/plan-priema-2021" target="_self"
-                  >План приёма в БГУИР</a
+                >План приёма в БГУИР</a
                 >
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a
                   href="/sroki-provedeniya-vstupitelnoy-kampanii"
                   target="_self"
-                  >Сроки проведения вступительной кампании</a
+                >Сроки проведения вступительной кампании</a
                 >
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a href="/prokhodnye-bally" target="_self"
-                  >Проходные баллы прошлых лет</a
+                >Проходные баллы прошлых лет</a
                 >
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a href="/dokumenty-dlya-postupleniya" target="_self"
-                  >Документы для поступления</a
+                >Документы для поступления</a
                 >
               </li>
             </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="/priemnaya-komissiya"
-                target="_self"
-                >Приёмная комиссия</a
-              >
-              <li class="menu__item menu__item--mobile">
+            <ul class="menu__list" counter="14">
+                  <span class="menu__list-title"
+                  ><a href="/priemnaya-komissiya" target="_self"
+                  >Приёмная комиссия</a
+                  ></span
+                  >
+              <li class="menu__item">
                 <a href="/kontakty-priyomnoy-komissii" target="_self"
-                  >Контакты отдела сопровождения приемной комиссии</a
+                >Контакты отдела сопровождения приемной комиссии</a
                 >
               </li>
-              <li class="menu__item menu__item--mobile">
+              <li class="menu__item">
                 <a href="/chasto-zadavaemye-voprosy" target="_self"
-                  >Часто задаваемые вопросы</a
+                >Часто задаваемые вопросы</a
                 >
               </li>
             </ul>
           </div>
-          <button class="button menu__btn" id="m5">
-            <span class="menu__btn-text"
-              >Профессиональная ориентация<img
-                class="menu__img"
-                src="/online/layouts/501/img/arrow.svg"
-            /></span>
-          </button>
-          <div class="menu__mobile-block hidden">
-            <ul class="menu__list menu__list--mibile">
-              <a
-                class="menu__list-title"
-                href="https://abitur.bsuir.by/ddo/test.jsp"
-                target="_blank"
-                >Дифференциально-диагностический опросник</a
-              >
-            </ul>
-            <ul class="menu__list menu__list--mibile">
-              <a class="menu__list-title" href="/online-vebinary" target="_self"
-                >On-line вебинары</a
-              >
-            </ul>
-          </div>
         </div>
-      </nav>
-    </header>
-
-    <main class="main-content main-content--no-wrapp">
-      <h1>Дифференциально-диагностический опросник (ДДО) Е.А.Климова</h1>
-
-      <p class="margin-p margin-p--half-width">
-        Методика предназначена для выявления склонности (предрасположенности)
-        человека к определенным типам профессий. Представляет собой достаточно
-        короткий опросник, состоящий из 20 альтернативных суждений. Испытуемому
-        необходимо выбрать один из двух, указанных в вопросе, видов занятий. По
-        результатам обследования, в соответствии с ключом, выявляется ориентация
-        человека на 5 типов профессий, по классификации Е.А.Климова:
-      </p>
-
-      <ul class="main-content__list">
-        <li>человек - природа;</li>
-        <li>человек - техника;</li>
-        <li>человек - человек;</li>
-        <li>человек - знаковая техника;</li>
-        <li>человек - знаковый образ;</li>
-        <li>человек - художественный образ.</li>
       </ul>
+      <ul class="menu__block" id="m5" childrenCount="2">
+        <span>Профессиональная ориентация</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list" counter="1">
+                  <span class="menu__list-title"
+                  ><a
+                    href="https://abitur.bsuir.by/ddo/test.jsp"
+                    target="_blank"
+                  >Дифференциально-диагностический опросник</a
+                  ></span
+                  >
+            </ul>
+            <ul class="menu__list" counter="2">
+                  <span class="menu__list-title"
+                  ><a href="/online-vebinary" target="_self"
+                  >On-line вебинары</a
+                  ></span
+                  >
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </div>
 
-      <p class="margin-p margin-p--half-width">
-        Опросник рекомендуется использовать определения профессиональной
-        ориентации и профессионального отбора.
-      </p>
-      <p class="margin-p margin-p--half-width">
-        Инструкция: внимательно прочитайте следующие вопросы и выберите
-        соответствующий ответ, затем нажмите кнопку "Показать результат".
-      </p>
+    <div class="wrapper header__wrapper--mobile">
+      <button class="button menu__btn" id="m1">
+            <span class="menu__btn-text">
+              Об университете
+              <img class="menu__img" src="/online/layouts/501/img/arrow.svg"
+              /></span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/10-prichin-vybrat-bguir"
+            target="_self"
+          >10 причин выбрать БГУИР</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/mrti-bguir" target="_self"
+          >МРТИ-БГУИР</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/dopolnitelnaya-voennaya-spetsialnost"
+            target="_self"
+          >Дополнительная военная специальность</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/skhema-raspolozheniya-korpusov"
+            target="_self"
+          >Расположение корпусов</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/fakultety-i-spetsialnosti"
+            target="_self"
+          >Факультеты и специальности</a
+          >
+          <li class="menu__item menu__item--mobile">
+            <a href="/ochnaya-dnevnaya-forma-obucheniya" target="_self"
+            >Специальности дневной формы</a
+            >
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/zaochnaya-forma-obucheniya" target="_self"
+            >Специальности заочной формы</a
+            >
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/distantsionnoe-obuchenie" target="_self"
+            >Специальности дистанционной формы</a
+            >
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/sokraschennaya-forma-obucheniya" target="_self"
+            >Сокращенная форма обучения</a
+            >
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/vtoroe-vysshee-obrazovanie" target="_self"
+            >Второе высшее образование</a
+            >
+          </li>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/studencheskaya-zhizn"
+            target="_self"
+          >Студенческая жизнь</a
+          >
+          <li class="menu__item menu__item--mobile">
+            <a href="/kulturnaya-zhizn" target="_self">Культурная жизнь</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/obschezhitiya" target="_self">Общежития</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/uchebnyy-protsess" target="_self">Учебный процесс</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/sotsialnaya-podderzhka-studentov" target="_self"
+            >Социальная поддержка студентов</a
+            >
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/sportivnaya-zhizn" target="_self">Спортивная жизнь</a>
+          </li>
+        </ul>
+      </div>
+      <button class="button menu__btn" id="m2">
+            <span class="menu__btn-text"
+            >Подготовка к поступлению<img
+              class="menu__img"
+              src="/online/layouts/501/img/arrow.svg"
+            /></span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/kursy-k-podgotovke-k-vstupitelnym-ispytaniyam"
+            target="_self"
+          >Подготовительные курсы</a
+          >
+        </ul>
+      </div>
+      <button class="button menu__btn" id="m3">
+            <span class="menu__btn-text"
+            >Централизованное тестирование<img
+              class="menu__img"
+              src="/online/layouts/501/img/arrow.svg"
+            /></span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/grafik-tsentralizovannogo-testirovaniya-2021"
+            target="_self"
+          >График проведения ЦТ</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/tsentralizovannoe-testirovanie-2021"
+            target="_self"
+          >График работы пункта регистрации</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/poryadok-registratsii-na-tst-2021"
+            target="_self"
+          >Порядок регистрации на ЦТ</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/registratsiya-inostrannykh-grazhdan-na-tst-2021"
+            target="_self"
+          >Регистрация иностранных граждан</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/vydacha-sertifikatov-tst-2021"
+            target="_self"
+          >Выдача сертификатов ЦТ</a
+          >
+        </ul>
+      </div>
+      <button class="button menu__btn" id="m4">
+            <span class="menu__btn-text"
+            >Приёмная кампания<img
+              class="menu__img"
+              src="/online/layouts/501/img/arrow.svg"
+            /></span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="https://www.bsuir.by/ru/magistratura/dlya-postupayuschikh"
+            target="_blank"
+          >Поступление в магистратуру</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="https://www.bsuir.by/online/showpage.jsp?PageID=94384&amp;resID=100229&amp;lang=ru&amp;menuItemID=121294"
+            target="_blank"
+          >Иностранным гражданам</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/algoritm-abiturienta"
+            target="_self"
+          >Алгоритм абитуриента</a
+          >
+          <li class="menu__item menu__item--mobile">
+            <a href="/pervaya-stupen-rb-polnyy-srok" target="_self"
+            >Полный срок обучения</a
+            >
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/pervaya-stupen-rb-sokraschennyy-srok" target="_self"
+            >Сокращенный срок обучения</a
+            >
+          </li>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/obschaya-informatsiya"
+            target="_self"
+          >Общая информация</a
+          >
+          <li class="menu__item menu__item--mobile">
+            <a href="/pravila-priema" target="_self">Правила приёма</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/poryadok-priema-v-bguir" target="_self"
+            >Порядок приёма</a
+            >
+          </li>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/sroki-provedeniya-vstupitelnoy-kampanii"
+            target="_self"
+          >Вступительная кампания</a
+          >
+          <li class="menu__item menu__item--mobile">
+            <a href="/plan-priema-2021" target="_self"
+            >План приёма в БГУИР</a
+            >
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a
+              href="/sroki-provedeniya-vstupitelnoy-kampanii"
+              target="_self"
+            >Сроки проведения вступительной кампании</a
+            >
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/prokhodnye-bally" target="_self"
+            >Проходные баллы прошлых лет</a
+            >
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/dokumenty-dlya-postupleniya" target="_self"
+            >Документы для поступления</a
+            >
+          </li>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="/priemnaya-komissiya"
+            target="_self"
+          >Приёмная комиссия</a
+          >
+          <li class="menu__item menu__item--mobile">
+            <a href="/kontakty-priyomnoy-komissii" target="_self"
+            >Контакты отдела сопровождения приемной комиссии</a
+            >
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/chasto-zadavaemye-voprosy" target="_self"
+            >Часто задаваемые вопросы</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button class="button menu__btn" id="m5">
+            <span class="menu__btn-text"
+            >Профессиональная ориентация<img
+              class="menu__img"
+              src="/online/layouts/501/img/arrow.svg"
+            /></span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a
+            class="menu__list-title"
+            href="https://abitur.bsuir.by/ddo/test.jsp"
+            target="_blank"
+          >Дифференциально-диагностический опросник</a
+          >
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/online-vebinary" target="_self"
+          >On-line вебинары</a
+          >
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
-      <p class="margin-p margin-p--half-width">
-        «Предположим, что после соответствующего обучения вы сможете выполнять
-        любую работу. Однако если бы вам пришлось выбрать только из двух
-        возможностей, что бы вы предпочли?»
-      </p>
-      <div class="test__result">
-        <div class="test__result-line">
-          <a href="#nature">Природа</a>
-          <div class="test__progres">
-            <span>1</span>
-            <div class="test__progres-color-A1" style="width: 30px"></div>
-            <div class="reference">
-              <div class="reference__color-A1"></div>
-              <span class="reference__title">
+<main class="main-content main-content--no-wrapp">
+  <h1>Дифференциально-диагностический опросник (ДДО) Е.А.Климова</h1>
+
+  <p class="margin-p margin-p--half-width">
+    Методика предназначена для выявления склонности (предрасположенности)
+    человека к определенным типам профессий. Представляет собой достаточно
+    короткий опросник, состоящий из 20 альтернативных суждений. Испытуемому
+    необходимо выбрать один из двух, указанных в вопросе, видов занятий. По
+    результатам обследования, в соответствии с ключом, выявляется ориентация
+    человека на 5 типов профессий, по классификации Е.А.Климова:
+  </p>
+
+  <ul class="main-content__list">
+    <li>человек - природа;</li>
+    <li>человек - техника;</li>
+    <li>человек - человек;</li>
+    <li>человек - знаковая техника;</li>
+    <li>человек - знаковый образ;</li>
+    <li>человек - художественный образ.</li>
+  </ul>
+
+  <p class="margin-p margin-p--half-width">
+    Опросник рекомендуется использовать определения профессиональной
+    ориентации и профессионального отбора.
+  </p>
+  <p class="margin-p margin-p--half-width">
+    Инструкция: внимательно прочитайте следующие вопросы и выберите
+    соответствующий ответ, затем нажмите кнопку "Показать результат".
+  </p>
+
+  <p class="margin-p margin-p--half-width">
+    «Предположим, что после соответствующего обучения вы сможете выполнять
+    любую работу. Однако если бы вам пришлось выбрать только из двух
+    возможностей, что бы вы предпочли?»
+  </p>
+  <div class="test__result">
+    <div class="test__result-line">
+      <a href="#nature">Природа</a>
+      <div class="test__progres">
+        <span>1</span>
+        <div class="test__progres-color-A1" style="width: 30px"></div>
+        <div class="reference">
+          <div class="reference__color-A1"></div>
+          <span class="reference__title">
                 работа с таким предметом труда активно отвергается: «что угодно,
                 только не это»
               </span>
-            </div>
-          </div>
-        </div>
-        <div class="test__result-line">
-          <a href="#technick">Техника</a>
-          <div class="test__progres">
-            <span>1</span>
-            <div
-              class="test__progres-color-A1 test__progres-color-A1--A2"
-              style="width: 30px"
-            ></div>
-            <div class="reference">
-              <div class="reference__color-A1 reference__color-A1--A2"></div>
-              <span class="reference__title">
-                работа с таким предметом труда активно отвергается: «что угодно,
-                только не это»
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="test__result-line">
-          <a href="#other-p">Другие люди</a>
-          <div class="test__progres">
-            <span>1</span>
-            <div
-              class="test__progres-color-A1 test__progres-color-A1--B1"
-              style="width: 30px"
-            ></div>
-            <div class="reference">
-              <div class="reference__color-A1 reference__color-A1--B1"></div>
-              <span class="reference__title">
-                работа с таким предметом труда активно отвергается: «что угодно,
-                только не это»
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="test__result-line">
-          <a href="#sistems">Знаковые системы</a>
-          <div class="test__progres">
-            <span>1</span>
-            <div
-              class="test__progres-color-A1 test__progres-color-A1--B2"
-              style="width: 30px"
-            ></div>
-            <div class="reference">
-              <div class="reference__color-A1 reference__color-A1--B2"></div>
-              <span class="reference__title">
-                работа с таким предметом труда активно отвергается: «что угодно,
-                только не это»
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="test__result-line">
-          <a href="#form">Художественный образ</a>
-          <div class="test__progres">
-            <span>1</span>
-            <div
-              class="test__progres-color-A1 test__progres-color-A1--C1"
-              style="width: 30px"
-            ></div>
-            <div class="reference">
-              <div class="reference__color-A1 reference__color-A1--C1"></div>
-              <span class="reference__title">
-                работа с таким предметом труда активно отвергается: «что угодно,
-                только не это»
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="test__result-line">
-          <a href="#human">Сам человек</a>
-          <div class="test__progres">
-            <span>1</span>
-            <div
-              class="test__progres-color-A1 test__progres-color-A1--B1"
-              style="width: 30px"
-            ></div>
-            <div class="reference">
-              <div class="reference__color-A1 reference__color-A1--B1"></div>
-              <span class="reference__title">
-                работа с таким предметом труда активно отвергается: «что угодно,
-                только не это»
-              </span>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="specification">
-        <div class="specification__card" id="nature">
-          <p class="toggler">Человек-природа</p>
-          <div>
-            <b>Профессионально важные качества:</b><br>
-            • Наблюдательность<br>
-            • Пространственное воображение<br>
-            • Потребность в двигательной активности<br>
-            • Физическая выносливость<br>
-            • Организаторские способности<br>
-            • Аналитические способности<br>
-            Первая группа профессий – "Человек - природа". Она объединяет
-все профессии, представители которых имеют дело с объектами, явлениями
-и процессами живой и неживой природы (предмет труда – земля, вода,
-растения и животные). Сюда включены профессии: ветеринар, агроном,
- гидролог, овощевод, геолог, полевод, егерь, механизатор. Представителей этих профессий объединяет одно очень важное качество – любовь к природе.
-Их любовь не созерцательная, которой обладают все люди, а деятельная,
-связанная с познанием ее законов и применением их. Поэтому, выбирая
-профессию данного типа, очень важно разобраться, как именно Вы относитесь к природе: как к мастерской, где Вы будете работать, или как к
-месту отдыха, где хорошо погулять, подышать свежим воздухом.
-Особенность объектов труда этого типа состоит в том, что они сложны, изменчивы, нестандартны. И растения, и животные, и микроорганизмы
-развиваются без всяких выходных и праздников, так что специалисту
-необходимо всегда быть готовым к непредвиденным событиям. 
-          </div>
-        </div>
-        <div class="specification__card" id="technick">
-          <p class="toggler">Человек-техника</p>
-          <div>
-            <b>Профессионально важные качества:</b><br>
-            • Техническое мышление<br>
-            • Переключение и концентрация внимания<br>
-            • Пространственное воображение<br>
-            • Оперативная память<br>
-            • Хорошая реакция и координация движений<br>
-            • Устойчивость нервной системы к внешним
-              раздражителям<br>
-            • Переносимость однообразия и монотонности<br>
-            Самыми распространенными являются профессии, где предметом труда
-            выступает техника. К типу "Человек - техника" относятся профессии,
-            связанные с обслуживанием техники, ее ремонтом, установкой и наладкой,
-            управлением: слесарь-ремонтник, наладчик, водитель. Сюда же входят профессии по производству и обработке металлов: сталевар, токарь, слесарьмеханик. В этот же тип включают профессии по обработке неметаллических
-            изделий (ткач, столяр); 
-            по переработке продуктов сельского хозяйства (пекарь,
-            кондитер); по добыче и обработке горных пород (проходчик, шахтер).
-            Техника представляет широкие возможности для новаторства, выдумки,
-            творчества. Поэтому важное значение приобретает практическое мышление.
-            Техническая фантазия, способность мысленно соединять и разъединять
-            технические объекты и их части - важные условия успехов в этой области.  
-          </div>
-        </div>
-        <div class="specification__card" id="other-p">
-          <p class="toggler">Человек-человек</p>
-          <div>
-            <b>Профессионально важные качества:</b><br>
-            • Коммуникативные и организаторские способности<br>
-            • Эмпатические способности<br>
-            • Эмоциональная устойчивость<br>
-            • Устойчивость и распределение внимания<br>
-            • Доброжелательность<br>
-            • Самообладание, выдержка<br>
-            Следующий тип профессий – "Человек – другой человек". В нем
-            предметом труда специалиста является другой человек, а характерной чертой
-            деятельности – необходимость непосредственного воздействия на людей. Круг
-            таких профессий многоаспектен: педагогические – учитель, воспитатель
-            детского сада; медицинские – врач, медсестра; юридические – следователь,
-            судья, адвокат; сфера обслуживания – продавец, проводник, парикмахер;
-            культпросветработники – пианист, аккомпаниатор и т.д. Устойчивое, хорошее
-            настроение в процессе работы с людьми, потребность в общении, способность
-            мысленно ставить себя на место другого человека, быстро понимать
-            намерения и помыслы людей, хорошая память, умение находить общий язык с
-            разными людьми – вот те личные качества, которые очень важны при работе
-            по профессии этого типа.  
-          </div>
-        </div>
-        <div class="specification__card" id="sistems">
-          <p class="toggler">Человек-знак</p>
-          <div>
-            <b>Профессионально важные качества:</b><br>
-            • Устойчивость, концентрация, переключение и распределение внимания<br>
-            • Абстрактное мышление<br>
-            • Образная память<br>
-            • Отсутствие выраженной экстраверсии и повышенного нейротизма<br>
-            • Аккуратность<br>
-            • Усидчивость<br>
-            Четвертая типовая группа – это профессии "Человек - знаковая
-            система". Здесь предметом труда служат не сами явления, а информация о
-            них в знаках (слова, формулы, условные знаки). Представители этих профессий
-            создают, обрабатывают, размножают, анализируют, хранят и передают
-            различные виды информации. Так, с языковой знаковой системой связана
-            работа историка, корректора, нотариуса, паспортистки, почтальона. С
-            графическими изображениями, картами, схемами работают чертежники;
-            штурманы, разметчики. Деятельность математиков, экономистов, операторов
-            ЭВМ, метеорологов связана с математической знаковой системой. Человек
-            воспринимает знак как символ реального объекта или явления. Поэтому
-            специалисту важно уметь, с одной стороны, абстрагироваться от реальных
-            свойств предмета, обозначенных знаками, а с другой – представлять
-            характеристики реальных явлений, стоящих за знаками. Другими словами,
-            нужно обладать хорошо развитым абстрактным мышлением, а учитывая, что
-            знаки сами по себе имеют малозаметные различия, необходимы такие
-            качества в работе с ними, как сосредоточенность, устойчивость внимания,
-            усидчивость.
-          </div>
-        </div>
-        <div class="specification__card" id="form">
-          <p class="toggler">Человек-художественный образ</p>
-          <div>
-            <b>Профессионально важные качества:</b><br>
-            • Наглядно-образное мышление<br>
-            • Образная память<br>
-            • Творческое воображение<br>
-            • Эмоциональная лабильность<br>
-            • Специальные способности (художественные, музыкальные)<br>
-            Пятая группа профессий – "Человек - художественный образ".
-            Создание художественных образов, переработка, тиражирование – на это
-            направлена деятельность представителей этой группы профессий. К ней
-            относятся: художники, скульпторы, писатели, реставраторы, дизайнеры,
-            чеканщики, ювелиры, маляры, артисты.
-          </div>
-        </div>
-        <div class="specification__card" id="human">
-          <p class="toggler">Сам человек</p>
-          <div>
-            <b>Профессионально важные качества:</b><br>
-            • Коммуникативные и организаторские способности<br>
-            • Усидчивость<br>
-            • Работоспособность, физическая выносливость<br>
-            • Двигательная память<br>
-            • Наглядно-образное мышление<br>
-            Последняя группа профессий – "Сам человек". Деятельность в этой
-            области предполагает совершенствование своей внешности, тренировку
-            различных спортивных навыков, а также осуществление психологической и
-            физической подготовки к соревнованиям, турнирам, выступлениям. К
-            данному направлению деятельности относятся: тренеры, спортсмены, модели.
-          </div>
-        </div>
+    </div>
+    <div class="test__result-line">
+      <a href="#technick">Техника</a>
+      <div class="test__progres">
+        <span>1</span>
+        <div
+          class="test__progres-color-A1 test__progres-color-A1--A2"
+          style="width: 30px"
+        ></div>
+        <div class="reference">
+          <div class="reference__color-A1 reference__color-A1--A2"></div>
+          <span class="reference__title">
+                работа с таким предметом труда активно отвергается: «что угодно,
+                только не это»
+              </span>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+    <div class="test__result-line">
+      <a href="#other-p">Другие люди</a>
+      <div class="test__progres">
+        <span>1</span>
+        <div
+          class="test__progres-color-A1 test__progres-color-A1--B1"
+          style="width: 30px"
+        ></div>
+        <div class="reference">
+          <div class="reference__color-A1 reference__color-A1--B1"></div>
+          <span class="reference__title">
+                работа с таким предметом труда активно отвергается: «что угодно,
+                только не это»
+              </span>
+        </div>
+      </div>
+    </div>
+    <div class="test__result-line">
+      <a href="#sistems">Знаковые системы</a>
+      <div class="test__progres">
+        <span>1</span>
+        <div
+          class="test__progres-color-A1 test__progres-color-A1--B2"
+          style="width: 30px"
+        ></div>
+        <div class="reference">
+          <div class="reference__color-A1 reference__color-A1--B2"></div>
+          <span class="reference__title">
+                работа с таким предметом труда активно отвергается: «что угодно,
+                только не это»
+              </span>
+        </div>
+      </div>
+    </div>
+    <div class="test__result-line">
+      <a href="#form">Художественный образ</a>
+      <div class="test__progres">
+        <span>1</span>
+        <div
+          class="test__progres-color-A1 test__progres-color-A1--C1"
+          style="width: 30px"
+        ></div>
+        <div class="reference">
+          <div class="reference__color-A1 reference__color-A1--C1"></div>
+          <span class="reference__title">
+                работа с таким предметом труда активно отвергается: «что угодно,
+                только не это»
+              </span>
+        </div>
+      </div>
+    </div>
+    <div class="test__result-line">
+      <a href="#human">Сам человек</a>
+      <div class="test__progres">
+        <span>1</span>
+        <div
+          class="test__progres-color-A1 test__progres-color-A1--B1"
+          style="width: 30px"
+        ></div>
+        <div class="reference">
+          <div class="reference__color-A1 reference__color-A1--B1"></div>
+          <span class="reference__title">
+                работа с таким предметом труда активно отвергается: «что угодно,
+                только не это»
+              </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="specification">
+    <div class="specification__card" id="nature">
+      <p class="toggler">Человек-природа</p>
+      <div>
+        <b>Профессионально важные качества:</b><br>
+        • Наблюдательность<br>
+        • Пространственное воображение<br>
+        • Потребность в двигательной активности<br>
+        • Физическая выносливость<br>
+        • Организаторские способности<br>
+        • Аналитические способности<br>
+        Первая группа профессий – "Человек - природа". Она объединяет
+        все профессии, представители которых имеют дело с объектами, явлениями
+        и процессами живой и неживой природы (предмет труда – земля, вода,
+        растения и животные). Сюда включены профессии: ветеринар, агроном,
+        гидролог, овощевод, геолог, полевод, егерь, механизатор. Представителей этих профессий объединяет одно очень
+        важное качество – любовь к природе.
+        Их любовь не созерцательная, которой обладают все люди, а деятельная,
+        связанная с познанием ее законов и применением их. Поэтому, выбирая
+        профессию данного типа, очень важно разобраться, как именно Вы относитесь к природе: как к мастерской, где Вы
+        будете работать, или как к
+        месту отдыха, где хорошо погулять, подышать свежим воздухом.
+        Особенность объектов труда этого типа состоит в том, что они сложны, изменчивы, нестандартны. И растения, и
+        животные, и микроорганизмы
+        развиваются без всяких выходных и праздников, так что специалисту
+        необходимо всегда быть готовым к непредвиденным событиям.
+      </div>
+    </div>
+    <div class="specification__card" id="technick">
+      <p class="toggler">Человек-техника</p>
+      <div>
+        <b>Профессионально важные качества:</b><br>
+        • Техническое мышление<br>
+        • Переключение и концентрация внимания<br>
+        • Пространственное воображение<br>
+        • Оперативная память<br>
+        • Хорошая реакция и координация движений<br>
+        • Устойчивость нервной системы к внешним
+        раздражителям<br>
+        • Переносимость однообразия и монотонности<br>
+        Самыми распространенными являются профессии, где предметом труда
+        выступает техника. К типу "Человек - техника" относятся профессии,
+        связанные с обслуживанием техники, ее ремонтом, установкой и наладкой,
+        управлением: слесарь-ремонтник, наладчик, водитель. Сюда же входят профессии по производству и обработке
+        металлов: сталевар, токарь, слесарьмеханик. В этот же тип включают профессии по обработке неметаллических
+        изделий (ткач, столяр);
+        по переработке продуктов сельского хозяйства (пекарь,
+        кондитер); по добыче и обработке горных пород (проходчик, шахтер).
+        Техника представляет широкие возможности для новаторства, выдумки,
+        творчества. Поэтому важное значение приобретает практическое мышление.
+        Техническая фантазия, способность мысленно соединять и разъединять
+        технические объекты и их части - важные условия успехов в этой области.
+      </div>
+    </div>
+    <div class="specification__card" id="other-p">
+      <p class="toggler">Человек-человек</p>
+      <div>
+        <b>Профессионально важные качества:</b><br>
+        • Коммуникативные и организаторские способности<br>
+        • Эмпатические способности<br>
+        • Эмоциональная устойчивость<br>
+        • Устойчивость и распределение внимания<br>
+        • Доброжелательность<br>
+        • Самообладание, выдержка<br>
+        Следующий тип профессий – "Человек – другой человек". В нем
+        предметом труда специалиста является другой человек, а характерной чертой
+        деятельности – необходимость непосредственного воздействия на людей. Круг
+        таких профессий многоаспектен: педагогические – учитель, воспитатель
+        детского сада; медицинские – врач, медсестра; юридические – следователь,
+        судья, адвокат; сфера обслуживания – продавец, проводник, парикмахер;
+        культпросветработники – пианист, аккомпаниатор и т.д. Устойчивое, хорошее
+        настроение в процессе работы с людьми, потребность в общении, способность
+        мысленно ставить себя на место другого человека, быстро понимать
+        намерения и помыслы людей, хорошая память, умение находить общий язык с
+        разными людьми – вот те личные качества, которые очень важны при работе
+        по профессии этого типа.
+      </div>
+    </div>
+    <div class="specification__card" id="sistems">
+      <p class="toggler">Человек-знак</p>
+      <div>
+        <b>Профессионально важные качества:</b><br>
+        • Устойчивость, концентрация, переключение и распределение внимания<br>
+        • Абстрактное мышление<br>
+        • Образная память<br>
+        • Отсутствие выраженной экстраверсии и повышенного нейротизма<br>
+        • Аккуратность<br>
+        • Усидчивость<br>
+        Четвертая типовая группа – это профессии "Человек - знаковая
+        система". Здесь предметом труда служат не сами явления, а информация о
+        них в знаках (слова, формулы, условные знаки). Представители этих профессий
+        создают, обрабатывают, размножают, анализируют, хранят и передают
+        различные виды информации. Так, с языковой знаковой системой связана
+        работа историка, корректора, нотариуса, паспортистки, почтальона. С
+        графическими изображениями, картами, схемами работают чертежники;
+        штурманы, разметчики. Деятельность математиков, экономистов, операторов
+        ЭВМ, метеорологов связана с математической знаковой системой. Человек
+        воспринимает знак как символ реального объекта или явления. Поэтому
+        специалисту важно уметь, с одной стороны, абстрагироваться от реальных
+        свойств предмета, обозначенных знаками, а с другой – представлять
+        характеристики реальных явлений, стоящих за знаками. Другими словами,
+        нужно обладать хорошо развитым абстрактным мышлением, а учитывая, что
+        знаки сами по себе имеют малозаметные различия, необходимы такие
+        качества в работе с ними, как сосредоточенность, устойчивость внимания,
+        усидчивость.
+      </div>
+    </div>
+    <div class="specification__card" id="form">
+      <p class="toggler">Человек-художественный образ</p>
+      <div>
+        <b>Профессионально важные качества:</b><br>
+        • Наглядно-образное мышление<br>
+        • Образная память<br>
+        • Творческое воображение<br>
+        • Эмоциональная лабильность<br>
+        • Специальные способности (художественные, музыкальные)<br>
+        Пятая группа профессий – "Человек - художественный образ".
+        Создание художественных образов, переработка, тиражирование – на это
+        направлена деятельность представителей этой группы профессий. К ней
+        относятся: художники, скульпторы, писатели, реставраторы, дизайнеры,
+        чеканщики, ювелиры, маляры, артисты.
+      </div>
+    </div>
+    <div class="specification__card" id="human">
+      <p class="toggler">Сам человек</p>
+      <div>
+        <b>Профессионально важные качества:</b><br>
+        • Коммуникативные и организаторские способности<br>
+        • Усидчивость<br>
+        • Работоспособность, физическая выносливость<br>
+        • Двигательная память<br>
+        • Наглядно-образное мышление<br>
+        Последняя группа профессий – "Сам человек". Деятельность в этой
+        области предполагает совершенствование своей внешности, тренировку
+        различных спортивных навыков, а также осуществление психологической и
+        физической подготовки к соревнованиям, турнирам, выступлениям. К
+        данному направлению деятельности относятся: тренеры, спортсмены, модели.
+      </div>
+    </div>
+  </div>
+  </div>
+</main>
+</body>
 </html>

@@ -33,12 +33,13 @@
   &--bordered > tfoot > tr > th,
   &--bordered > thead > tr > td,
   &--bordered > thead > tr > th {
-    border: 1px solid @line;
-    border-top-color: @line;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
     text-align: center;
+    outline: 1px solid @line;
+  }
+
+  &--bordered > thead > tr > td,
+  &--bordered > thead > tr > th {
+    background-color: @wite;
   }
 
   &__column-day--budget,
@@ -98,12 +99,12 @@
     fill: @additional;
   }
 
-  .table__column-blocks {
+  &__column-blocks {
     display: none;
     flex-direction: column;
   }
 
-  .table__block-cell {
+  &__block-cell {
     padding: 7px;
     border: 1px solid #464e6a6b;
     border-top-color: #464e6a6b;
@@ -116,11 +117,17 @@
     line-height: @fl14;
   }
 
-  .table__special-cell {
+  &__special-cell {
     font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  & thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
 
   /*подсветка разных факультетов*/
@@ -215,14 +222,11 @@
     width: 100%;
 
     &__column-spec {
-      // border-left: 3px solid #d0d0d0;
-      // border-bottom: 1px solid #d0d0d0;
-      // position: absolute;
-      // width: @column-fixed-width;
-      // left: 0;
-      // top: auto;
-      // line-height: 1.1;
-      display: none;
+      position: sticky;
+      left: 0;
+      z-index: 10;
+      background-color: white;
+      /*display: none;*/
     }
 
     & > thead &__column-spec {
@@ -244,22 +248,15 @@
   }
 
   .table__column-blocks {
-    display: flex;
+   /* display: flex;*/
+    display: none;
   }
 
-  // th.table__column-spec {
-  //   height: 70px;
-  // }
-
   .scroll {
-    // width: calc(100% - @column-fixed-width);
-    // width: 100%;
-    // margin-left: @column-fixed-width;
     overflow: auto;
   }
 
   .table-wrapper {
-    // position: relative;
     display: flex;
   }
 

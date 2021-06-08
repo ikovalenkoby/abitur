@@ -18,7 +18,8 @@
     color: @icon2;
   }
 
-  & a::after {
+  & a::after,
+  & span::after {
     content: "";
     height: 10px;
     width: 5px;
@@ -43,16 +44,28 @@
   & span {
     font-size: @f14;
     color: @additional;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+  }
+
+  & span:last-child::after {
+    content: "";
+    height: 0;
+    width: 0;
+
   }
 }
 
 @media screen and (max-width: 767px) {
   .breadcrumbs {
     margin-bottom: 20px;
+    flex-wrap: wrap;
 
     & a,
     & span {
       font-size: @f12;
+      padding-bottom: 5px;
     }
   }
 }

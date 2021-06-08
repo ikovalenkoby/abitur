@@ -2,6 +2,7 @@
   position: relative;
   padding-left: 28px;
   max-width: 332px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -19,5 +20,9 @@
 .test__answer-radio:checked + .test__answer-title::before {
   background-color: @text;
   background-clip: content-box;
-  padding: 3px;
+  padding: 2px;
+}
+
+.test__answer-title:hover {
+
 }

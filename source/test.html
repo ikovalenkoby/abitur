@@ -1,1154 +1,1268 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; CHARSET=windows-1251"><meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="/cms/js/fancybox/fancybox.css">
-<script src="/cms/js/jquery-1.9.1.min.js"></script>
-<script src="/cms/js/fancybox/fancybox.js"></script>
-<script defer src="/online/layouts/501/js/script.js"></script>
-    <script type="text/javascript" src="/online/layouts/501/js/jssor.slider.mini.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; CHARSET=windows-1251">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/cms/js/fancybox/fancybox.css">
+  <script src="/cms/js/jquery-1.9.1.min.js"></script>
+  <script src="/cms/js/fancybox/fancybox.js"></script>
+  <script defer src="/online/layouts/501/js/script.js"></script>
+  <script type="text/javascript" src="/online/layouts/501/js/jssor.slider.mini.js"></script>
 
-    <script type="text/javascript" language="JavaScript" src="/cms/js/common_window.js"></script>
-<!-- 
-<script type="text/javascript" language="JavaScript" src="/cms/js/online_edit.js"></script>
-<script type="text/javascript">
-var language = 1;
-document.onload = on_load_();
-function on_load_()
-{
-	on_load_scroll_to_link();
-}
-function on_load_scroll_to_link()
-{
+  <script type="text/javascript" language="JavaScript" src="/cms/js/common_window.js"></script>
+  <!--
+  <script type="text/javascript" language="JavaScript" src="/cms/js/online_edit.js"></script>
+  <script type="text/javascript">
+  var language = 1;
+  document.onload = on_load_();
+  function on_load_()
+  {
+    on_load_scroll_to_link();
+  }
+  function on_load_scroll_to_link()
+  {
 
-}
-</script> --><!-- ??? -->
+  }
+  </script> --><!-- ??? -->
 
-	<TITLE>Р­Р»РµРєС‚СЂРѕРЅРЅС‹Р№ Р°Р±РёС‚СѓСЂРёРµРЅС‚ Р‘Р“РЈРР  - Р”РёС„С„РµСЂРµРЅС†РёР°Р»СЊРЅРѕ-РґРёР°РіРЅРѕСЃС‚РёС‡РµСЃРєРёР№ РѕРїСЂРѕСЃРЅРёРє (Р”Р”Рћ) Р•.Рђ.РљР»РёРјРѕРІР°</TITLE>
-	<meta http-equiv="Description" content="">
-	<meta http-equiv="Keywords" content="">
-	<script>
-        $(document).ready(function () {
-            var countSTR = 7;
-            $('ul.menu__block').each(function (index, dateElement) {
-                var dateEl = $(dateElement);
-                var childrencount = dateEl.attr("childrencount");
-                if (childrencount>countSTR) {
-                    var htmlEl = '<div class="menu__wrapper">';
-                    var flag = 1;
-                    dateEl.find('ul.menu__list').each(function (index1, dateElement1) {
-                        var dateEl1 = $(dateElement1);
-                        var counter = dateEl1.attr("counter");
-                        //if (counter%countSTR == 0 && countSTR*flag != childrencount) {
-                        if (counter>countSTR*flag) {
-                            //dateEl1.after('</div><div class="menu__wrapper">');
-                            htmlEl = htmlEl + '</div><div class="menu__wrapper"><ul class="menu__list" counter="'+counter+'">' + dateEl1.html() + '</ul>';
-                            flag = flag + 1;
-                        } else {
-                            htmlEl = htmlEl + '<ul class="menu__list" counter="'+counter+'">' + dateEl1.html() + '</ul>';
-                        }
-                    });
-                    htmlEl = htmlEl+'</div>';
-                    dateEl.find('div.menu__hidden-box').html(htmlEl);
-                }
-            });
-        });
-    </script>
+  <TITLE>Электронный абитуриент БГУИР - Дифференциально-диагностический опросник (ДДО) Е.А.Климова</TITLE>
+  <meta http-equiv="Description" content="">
+  <meta http-equiv="Keywords" content="">
+  <script>
+    $(document).ready(function () {
+      var countSTR = 7;
+      $('ul.menu__block').each(function (index, dateElement) {
+        var dateEl = $(dateElement);
+        var childrencount = dateEl.attr("childrencount");
+        if (childrencount > countSTR) {
+          var htmlEl = '<div class="menu__wrapper">';
+          var flag = 1;
+          dateEl.find('ul.menu__list').each(function (index1, dateElement1) {
+            var dateEl1 = $(dateElement1);
+            var counter = dateEl1.attr("counter");
+            //if (counter%countSTR == 0 && countSTR*flag != childrencount) {
+            if (counter > countSTR * flag) {
+              //dateEl1.after('</div><div class="menu__wrapper">');
+              htmlEl = htmlEl + '</div><div class="menu__wrapper"><ul class="menu__list" counter="' + counter + '">' + dateEl1.html() + '</ul>';
+              flag = flag + 1;
+            } else {
+              htmlEl = htmlEl + '<ul class="menu__list" counter="' + counter + '">' + dateEl1.html() + '</ul>';
+            }
+          });
+          htmlEl = htmlEl + '</div>';
+          dateEl.find('div.menu__hidden-box').html(htmlEl);
+        }
+      });
+    });
+  </script>
 
-    </head>
+</head>
 <body class="body">
 <header class="header">
-    <div class="wrapper header__wrapper">
-        <a href="/">
-            <img class="logo" src="/m/12_113227_0_54837.svg" hspace="0"   vspace="0" border="0" alt="To main page">
-            </a>
-		
-         <script type="text/javascript" language="JavaScript">
+  <div class="wrapper header__wrapper">
+    <a href="/">
+      <img class="logo" src="/m/12_113227_0_54837.svg" hspace="0" vspace="0" border="0" alt="To main page">
+    </a>
 
-            String.prototype.trim = function () {
-                return this.replace(/^\s*/, "").replace(/\s*$/, "");
-            };
+    <script type="text/javascript" language="JavaScript">
 
-            function checkSearch(){
-                var s = String (document.frm.what_find.value);
-                if(document.frm.what_find.value==''){
-                    window.alert('Р—Р°РїРѕР»РЅРёС‚Рµ РїРѕР»Рµ РїРѕРёСЃРєР°!!!');
-                    return false;
-                } else {
-                    if(s.trim()==''){
-                        window.alert('Р—Р°РїРѕР»РЅРёС‚Рµ РїРѕР»Рµ РїРѕРёСЃРєР° С‚РµРєСЃС‚РѕРј!!!');
-                        return false;
-                    }
-                }
-                return true;
-            }
+      String.prototype.trim = function () {
+        return this.replace(/^\s*/, "").replace(/\s*$/, "");
+      };
 
-        </script>
-        <form class="search-form header__search-form" action="/online/search/search_g_abitur.jsp" method="get" accept-charset="utf-8">
-            <!-- <input
-                    class="search-form__input h4"
-                    type="text"
-                    placeholder="РџРѕРёСЃРє"
-            /> -->
-            <input type="hidden" name="resID" value="113227">
-            <input type="hidden" name="lang" value="ru">
-            <input type="hidden" name="menuItemID" value="-1">
-            <input type="hidden" name="noshow" value="1">
-            <input class="search-form__input h4" placeholder="РџРѕРёСЃРє" name="q" OnClick="this.value=''" OnSelect="this.value=''">
-            <!--<input value='' name="img" class="button search-form__button" type="submit" >-->
+      function checkSearch() {
+        var s = String(document.frm.what_find.value);
+        if (document.frm.what_find.value == '') {
+          window.alert('Заполните поле поиска!!!');
+          return false;
+        } else {
+          if (s.trim() == '') {
+            window.alert('Заполните поле поиска текстом!!!');
+            return false;
+          }
+        }
+        return true;
+      }
 
-             <button class="button search-form__button">
-                <svg class="search-form__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <use xlink:href="/online/layouts/501//img/search_sprite.svg#search"></use>
-                </svg>
-            </button>
-        </form>
+    </script>
+    <form class="search-form header__search-form" action="/online/search/search_g_abitur.jsp" method="get"
+          accept-charset="utf-8">
+      <input type="hidden" name="resID" value="113227">
+      <input type="hidden" name="lang" value="ru">
+      <input type="hidden" name="menuItemID" value="-1">
+      <input type="hidden" name="noshow" value="1">
+      <input class="search-form__input h4" placeholder="Поиск" name="q" OnClick="this.value=''" OnSelect="this.value=''">
+      <!--<input value='' name="img" class="button search-form__button" type="submit" >-->
 
-        <button class="button button--corner header__links">
-            РџРћРџРЈР›РЇР РќР«Р• РЎРЎР«Р›РљР
-            <div class="header__links-circle">
-                <img src="/online/layouts/501//img/arrow.svg" class="header__links-arrow"/>
-            </div>
-        </button>
+      <button class="button search-form__button">
+        <svg class="search-form__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="/online/layouts/501//img/search_sprite.svg#search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <button class="button button--corner header__links">
+      ПОПУЛЯРНЫЕ ССЫЛКИ
+      <div class="header__links-circle">
+        <img src="/online/layouts/501//img/arrow.svg" class="header__links-arrow"/>
+      </div>
+    </button>
+  </div>
+
+  <nav class="menu">
+    <div class="wrapper header__wrapper--menu">
+      <ul class="menu__block" id="m1" childrenCount="16">
+        <span>Об университете</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list" counter="1">
+              <span class="menu__list-title"><a href="/10-prichin-vybrat-bguir"
+                                                target="_self">10 причин выбрать БГУИР</a></span>
+            </ul>
+            <ul class="menu__list" counter="2">
+              <span class="menu__list-title"><a href="/mrti-bguir" target="_self">МРТИ-БГУИР</a></span>
+            </ul>
+            <ul class="menu__list" counter="3">
+              <span class="menu__list-title"><a href="/dopolnitelnaya-voennaya-spetsialnost" target="_self">Дополнительная военная специальность</a></span>
+            </ul>
+            <ul class="menu__list" counter="4">
+              <span class="menu__list-title"><a href="/skhema-raspolozheniya-korpusov" target="_self">Расположение корпусов</a></span>
+            </ul>
+            <ul class="menu__list" counter="5">
+              <span class="menu__list-title"><a href="/fakultety-i-spetsialnosti" target="_self">Факультеты и специальности</a></span>
+              <li class="menu__item">
+                <a href="/ochnaya-dnevnaya-forma-obucheniya" target="_self">Специальности дневной формы</a>
+              </li>
+              <li class="menu__item">
+                <a href="/zaochnaya-forma-obucheniya" target="_self">Специальности заочной формы</a>
+              </li>
+              <li class="menu__item">
+                <a href="/distantsionnoe-obuchenie" target="_self">Специальности дистанционной формы</a>
+              </li>
+              <li class="menu__item">
+                <a href="/sokraschennaya-forma-obucheniya" target="_self">Сокращенная форма обучения</a>
+              </li>
+              <li class="menu__item">
+                <a href="/vtoroe-vysshee-obrazovanie" target="_self">Второе высшее образование</a>
+              </li>
+            </ul>
+            <ul class="menu__list" counter="11">
+              <span class="menu__list-title"><a href="/studencheskaya-zhizn"
+                                                target="_self">Студенческая жизнь</a></span>
+              <li class="menu__item">
+                <a href="/kulturnaya-zhizn" target="_self">Культурная жизнь</a>
+              </li>
+              <li class="menu__item">
+                <a href="/obschezhitiya" target="_self">Общежития</a>
+              </li>
+              <li class="menu__item">
+                <a href="/uchebnyy-protsess" target="_self">Учебный процесс</a>
+              </li>
+              <li class="menu__item">
+                <a href="/sotsialnaya-podderzhka-studentov" target="_self">Социальная поддержка студентов</a>
+              </li>
+              <li class="menu__item">
+                <a href="/sportivnaya-zhizn" target="_self">Спортивная жизнь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block" id="m2" childrenCount="1">
+        <span>Подготовка к поступлению</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list" counter="1">
+              <span class="menu__list-title"><a href="/kursy-k-podgotovke-k-vstupitelnym-ispytaniyam" target="_self">Подготовительные курсы</a></span>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block" id="m3" childrenCount="5">
+        <span>Централизованное тестирование</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list" counter="1">
+              <span class="menu__list-title"><a href="/grafik-tsentralizovannogo-testirovaniya-2021" target="_self">График проведения ЦТ</a></span>
+            </ul>
+            <ul class="menu__list" counter="2">
+              <span class="menu__list-title"><a href="/tsentralizovannoe-testirovanie-2021" target="_self">График работы пункта регистрации</a></span>
+            </ul>
+            <ul class="menu__list" counter="3">
+              <span class="menu__list-title"><a href="/poryadok-registratsii-na-tst-2021" target="_self">Порядок регистрации на ЦТ</a></span>
+            </ul>
+            <ul class="menu__list" counter="4">
+              <span class="menu__list-title"><a href="/registratsiya-inostrannykh-grazhdan-na-tst-2021" target="_self">Регистрация иностранных граждан</a></span>
+            </ul>
+            <ul class="menu__list" counter="5">
+              <span class="menu__list-title"><a href="/vydacha-sertifikatov-tst-2021" target="_self">Выдача сертификатов ЦТ</a></span>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block" id="m4" childrenCount="16">
+        <span>Приёмная кампания</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list" counter="1">
+              <span class="menu__list-title"><a href="https://www.bsuir.by/ru/magistratura/dlya-postupayuschikh"
+                                                target="_blank">Поступление в магистратуру</a></span>
+            </ul>
+            <ul class="menu__list" counter="2">
+              <span class="menu__list-title"><a
+                href="https://www.bsuir.by/online/showpage.jsp?PageID=94384&amp;resID=100229&amp;lang=ru&amp;menuItemID=121294"
+                target="_blank">Иностранным гражданам</a></span>
+            </ul>
+            <ul class="menu__list" counter="3">
+              <span class="menu__list-title"><a href="/algoritm-abiturienta"
+                                                target="_self">Алгоритм абитуриента</a></span>
+              <li class="menu__item">
+                <a href="/pervaya-stupen-rb-polnyy-srok" target="_self">Полный срок обучения</a>
+              </li>
+              <li class="menu__item">
+                <a href="/pervaya-stupen-rb-sokraschennyy-srok" target="_self">Сокращенный срок обучения</a>
+              </li>
+            </ul>
+            <ul class="menu__list" counter="6">
+              <span class="menu__list-title"><a href="/obschaya-informatsiya" target="_self">Общая информация</a></span>
+              <li class="menu__item">
+                <a href="/pravila-priema" target="_self">Правила приёма</a>
+              </li>
+              <li class="menu__item">
+                <a href="/poryadok-priema-v-bguir" target="_self">Порядок приёма</a>
+              </li>
+            </ul>
+            <ul class="menu__list" counter="9">
+              <span class="menu__list-title"><a href="/sroki-provedeniya-vstupitelnoy-kampanii" target="_self">Вступительная кампания</a></span>
+              <li class="menu__item">
+                <a href="/plan-priema-2021" target="_self">План приёма в БГУИР</a>
+              </li>
+              <li class="menu__item">
+                <a href="/sroki-provedeniya-vstupitelnoy-kampanii" target="_self">Сроки проведения вступительной
+                  кампании</a>
+              </li>
+              <li class="menu__item">
+                <a href="/prokhodnye-bally" target="_self">Проходные баллы прошлых лет</a>
+              </li>
+              <li class="menu__item">
+                <a href="/dokumenty-dlya-postupleniya" target="_self">Документы для поступления</a>
+              </li>
+            </ul>
+            <ul class="menu__list" counter="14">
+              <span class="menu__list-title"><a href="/priemnaya-komissiya" target="_self">Приёмная комиссия</a></span>
+              <li class="menu__item">
+                <a href="/kontakty-priyomnoy-komissii" target="_self">Контакты отдела сопровождения приемной
+                  комиссии</a>
+              </li>
+              <li class="menu__item">
+                <a href="/chasto-zadavaemye-voprosy" target="_self">Часто задаваемые вопросы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <ul class="menu__block" id="m5" childrenCount="2">
+        <span>Профессиональная ориентация</span>
+        <div class="menu__hidden-box">
+          <div class="menu__wrapper">
+            <ul class="menu__list" counter="1">
+              <span class="menu__list-title"><a href="https://abitur.bsuir.by/ddo/test.jsp" target="_blank">Дифференциально-диагностический опросник</a></span>
+            </ul>
+            <ul class="menu__list" counter="2">
+              <span class="menu__list-title"><a href="/online-vebinary" target="_self">On-line вебинары</a></span>
+            </ul>
+          </div>
+        </div>
+      </ul>
     </div>
 
-    <nav class="menu">
-        <div class="wrapper header__wrapper--menu">
-			<ul class="menu__block" id="m1" childrenCount="16">
-<span>РћР± СѓРЅРёРІРµСЂСЃРёС‚РµС‚Рµ</span>
-<div class="menu__hidden-box">
-<div class="menu__wrapper">
-<ul class="menu__list" counter="1">
-<span class="menu__list-title"><a href="/10-prichin-vybrat-bguir" target="_self">10 РїСЂРёС‡РёРЅ РІС‹Р±СЂР°С‚СЊ Р‘Р“РЈРР </a></span>
-</ul>
-<ul class="menu__list" counter="2">
-<span class="menu__list-title"><a href="/mrti-bguir" target="_self">РњР РўР-Р‘Р“РЈРР </a></span>
-</ul>
-<ul class="menu__list" counter="3">
-<span class="menu__list-title"><a href="/dopolnitelnaya-voennaya-spetsialnost" target="_self">Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РІРѕРµРЅРЅР°СЏ СЃРїРµС†РёР°Р»СЊРЅРѕСЃС‚СЊ</a></span>
-</ul>
-<ul class="menu__list" counter="4">
-<span class="menu__list-title"><a href="/skhema-raspolozheniya-korpusov" target="_self">Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ РєРѕСЂРїСѓСЃРѕРІ</a></span>
-</ul>
-<ul class="menu__list" counter="5">
-<span class="menu__list-title"><a href="/fakultety-i-spetsialnosti" target="_self">Р¤Р°РєСѓР»СЊС‚РµС‚С‹ Рё СЃРїРµС†РёР°Р»СЊРЅРѕСЃС‚Рё</a></span>
-<li class="menu__item">
-<a href="/ochnaya-dnevnaya-forma-obucheniya" target="_self">РЎРїРµС†РёР°Р»СЊРЅРѕСЃС‚Рё РґРЅРµРІРЅРѕР№ С„РѕСЂРјС‹</a>
-</li>
-<li class="menu__item">
-<a href="/zaochnaya-forma-obucheniya" target="_self">РЎРїРµС†РёР°Р»СЊРЅРѕСЃС‚Рё Р·Р°РѕС‡РЅРѕР№ С„РѕСЂРјС‹</a>
-</li>
-<li class="menu__item">
-<a href="/distantsionnoe-obuchenie" target="_self">РЎРїРµС†РёР°Р»СЊРЅРѕСЃС‚Рё РґРёСЃС‚Р°РЅС†РёРѕРЅРЅРѕР№ С„РѕСЂРјС‹</a>
-</li>
-<li class="menu__item">
-<a href="/sokraschennaya-forma-obucheniya" target="_self">РЎРѕРєСЂР°С‰РµРЅРЅР°СЏ С„РѕСЂРјР° РѕР±СѓС‡РµРЅРёСЏ</a>
-</li>
-<li class="menu__item">
-<a href="/vtoroe-vysshee-obrazovanie" target="_self">Р’С‚РѕСЂРѕРµ РІС‹СЃС€РµРµ РѕР±СЂР°Р·РѕРІР°РЅРёРµ</a>
-</li>
-</ul>
-<ul class="menu__list" counter="11">
-<span class="menu__list-title"><a href="/studencheskaya-zhizn" target="_self">РЎС‚СѓРґРµРЅС‡РµСЃРєР°СЏ Р¶РёР·РЅСЊ</a></span>
-<li class="menu__item">
-<a href="/kulturnaya-zhizn" target="_self">РљСѓР»СЊС‚СѓСЂРЅР°СЏ Р¶РёР·РЅСЊ</a>
-</li>
-<li class="menu__item">
-<a href="/obschezhitiya" target="_self">РћР±С‰РµР¶РёС‚РёСЏ</a>
-</li>
-<li class="menu__item">
-<a href="/uchebnyy-protsess" target="_self">РЈС‡РµР±РЅС‹Р№ РїСЂРѕС†РµСЃСЃ</a>
-</li>
-<li class="menu__item">
-<a href="/sotsialnaya-podderzhka-studentov" target="_self">РЎРѕС†РёР°Р»СЊРЅР°СЏ РїРѕРґРґРµСЂР¶РєР° СЃС‚СѓРґРµРЅС‚РѕРІ</a>
-</li>
-<li class="menu__item">
-<a href="/sportivnaya-zhizn" target="_self">РЎРїРѕСЂС‚РёРІРЅР°СЏ Р¶РёР·РЅСЊ</a>
-</li>
-</ul>
-</div>
-</div>
-</ul>
-<ul class="menu__block" id="m2" childrenCount="1">
-<span>РџРѕРґРіРѕС‚РѕРІРєР° Рє РїРѕСЃС‚СѓРїР»РµРЅРёСЋ</span>
-<div class="menu__hidden-box">
-<div class="menu__wrapper">
-<ul class="menu__list" counter="1">
-<span class="menu__list-title"><a href="/kursy-k-podgotovke-k-vstupitelnym-ispytaniyam" target="_self">РџРѕРґРіРѕС‚РѕРІРёС‚РµР»СЊРЅС‹Рµ РєСѓСЂСЃС‹</a></span>
-</ul>
-</div>
-</div>
-</ul>
-<ul class="menu__block" id="m3" childrenCount="5">
-<span>Р¦РµРЅС‚СЂР°Р»РёР·РѕРІР°РЅРЅРѕРµ С‚РµСЃС‚РёСЂРѕРІР°РЅРёРµ</span>
-<div class="menu__hidden-box">
-<div class="menu__wrapper">
-<ul class="menu__list" counter="1">
-<span class="menu__list-title"><a href="/grafik-tsentralizovannogo-testirovaniya-2021" target="_self">Р“СЂР°С„РёРє РїСЂРѕРІРµРґРµРЅРёСЏ Р¦Рў</a></span>
-</ul>
-<ul class="menu__list" counter="2">
-<span class="menu__list-title"><a href="/tsentralizovannoe-testirovanie-2021" target="_self">Р“СЂР°С„РёРє СЂР°Р±РѕС‚С‹ РїСѓРЅРєС‚Р° СЂРµРіРёСЃС‚СЂР°С†РёРё</a></span>
-</ul>
-<ul class="menu__list" counter="3">
-<span class="menu__list-title"><a href="/poryadok-registratsii-na-tst-2021" target="_self">РџРѕСЂСЏРґРѕРє СЂРµРіРёСЃС‚СЂР°С†РёРё РЅР° Р¦Рў</a></span>
-</ul>
-<ul class="menu__list" counter="4">
-<span class="menu__list-title"><a href="/registratsiya-inostrannykh-grazhdan-na-tst-2021" target="_self">Р РµРіРёСЃС‚СЂР°С†РёСЏ РёРЅРѕСЃС‚СЂР°РЅРЅС‹С… РіСЂР°Р¶РґР°РЅ</a></span>
-</ul>
-<ul class="menu__list" counter="5">
-<span class="menu__list-title"><a href="/vydacha-sertifikatov-tst-2021" target="_self">Р’С‹РґР°С‡Р° СЃРµСЂС‚РёС„РёРєР°С‚РѕРІ Р¦Рў</a></span>
-</ul>
-</div>
-</div>
-</ul>
-<ul class="menu__block" id="m4" childrenCount="16">
-<span>РџСЂРёС‘РјРЅР°СЏ РєР°РјРїР°РЅРёСЏ</span>
-<div class="menu__hidden-box">
-<div class="menu__wrapper">
-<ul class="menu__list" counter="1">
-<span class="menu__list-title"><a href="https://www.bsuir.by/ru/magistratura/dlya-postupayuschikh" target="_blank">РџРѕСЃС‚СѓРїР»РµРЅРёРµ РІ РјР°РіРёСЃС‚СЂР°С‚СѓСЂСѓ</a></span>
-</ul>
-<ul class="menu__list" counter="2">
-<span class="menu__list-title"><a href="https://www.bsuir.by/online/showpage.jsp?PageID=94384&amp;resID=100229&amp;lang=ru&amp;menuItemID=121294" target="_blank">РРЅРѕСЃС‚СЂР°РЅРЅС‹Рј РіСЂР°Р¶РґР°РЅР°Рј</a></span>
-</ul>
-<ul class="menu__list" counter="3">
-<span class="menu__list-title"><a href="/algoritm-abiturienta" target="_self">РђР»РіРѕСЂРёС‚Рј Р°Р±РёС‚СѓСЂРёРµРЅС‚Р°</a></span>
-<li class="menu__item">
-<a href="/pervaya-stupen-rb-polnyy-srok" target="_self">РџРѕР»РЅС‹Р№ СЃСЂРѕРє РѕР±СѓС‡РµРЅРёСЏ</a>
-</li>
-<li class="menu__item">
-<a href="/pervaya-stupen-rb-sokraschennyy-srok" target="_self">РЎРѕРєСЂР°С‰РµРЅРЅС‹Р№ СЃСЂРѕРє РѕР±СѓС‡РµРЅРёСЏ</a>
-</li>
-</ul>
-<ul class="menu__list" counter="6">
-<span class="menu__list-title"><a href="/obschaya-informatsiya" target="_self">РћР±С‰Р°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ</a></span>
-<li class="menu__item">
-<a href="/pravila-priema" target="_self">РџСЂР°РІРёР»Р° РїСЂРёС‘РјР°</a>
-</li>
-<li class="menu__item">
-<a href="/poryadok-priema-v-bguir" target="_self">РџРѕСЂСЏРґРѕРє РїСЂРёС‘РјР°</a>
-</li>
-</ul>
-<ul class="menu__list" counter="9">
-<span class="menu__list-title"><a href="/sroki-provedeniya-vstupitelnoy-kampanii" target="_self">Р’СЃС‚СѓРїРёС‚РµР»СЊРЅР°СЏ РєР°РјРїР°РЅРёСЏ</a></span>
-<li class="menu__item">
-<a href="/plan-priema-2021" target="_self">РџР»Р°РЅ РїСЂРёС‘РјР° РІ Р‘Р“РЈРР </a>
-</li>
-<li class="menu__item">
-<a href="/sroki-provedeniya-vstupitelnoy-kampanii" target="_self">РЎСЂРѕРєРё РїСЂРѕРІРµРґРµРЅРёСЏ РІСЃС‚СѓРїРёС‚РµР»СЊРЅРѕР№ РєР°РјРїР°РЅРёРё</a>
-</li>
-<li class="menu__item">
-<a href="/prokhodnye-bally" target="_self">РџСЂРѕС…РѕРґРЅС‹Рµ Р±Р°Р»Р»С‹ РїСЂРѕС€Р»С‹С… Р»РµС‚</a>
-</li>
-<li class="menu__item">
-<a href="/dokumenty-dlya-postupleniya" target="_self">Р”РѕРєСѓРјРµРЅС‚С‹ РґР»СЏ РїРѕСЃС‚СѓРїР»РµРЅРёСЏ</a>
-</li>
-</ul>
-<ul class="menu__list" counter="14">
-<span class="menu__list-title"><a href="/priemnaya-komissiya" target="_self">РџСЂРёС‘РјРЅР°СЏ РєРѕРјРёСЃСЃРёСЏ</a></span>
-<li class="menu__item">
-<a href="/kontakty-priyomnoy-komissii" target="_self">РљРѕРЅС‚Р°РєС‚С‹ РѕС‚РґРµР»Р° СЃРѕРїСЂРѕРІРѕР¶РґРµРЅРёСЏ РїСЂРёРµРјРЅРѕР№ РєРѕРјРёСЃСЃРёРё</a>
-</li>
-<li class="menu__item">
-<a href="/chasto-zadavaemye-voprosy" target="_self">Р§Р°СЃС‚Рѕ Р·Р°РґР°РІР°РµРјС‹Рµ РІРѕРїСЂРѕСЃС‹</a>
-</li>
-</ul>
-</div>
-</div>
-</ul>
-<ul class="menu__block" id="m5" childrenCount="2">
-<span>РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅР°СЏ РѕСЂРёРµРЅС‚Р°С†РёСЏ</span>
-<div class="menu__hidden-box">
-<div class="menu__wrapper">
-<ul class="menu__list" counter="1">
-<span class="menu__list-title"><a href="https://abitur.bsuir.by/ddo/test.jsp" target="_blank">Р”РёС„С„РµСЂРµРЅС†РёР°Р»СЊРЅРѕ-РґРёР°РіРЅРѕСЃС‚РёС‡РµСЃРєРёР№ РѕРїСЂРѕСЃРЅРёРє</a></span>
-</ul>
-<ul class="menu__list" counter="2">
-<span class="menu__list-title"><a href="/online-vebinary" target="_self">On-line РІРµР±РёРЅР°СЂС‹</a></span>
-</ul>
-</div>
-</div>
-</ul>
-</div>
-
-        <div class="wrapper header__wrapper--mobile">
-            <button class="button menu__btn" id="m1"><span class="menu__btn-text">РћР± СѓРЅРёРІРµСЂСЃРёС‚РµС‚Рµ<img class="menu__img" src="/online/layouts/501/img/arrow.svg"></span></button>
-<div class="menu__mobile-block hidden">
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/10-prichin-vybrat-bguir" target="_self">10 РїСЂРёС‡РёРЅ РІС‹Р±СЂР°С‚СЊ Р‘Р“РЈРР </a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/mrti-bguir" target="_self">РњР РўР-Р‘Р“РЈРР </a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/dopolnitelnaya-voennaya-spetsialnost" target="_self">Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РІРѕРµРЅРЅР°СЏ СЃРїРµС†РёР°Р»СЊРЅРѕСЃС‚СЊ</a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/skhema-raspolozheniya-korpusov" target="_self">Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ РєРѕСЂРїСѓСЃРѕРІ</a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/fakultety-i-spetsialnosti" target="_self">Р¤Р°РєСѓР»СЊС‚РµС‚С‹ Рё СЃРїРµС†РёР°Р»СЊРЅРѕСЃС‚Рё</a>
-<li class="menu__item menu__item--mobile">
-<a href="/ochnaya-dnevnaya-forma-obucheniya" target="_self">РЎРїРµС†РёР°Р»СЊРЅРѕСЃС‚Рё РґРЅРµРІРЅРѕР№ С„РѕСЂРјС‹</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/zaochnaya-forma-obucheniya" target="_self">РЎРїРµС†РёР°Р»СЊРЅРѕСЃС‚Рё Р·Р°РѕС‡РЅРѕР№ С„РѕСЂРјС‹</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/distantsionnoe-obuchenie" target="_self">РЎРїРµС†РёР°Р»СЊРЅРѕСЃС‚Рё РґРёСЃС‚Р°РЅС†РёРѕРЅРЅРѕР№ С„РѕСЂРјС‹</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/sokraschennaya-forma-obucheniya" target="_self">РЎРѕРєСЂР°С‰РµРЅРЅР°СЏ С„РѕСЂРјР° РѕР±СѓС‡РµРЅРёСЏ</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/vtoroe-vysshee-obrazovanie" target="_self">Р’С‚РѕСЂРѕРµ РІС‹СЃС€РµРµ РѕР±СЂР°Р·РѕРІР°РЅРёРµ</a>
-</li>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/studencheskaya-zhizn" target="_self">РЎС‚СѓРґРµРЅС‡РµСЃРєР°СЏ Р¶РёР·РЅСЊ</a>
-<li class="menu__item menu__item--mobile">
-<a href="/kulturnaya-zhizn" target="_self">РљСѓР»СЊС‚СѓСЂРЅР°СЏ Р¶РёР·РЅСЊ</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/obschezhitiya" target="_self">РћР±С‰РµР¶РёС‚РёСЏ</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/uchebnyy-protsess" target="_self">РЈС‡РµР±РЅС‹Р№ РїСЂРѕС†РµСЃСЃ</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/sotsialnaya-podderzhka-studentov" target="_self">РЎРѕС†РёР°Р»СЊРЅР°СЏ РїРѕРґРґРµСЂР¶РєР° СЃС‚СѓРґРµРЅС‚РѕРІ</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/sportivnaya-zhizn" target="_self">РЎРїРѕСЂС‚РёРІРЅР°СЏ Р¶РёР·РЅСЊ</a>
-</li>
-</ul>
-</div>
-<button class="button menu__btn" id="m2"><span class="menu__btn-text">РџРѕРґРіРѕС‚РѕРІРєР° Рє РїРѕСЃС‚СѓРїР»РµРЅРёСЋ<img class="menu__img" src="/online/layouts/501/img/arrow.svg"></span></button>
-<div class="menu__mobile-block hidden">
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/kursy-k-podgotovke-k-vstupitelnym-ispytaniyam" target="_self">РџРѕРґРіРѕС‚РѕРІРёС‚РµР»СЊРЅС‹Рµ РєСѓСЂСЃС‹</a>
-</ul>
-</div>
-<button class="button menu__btn" id="m3"><span class="menu__btn-text">Р¦РµРЅС‚СЂР°Р»РёР·РѕРІР°РЅРЅРѕРµ С‚РµСЃС‚РёСЂРѕРІР°РЅРёРµ<img class="menu__img" src="/online/layouts/501/img/arrow.svg"></span></button>
-<div class="menu__mobile-block hidden">
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/grafik-tsentralizovannogo-testirovaniya-2021" target="_self">Р“СЂР°С„РёРє РїСЂРѕРІРµРґРµРЅРёСЏ Р¦Рў</a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/tsentralizovannoe-testirovanie-2021" target="_self">Р“СЂР°С„РёРє СЂР°Р±РѕС‚С‹ РїСѓРЅРєС‚Р° СЂРµРіРёСЃС‚СЂР°С†РёРё</a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/poryadok-registratsii-na-tst-2021" target="_self">РџРѕСЂСЏРґРѕРє СЂРµРіРёСЃС‚СЂР°С†РёРё РЅР° Р¦Рў</a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/registratsiya-inostrannykh-grazhdan-na-tst-2021" target="_self">Р РµРіРёСЃС‚СЂР°С†РёСЏ РёРЅРѕСЃС‚СЂР°РЅРЅС‹С… РіСЂР°Р¶РґР°РЅ</a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/vydacha-sertifikatov-tst-2021" target="_self">Р’С‹РґР°С‡Р° СЃРµСЂС‚РёС„РёРєР°С‚РѕРІ Р¦Рў</a>
-</ul>
-</div>
-<button class="button menu__btn" id="m4"><span class="menu__btn-text">РџСЂРёС‘РјРЅР°СЏ РєР°РјРїР°РЅРёСЏ<img class="menu__img" src="/online/layouts/501/img/arrow.svg"></span></button>
-<div class="menu__mobile-block hidden">
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="https://www.bsuir.by/ru/magistratura/dlya-postupayuschikh" target="_blank">РџРѕСЃС‚СѓРїР»РµРЅРёРµ РІ РјР°РіРёСЃС‚СЂР°С‚СѓСЂСѓ</a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="https://www.bsuir.by/online/showpage.jsp?PageID=94384&amp;resID=100229&amp;lang=ru&amp;menuItemID=121294" target="_blank">РРЅРѕСЃС‚СЂР°РЅРЅС‹Рј РіСЂР°Р¶РґР°РЅР°Рј</a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/algoritm-abiturienta" target="_self">РђР»РіРѕСЂРёС‚Рј Р°Р±РёС‚СѓСЂРёРµРЅС‚Р°</a>
-<li class="menu__item menu__item--mobile">
-<a href="/pervaya-stupen-rb-polnyy-srok" target="_self">РџРѕР»РЅС‹Р№ СЃСЂРѕРє РѕР±СѓС‡РµРЅРёСЏ</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/pervaya-stupen-rb-sokraschennyy-srok" target="_self">РЎРѕРєСЂР°С‰РµРЅРЅС‹Р№ СЃСЂРѕРє РѕР±СѓС‡РµРЅРёСЏ</a>
-</li>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/obschaya-informatsiya" target="_self">РћР±С‰Р°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ</a>
-<li class="menu__item menu__item--mobile">
-<a href="/pravila-priema" target="_self">РџСЂР°РІРёР»Р° РїСЂРёС‘РјР°</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/poryadok-priema-v-bguir" target="_self">РџРѕСЂСЏРґРѕРє РїСЂРёС‘РјР°</a>
-</li>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/sroki-provedeniya-vstupitelnoy-kampanii" target="_self">Р’СЃС‚СѓРїРёС‚РµР»СЊРЅР°СЏ РєР°РјРїР°РЅРёСЏ</a>
-<li class="menu__item menu__item--mobile">
-<a href="/plan-priema-2021" target="_self">РџР»Р°РЅ РїСЂРёС‘РјР° РІ Р‘Р“РЈРР </a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/sroki-provedeniya-vstupitelnoy-kampanii" target="_self">РЎСЂРѕРєРё РїСЂРѕРІРµРґРµРЅРёСЏ РІСЃС‚СѓРїРёС‚РµР»СЊРЅРѕР№ РєР°РјРїР°РЅРёРё</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/prokhodnye-bally" target="_self">РџСЂРѕС…РѕРґРЅС‹Рµ Р±Р°Р»Р»С‹ РїСЂРѕС€Р»С‹С… Р»РµС‚</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/dokumenty-dlya-postupleniya" target="_self">Р”РѕРєСѓРјРµРЅС‚С‹ РґР»СЏ РїРѕСЃС‚СѓРїР»РµРЅРёСЏ</a>
-</li>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/priemnaya-komissiya" target="_self">РџСЂРёС‘РјРЅР°СЏ РєРѕРјРёСЃСЃРёСЏ</a>
-<li class="menu__item menu__item--mobile">
-<a href="/kontakty-priyomnoy-komissii" target="_self">РљРѕРЅС‚Р°РєС‚С‹ РѕС‚РґРµР»Р° СЃРѕРїСЂРѕРІРѕР¶РґРµРЅРёСЏ РїСЂРёРµРјРЅРѕР№ РєРѕРјРёСЃСЃРёРё</a>
-</li>
-<li class="menu__item menu__item--mobile">
-<a href="/chasto-zadavaemye-voprosy" target="_self">Р§Р°СЃС‚Рѕ Р·Р°РґР°РІР°РµРјС‹Рµ РІРѕРїСЂРѕСЃС‹</a>
-</li>
-</ul>
-</div>
-<button class="button menu__btn" id="m5"><span class="menu__btn-text">РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅР°СЏ РѕСЂРёРµРЅС‚Р°С†РёСЏ<img class="menu__img" src="/online/layouts/501/img/arrow.svg"></span></button>
-<div class="menu__mobile-block hidden">
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="https://abitur.bsuir.by/ddo/test.jsp" target="_blank">Р”РёС„С„РµСЂРµРЅС†РёР°Р»СЊРЅРѕ-РґРёР°РіРЅРѕСЃС‚РёС‡РµСЃРєРёР№ РѕРїСЂРѕСЃРЅРёРє</a>
-</ul>
-<ul class="menu__list menu__list--mibile">
-<a class="menu__list-title" href="/online-vebinary" target="_self">On-line РІРµР±РёРЅР°СЂС‹</a>
-</ul>
-</div>
-</div>
-    </nav>
+    <div class="wrapper header__wrapper--mobile">
+      <button class="button menu__btn" id="m1"><span class="menu__btn-text">Об университете<img class="menu__img"
+                                                                                                src="/online/layouts/501/img/arrow.svg"></span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/10-prichin-vybrat-bguir" target="_self">10 причин выбрать БГУИР</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/mrti-bguir" target="_self">МРТИ-БГУИР</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/dopolnitelnaya-voennaya-spetsialnost" target="_self">Дополнительная военная
+            специальность</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/skhema-raspolozheniya-korpusov" target="_self">Расположение корпусов</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/fakultety-i-spetsialnosti" target="_self">Факультеты и специальности</a>
+          <li class="menu__item menu__item--mobile">
+            <a href="/ochnaya-dnevnaya-forma-obucheniya" target="_self">Специальности дневной формы</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/zaochnaya-forma-obucheniya" target="_self">Специальности заочной формы</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/distantsionnoe-obuchenie" target="_self">Специальности дистанционной формы</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/sokraschennaya-forma-obucheniya" target="_self">Сокращенная форма обучения</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/vtoroe-vysshee-obrazovanie" target="_self">Второе высшее образование</a>
+          </li>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/studencheskaya-zhizn" target="_self">Студенческая жизнь</a>
+          <li class="menu__item menu__item--mobile">
+            <a href="/kulturnaya-zhizn" target="_self">Культурная жизнь</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/obschezhitiya" target="_self">Общежития</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/uchebnyy-protsess" target="_self">Учебный процесс</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/sotsialnaya-podderzhka-studentov" target="_self">Социальная поддержка студентов</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/sportivnaya-zhizn" target="_self">Спортивная жизнь</a>
+          </li>
+        </ul>
+      </div>
+      <button class="button menu__btn" id="m2"><span class="menu__btn-text">Подготовка к поступлению<img
+        class="menu__img" src="/online/layouts/501/img/arrow.svg"></span></button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/kursy-k-podgotovke-k-vstupitelnym-ispytaniyam" target="_self">Подготовительные
+            курсы</a>
+        </ul>
+      </div>
+      <button class="button menu__btn" id="m3"><span class="menu__btn-text">Централизованное тестирование<img
+        class="menu__img" src="/online/layouts/501/img/arrow.svg"></span></button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/grafik-tsentralizovannogo-testirovaniya-2021" target="_self">График
+            проведения ЦТ</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/tsentralizovannoe-testirovanie-2021" target="_self">График работы пункта
+            регистрации</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/poryadok-registratsii-na-tst-2021" target="_self">Порядок регистрации на
+            ЦТ</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/registratsiya-inostrannykh-grazhdan-na-tst-2021" target="_self">Регистрация
+            иностранных граждан</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/vydacha-sertifikatov-tst-2021" target="_self">Выдача сертификатов ЦТ</a>
+        </ul>
+      </div>
+      <button class="button menu__btn" id="m4"><span class="menu__btn-text">Приёмная кампания<img class="menu__img"
+                                                                                                  src="/online/layouts/501/img/arrow.svg"></span>
+      </button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="https://www.bsuir.by/ru/magistratura/dlya-postupayuschikh" target="_blank">Поступление
+            в магистратуру</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title"
+             href="https://www.bsuir.by/online/showpage.jsp?PageID=94384&amp;resID=100229&amp;lang=ru&amp;menuItemID=121294"
+             target="_blank">Иностранным гражданам</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/algoritm-abiturienta" target="_self">Алгоритм абитуриента</a>
+          <li class="menu__item menu__item--mobile">
+            <a href="/pervaya-stupen-rb-polnyy-srok" target="_self">Полный срок обучения</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/pervaya-stupen-rb-sokraschennyy-srok" target="_self">Сокращенный срок обучения</a>
+          </li>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/obschaya-informatsiya" target="_self">Общая информация</a>
+          <li class="menu__item menu__item--mobile">
+            <a href="/pravila-priema" target="_self">Правила приёма</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/poryadok-priema-v-bguir" target="_self">Порядок приёма</a>
+          </li>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/sroki-provedeniya-vstupitelnoy-kampanii" target="_self">Вступительная
+            кампания</a>
+          <li class="menu__item menu__item--mobile">
+            <a href="/plan-priema-2021" target="_self">План приёма в БГУИР</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/sroki-provedeniya-vstupitelnoy-kampanii" target="_self">Сроки проведения вступительной
+              кампании</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/prokhodnye-bally" target="_self">Проходные баллы прошлых лет</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/dokumenty-dlya-postupleniya" target="_self">Документы для поступления</a>
+          </li>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/priemnaya-komissiya" target="_self">Приёмная комиссия</a>
+          <li class="menu__item menu__item--mobile">
+            <a href="/kontakty-priyomnoy-komissii" target="_self">Контакты отдела сопровождения приемной комиссии</a>
+          </li>
+          <li class="menu__item menu__item--mobile">
+            <a href="/chasto-zadavaemye-voprosy" target="_self">Часто задаваемые вопросы</a>
+          </li>
+        </ul>
+      </div>
+      <button class="button menu__btn" id="m5"><span class="menu__btn-text">Профессиональная ориентация<img
+        class="menu__img" src="/online/layouts/501/img/arrow.svg"></span></button>
+      <div class="menu__mobile-block hidden">
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="https://abitur.bsuir.by/ddo/test.jsp" target="_blank">Дифференциально-диагностический
+            опросник</a>
+        </ul>
+        <ul class="menu__list menu__list--mibile">
+          <a class="menu__list-title" href="/online-vebinary" target="_self">On-line вебинары</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
 <main class="main-content main-content--no-wrapp">
-<body>
+  <body>
 
-<h1>Р”РёС„С„РµСЂРµРЅС†РёР°Р»СЊРЅРѕ-РґРёР°РіРЅРѕСЃС‚РёС‡РµСЃРєРёР№ РѕРїСЂРѕСЃРЅРёРє (Р”Р”Рћ) Р•.Рђ.РљР»РёРјРѕРІР°</h1>
+  <h1>Дифференциально-диагностический опросник (ДДО) Е.А.Климова</h1>
 
-<p class="margin-p margin-p--half-width">РћРїСЂРѕСЃРЅРёРє Р”Р”Рћ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ РѕС†РµРЅРєРё РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅРѕР№ РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚Рё РЅР° РѕСЃРЅРѕРІРµ РїСЂРµРґРїРѕС‡С‚РµРЅРёР№ С‡РµР»РѕРІРµРєРѕРј СЂР°Р·Р»РёС‡РЅС‹С… РїРѕ С…Р°СЂР°РєС‚РµСЂСѓ РІРёРґРѕРІ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё.  
-Р’ РѕСЃРЅРѕРІСѓ РјРµС‚РѕРґРёРєРё РїРѕР»РѕР¶РµРЅР° СЃС…РµРјР° РєР»Р°СЃСЃРёС„РёРєР°С†РёРё РїСЂРѕС„РµСЃСЃРёР№, РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ РєРѕС‚РѕСЂРѕР№ РІСЃРµ РїСЂРѕС„РµСЃСЃРёРё РґРµР»СЏС‚СЃСЏ РЅР° РіСЂСѓРїРїС‹ РїРѕ РїСЂРµРґРјРµС‚Сѓ С‚СЂСѓРґР°: 
-</p>
-<ul class="main-content__list">
-    <li>С‡РµР»РѕРІРµРє - РїСЂРёСЂРѕРґР°;</li>
-    <li>С‡РµР»РѕРІРµРє - С‚РµС…РЅРёРєР°;</li>
-    <li>С‡РµР»РѕРІРµРє - С‡РµР»РѕРІРµРє;</li>
-    <li>С‡РµР»РѕРІРµРє - Р·РЅР°РєРѕРІР°СЏ С‚РµС…РЅРёРєР°, Р·РЅР°РєРѕРІС‹Р№ РѕР±СЂР°Р·;</li>
-    <li>С‡РµР»РѕРІРµРє - С…СѓРґРѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ РѕР±СЂР°Р·.</li>
-</ul>
-<p class="margin-p margin-p--half-width">Р—РґРµСЃСЊ РїСЂРµРґСЃС‚Р°РІР»РµРЅР° РјРѕРґРёС„РёС†РёСЂРѕРІР°РЅРЅР°СЏ Рђ.Рђ. РђР·Р±РµР»СЊ РјРµС‚РѕРґРёРєР° Р”Р”Рћ, РіРґРµ РІ РєР°С‡РµСЃС‚РІРµ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕР№ РіСЂСѓРїРїС‹ СЂР°СЃСЃРјР°С‚СЂРёРІР°СЋС‚СЃСЏ РїСЂРѕС„РµСЃСЃРёРё, РІ РєРѕС‚РѕСЂС‹С… РїСЂРµРґРјРµС‚РѕРј С‚СЂСѓРґР° РІС‹СЃС‚СѓРїР°РµС‚ СЃР°Рј С‡РµР»РѕРІРµРє. 
-</p>
-<p class="margin-p margin-p--half-width">РРЅСЃС‚СЂСѓРєС†РёСЏ: РІРЅРёРјР°С‚РµР»СЊРЅРѕ РїСЂРѕС‡РёС‚Р°Р№С‚Рµ СЃР»РµРґСѓСЋС‰РёРµ РІРѕРїСЂРѕСЃС‹ Рё РІС‹Р±РµСЂРёС‚Рµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёР№ РѕС‚РІРµС‚, Р·Р°С‚РµРј РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ "РџРѕРєР°Р·Р°С‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚".</p>
-<p class="margin-p margin-p--half-width">РџСЂРµРґРїРѕР»РѕР¶РёРј, С‡С‚Рѕ РїРѕСЃР»Рµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµРіРѕ РѕР±СѓС‡РµРЅРёСЏ РІС‹ СЃРїРѕСЃРѕР±РЅС‹ РѕРґРёРЅР°РєРѕРІРѕ СѓСЃРїРµС€РЅРѕ РІС‹РїРѕР»РЅСЏС‚СЊ Р»СЋР±СѓСЋ СЂР°Р±РѕС‚Сѓ. 
-				Р’ С‚Р°Р±Р»РёС†Рµ РїСЂРёРІРµРґРµРЅ СЃРїРёСЃРѕРє СЂР°Р·Р»РёС‡РЅС‹С… РІРёРґРѕРІ СЂР°Р±РѕС‚С‹. Р•СЃР»Рё Р±С‹ РІР°Рј РїСЂРёС€Р»РѕСЃСЊ РІС‹Р±РёСЂР°С‚СЊ Р»РёС€СЊ РѕРґРЅСѓ СЂР°Р±РѕС‚Сѓ РёР· РєР°Р¶РґРѕР№ РїР°СЂС‹ РІ СЌС‚РѕРј СЃРїРёСЃРєРµ, С‡С‚РѕР±С‹ РІС‹ РїСЂРµРґРїРѕС‡Р»Рё? 
-				Р’С‹Р±РµСЂРёС‚Рµ РѕРґРёРЅ РІРёРґ СЂР°Р±РѕС‚С‹ РёР· РєР°Р¶РґРѕР№ РїР°СЂС‹.</p>
+  <p class="margin-p margin-p--half-width">Опросник ДДО используется для оценки профессиональной направленности на
+    основе предпочтений человеком различных по характеру видов деятельности.
+    В основу методики положена схема классификации профессий, в соответствии с которой все профессии делятся на группы
+    по предмету труда:
+  </p>
+  <ul class="main-content__list">
+    <li>человек - природа;</li>
+    <li>человек - техника;</li>
+    <li>человек - человек;</li>
+    <li>человек - знаковая техника, знаковый образ;</li>
+    <li>человек - художественный образ.</li>
+  </ul>
+  <p class="margin-p margin-p--half-width">Здесь представлена модифицированная А.А. Азбель методика ДДО, где в качестве
+    дополнительной группы рассматриваются профессии, в которых предметом труда выступает сам человек.
+  </p>
+  <p class="margin-p margin-p--half-width">Инструкция: внимательно прочитайте следующие вопросы и выберите
+    соответствующий ответ, затем нажмите кнопку "Показать результат".</p>
+  <p class="margin-p margin-p--half-width">Предположим, что после соответствующего обучения вы способны одинаково
+    успешно выполнять любую работу.
+    В таблице приведен список различных видов работы. Если бы вам пришлось выбирать лишь одну работу из каждой пары в
+    этом списке, чтобы вы предпочли?
+    Выберите один вид работы из каждой пары.</p>
 
-<form class="test" name="form1" method="post" action="test.jsp" onsubmit="return checkForm();">
+  <form class="test" name="form1" method="post" action="test.jsp" onsubmit="return checkForm();">
     <input type="hidden" name="resID" value="113227">
     <input type="hidden" name="menuItemID" value="118118">
-			<div class="test__answer-block test__answer-block--no-answer">
-				<div class="test__answer-number test__answer-number--no-answer">1</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="1" id="1a" value="1a">
-							<label class="test__answer-title" for="1a">Р’С‹СЂР°С‰РёРІР°С‚СЊ Рё РґСЂРµСЃСЃРёСЂРѕРІР°С‚СЊ СЃР»СѓР¶РµР±РЅС‹С… СЃРѕР±Р°Рє РґР»СЏ РїРѕРёСЃРєР° РЅР°СЂРєРѕС‚РёРєРѕРІ</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="1" id="1b" value="1b">
-							<label class="test__answer-title" for="1b">Р Р°Р·СЂР°Р±Р°С‚С‹РІР°С‚СЊ РЅРѕРІС‹Рµ РјРѕРґРµР»Рё СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ Р±С‹С‚РѕРІРѕР№ С‚РµС…РЅРёРєРё</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">2</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="2" id="2a" value="2a">
-							<label class="test__answer-title" for="2a">РЎРїР°СЃР°С‚СЊ Р»СЋРґРµР№ РїРѕСЃР»Рµ Р°РІР°СЂРёРё Рё Р·РµРјР»РµС‚СЂСЏСЃРµРЅРёСЏ</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="2" id="2b" value="2b">
-							<label class="test__answer-title" for="2b">Р—Р°РІРµСЂСЏС‚СЊ РґРѕРєСѓРјРµРЅС‚С‹, РѕС„РѕСЂРјР»СЏС‚СЊ РґРѕРІРµСЂРµРЅРЅРѕСЃС‚Рё, РґРѕРіРѕРІРѕСЂС‹</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">3</div>
-            	<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="3" id="3a" value="3a">
-							<label class="test__answer-title" for="3a">РџРµС‚СЊ РІ РјСѓР·С‹РєР°Р»СЊРЅРѕР№ РіСЂСѓРїРїРµ</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="3" id="3b" value="3b">
-							<label class="test__answer-title" for="3b">РРЅС‚РµРЅСЃРёРІРЅРѕ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ, СЃРѕРІРµСЂС€РµРЅСЃС‚РІРѕРІР°С‚СЊСЃСЏ Рё РґРѕР±РёРІР°С‚СЊСЃСЏ РЅРѕРІС‹С… СЃРїРѕСЂС‚РёРІРЅС‹С… СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">4</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="4" id="4a" value="4a">
-							<label class="test__answer-title" for="4a">РќР°Р»Р°Р¶РёРІР°С‚СЊ СЂР°Р±РѕС‚Сѓ РєРѕРјРїСЊСЋС‚РµСЂРѕРІ Рё РѕР±РѕСЂСѓРґРѕРІР°РЅРёСЏ</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="4" id="4b" value="4b">
-							<label class="test__answer-title" for="4b">Р Р°СЃСЃРєР°Р·С‹РІР°С‚СЊ Рѕ С‚РѕРІР°СЂРµ, СѓР±РµР¶РґР°С‚СЊ Р»СЋРґРµР№ РїСЂРёРѕР±СЂРµС‚Р°С‚СЊ РµРіРѕ</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">5</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="5" id="5a" value="5a">
-							<label class="test__answer-title" for="5a">РџРµСЂРµРІРѕРґРёС‚СЊ РЅР°СѓС‡РЅС‹Рµ С‚РµРєСЃС‚С‹</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="5" id="5b" value="5b">
-							<label class="test__answer-title" for="5b">РџРёСЃР°С‚СЊ СЂР°СЃСЃРєР°Р·С‹, СЃС†РµРЅР°СЂРёРё, С„РµР»СЊРµС‚РѕРЅС‹</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">6</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="6" id="6a" value="6a">
-							<label class="test__answer-title" for="6a">РўСЂРµРЅРёСЂРѕРІР°С‚СЊ СЃРІРѕР№ РѕСЂРіР°РЅРёР·Рј, С‡С‚РѕР±С‹ РѕРЅ РІС‹РґРµСЂР¶РёРІР°Р» РІРѕР·РґРµР№СЃС‚РІРёРµ Р±РѕР»СЊС€РёС… С„РёР·РёС‡РµСЃРєРёС… РЅР°РіСЂСѓР·РѕРє</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="6" id="6b" value="6b">
-							<label class="test__answer-title" for="6b">Р Р°Р·СЂР°Р±Р°С‚С‹РІР°С‚СЊ РјРµСЂРѕРїСЂРёСЏС‚РёСЏ РїРѕ РѕС…СЂР°РЅРµСЂРµ РґРєРёС… СЂР°СЃС‚РµРЅРёР№</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">7</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="7" id="7a" value="7a">
-							<label class="test__answer-title" for="7a">Р РµРјРѕРЅС‚РёСЂРѕРІР°С‚СЊ РѕСЂРіС‚РµС…РЅРёРєСѓ, РєРѕРјРїСЊСЋС‚РµСЂС‹, С‚РµР»РµС„РѕРЅС‹</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="7" id="7b" value="7b">
-							<label class="test__answer-title" for="7b">РСЃРїСЂР°РІР»СЏС‚СЊ СЃРјС‹СЃР»РѕРІС‹Рµ Рё СЃС‚РёР»РёСЃС‚РёС‡РµСЃРєРёРµ РѕС€РёР±РєРё РІ РіРѕС‚РѕРІСЏС‰РёС…СЃСЏ Рє РїРµС‡Р°С‚Рё С‚РµРєСЃС‚Р°С…</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">8</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="8" id="8a" value="8a">
-							<label class="test__answer-title" for="8a">Р—Р°РЅРёРјР°С‚СЊСЃСЏ С„Р»РѕСЂРёСЃС‚РёРєРѕР№, РѕС„РѕСЂРјР»СЏС‚СЊ РїРѕРјРµС‰РµРЅРёСЏ С†РІРµС‚Р°РјРё</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="8" id="8b" value="8b">
-							<label class="test__answer-title" for="8b">РђРЅР°Р»РёР·РёСЂРѕРІР°С‚СЊ СЃРѕСЃС‚РѕСЏРЅРёРµ СЂР°СЃС‚РµРЅРёР№ Рё Р¶РёРІРѕС‚РЅС‹С… РІ Р·Р°РіСЂСЏР·РЅРµРЅРЅС‹С… СѓСЃР»РѕРІРёСЏС… СЃСЂРµРґС‹</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">9</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="9" id="9a" value="9a">
-							<label class="test__answer-title" for="9a">РЈРїСЂР°РІР»СЏС‚СЊ Р°РІС‚РѕРјРѕР±РёР»РµРј, Р°РІС‚РѕР±СѓСЃРѕРј, С‚СЂРµР№Р»РµСЂРѕРј, Р»РѕРєРѕРјРѕС‚РёРІРѕРј РїРѕРµР·РґР°</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="9" id="9b" value="9b">
-							<label class="test__answer-title" for="9b">РњРёРєС€РёСЂРѕРІР°С‚СЊ РјСѓР·С‹РєСѓ РёР»Рё РєРѕСЂСЂРµРєС‚РёСЂРѕРІР°С‚СЊ С„РѕС‚РѕСЃРЅРёРјРєРё СЃ РїРѕРјРѕС‰СЊСЋ РєРѕРјРїСЊСЋС‚РµСЂР°</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">10</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="10" id="10a" value="10a">
-							<label class="test__answer-title" for="10a">Р•Р¶РµРґРЅРµРІРЅРѕ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ СЃРІРѕРё Р°С‚Р»РµС‚РёС‡РµСЃРєРёРµ РЅР°РІС‹РєРё РІ СЃРїРѕСЂС‚РёРІРЅРѕРј Р·Р°Р»Рµ, РІ Р±Р°СЃСЃРµР№РЅРµ, РЅР° СЃС‚Р°РґРёРѕРЅРµ, РєРѕСЂС‚Рµ Рё С‚.Рґ.</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="10" id="10b" value="10b">
-							<label class="test__answer-title" for="10b">РћС‚Р»Р°Р¶РёРІР°С‚СЊ СЂР°Р±РѕС‚Сѓ СЃРїРѕСЂС‚РёРІРЅРѕРіРѕ Р°РІС‚РѕРјРѕР±РёР»СЏ Рё Р·Р°РјРµРЅСЏС‚СЊ РјРµС…Р°РЅРёР·РјС‹ РІ СЃР»СѓС‡Р°Рµ РЅРµРёСЃРїСЂР°РІРЅРѕСЃС‚Рё</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">11</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="11" id="11a" value="11a">
-							<label class="test__answer-title" for="11a">Р”Р°РІР°С‚СЊ Р»СЋРґСЏРј РєРѕРЅСЃСѓР»СЊС‚Р°С†РёРё РїРѕ С‚СѓСЂРёСЃС‚РёС‡РµСЃРєРёРј РјР°СЂС€СЂСѓС‚Р°Рј РґСЂСѓРіРёС… РіРѕСЂРѕРґРѕРІ Рё СЃС‚СЂР°РЅ</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="11" id="11b" value="11b">
-							<label class="test__answer-title" for="11b">РћС„РѕСЂРјР»СЏС‚СЊ РІРёС‚СЂРёРЅС‹ СѓРЅРёРІРµСЂРјР°РіРѕРІ; Р·Р°РЅРёРјР°С‚СЊСЃСЏ РѕС„РѕСЂРјР»РµРЅРёРµРј РєРѕРЅС†РµСЂС‚РѕРІ Рё С€РѕСѓ</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">12</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="12" id="12a" value="12a">
-							<label class="test__answer-title" for="12a">Р Р°Р·РІРѕРґРёС‚СЊ РґРµРєРѕСЂР°С‚РёРІРЅС‹С… СЂС‹Р± Рё СѓС…Р°Р¶РёРІР°С‚СЊ Р·Р° Р°РєРІР°СЂРёСѓРјР°РјРё РІ РѕС„РёСЃР°С…</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="12" id="12b" value="12b">
-							<label class="test__answer-title" for="12b">РћРєР°Р·С‹РІР°С‚СЊ Р»СЋРґСЏРј РјРµРґРёС†РёРЅСЃРєСѓСЋ РїРѕРјРѕС‰СЊ</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">13</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="13" id="13a" value="13a">
-							<label class="test__answer-title" for="13a">РЈРїРѕСЂСЏРґРѕС‡РёРІР°С‚СЊ РґРѕРєСѓРјРµРЅС‚Р°С†РёСЋ С„РёСЂРјС‹ Рё РїРѕРґРіРѕС‚Р°РІР»РёРІР°С‚СЊ РЅРѕРІСѓСЋ(РґРѕРіРѕРІРѕСЂР°, СЃС‡РµС‚Р°, РІРµРґРѕРјРѕСЃС‚Рё, РґРѕРІРµСЂРµРЅРЅРѕСЃС‚Рё)</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="13" id="13b" value="13b">
-							<label class="test__answer-title" for="13b">Р’С‹СЂР°Р±Р°С‚С‹РІР°С‚СЊ РЅР°РІС‹РєРё РєСЂР°СЃРёРІРѕР№ РїРѕС…РѕРґРєРё Рё РїР»Р°СЃС‚РёС‡РЅС‹С… РґРІРёР¶РµРЅРёР№ РґР»СЏ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅРѕРіРѕ РІС‹СЃС‚СѓРїР»РµРЅРёСЏ РЅР° РїРѕРґРёСѓРјРµ</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">14</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="14" id="14a" value="14a">
-							<label class="test__answer-title" for="14a">РР·СѓС‡Р°С‚СЊ РіРµРЅРµС‚РёРєСѓ, РІС‹РІРѕРґРёС‚СЊ РЅРѕРІС‹Рµ СЃРѕСЂС‚Р° СЂР°СЃС‚РµРЅРёР№</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="14" id="14b" value="14b">
-							<label class="test__answer-title" for="14b">Р Р°Р±РѕС‚Р°С‚СЊ РІ С„РѕРЅРґР°С… Р°СЂС…РёРІРѕРІ, РЅР°С…РѕРґРёС‚СЊ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">15</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="15" id="15a" value="15a">
-							<label class="test__answer-title" for="15a">РЎРѕРїСЂРѕРІРѕР¶РґР°С‚СЊ Р»СЋРґРµР№ РІ СЃР»РѕР¶РЅС‹С… С‚СѓСЂРёСЃС‚РёС‡РµСЃРєРёС… РїРѕС…РѕРґР°С… РІ СЂРѕР»Рё РёРЅСЃС‚СЂСѓРєС‚РѕСЂР°</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="15" id="15b" value="15b">
-							<label class="test__answer-title" for="15b">РџСЂРёРґСѓРјС‹РІР°С‚СЊ Рё РѕС‚СЂР°Р±Р°С‚С‹РІР°С‚СЊ СЃР»РѕР¶РЅС‹Рµ Р°РєСЂРѕР±Р°С‚РёС‡РµСЃРєРёРµ С‚СЂСЋРєРё, СЃРїРѕСЂС‚РёРІРЅС‹Рµ РЅРѕРјРµСЂР°</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">16</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="16" id="16a" value="16a">
-							<label class="test__answer-title" for="16a">Р›РµС‡РёС‚СЊ РєРѕС€РµРє, СЃРѕР±Р°Рє, Р»РѕС€Р°РґРµР№ Рё РїСЂ. </label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="16" id="16b" value="16b">
-							<label class="test__answer-title" for="16b">РћСЃСѓС‰РµСЃС‚РІР»СЏС‚СЊ СЃР±РѕСЂРєСѓ РєРѕРјРїСЊСЋС‚РµСЂРѕРІ</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">17</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="17" id="17a" value="17a">
-							<label class="test__answer-title" for="17a">РСЃРєР°С‚СЊ РЅСѓР¶РЅС‹С… Р»СЋРґРµР№, РїСЂРѕРІРѕРґРёС‚СЊ РїРѕРґР±РѕСЂ РїРµСЂСЃРѕРЅР°Р»Р° РІ СЂР°Р·Р»РёС‡РЅС‹Рµ С„РёСЂРјС‹</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="17" id="17b" value="17b">
-							<label class="test__answer-title" for="17b">РџСЂРѕРІРѕРґРёС‚СЊ С„РёРЅР°РЅСЃРѕРІС‹Р№ Р°РЅР°Р»РёР· СЂС‹РЅРєР° С†РµРЅРЅС‹С… Р±СѓРјР°Рі</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">18</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="18" id="18a" value="18a">
-							<label class="test__answer-title" for="18a">РРіСЂР°С‚СЊ РЅР° СЃС†РµРЅРµ, СЃРЅРёРјР°С‚СЊСЃСЏ РІ РєРёРЅРѕ, СЃС‚Р°РІРёС‚СЊ С‚СЂСЋРєРё</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="18" id="18b" value="18b">
-							<label class="test__answer-title" for="18b">РўСЂРµРЅРёСЂРѕРІР°С‚СЊ Рё СЂРµРїРµС‚РёСЂРѕРІР°С‚СЊ РєСЂР°СЃРёРІС‹Рµ Рё С‚РѕС‡РЅС‹Рµ РґРІРёР¶РµРЅРёСЏ РїРµСЂРµРґ СЃРїРѕСЂС‚РёРІРЅС‹Рј РІС‹СЃС‚СѓРїР»РµРЅРёРµРј</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">19</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="19" id="19a" value="19a">
-							<label class="test__answer-title" for="19a">РќР°Р»Р°Р¶РёРІР°С‚СЊ СЂР°Р±РѕС‚Сѓ РјРµРґРёС†РёРЅСЃРєРѕРіРѕ Р»Р°Р·РµСЂР°, СѓР»СЊС‚СЂР°Р·РІСѓРєРѕРІРѕР№ Р°РїРїР°СЂР°С‚СѓСЂС‹</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="19" id="19b" value="19b">
-							<label class="test__answer-title" for="19b">РџСЂРµРїРѕРґР°РІР°С‚СЊ СЂР°Р·Р»РёС‡РЅС‹Рµ РїСЂРµРґРјРµС‚С‹ РІ С€РєРѕР»Рµ, С‚РµС…РЅРёРєСѓРјРµ, РёРЅСЃС‚РёС‚СѓС‚Рµ Рё С‚.Рґ.</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">20</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="20" id="20a" value="20a">
-							<label class="test__answer-title" for="20a">Р Р°СЃСЃС‡РёС‚С‹РІР°С‚СЊ СЌРєРѕРЅРѕРјРЅС‹Р№ РїСѓС‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚РёСЂРѕРІРєРё С‚РѕРІР°СЂР° РґРѕ РїРѕС‚СЂРµР±РёС‚РµР»СЏ</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="20" id="20b" value="20b">
-							<label class="test__answer-title" for="20b">РћС„РѕСЂРјР»СЏС‚СЊ РёР»Р»СЋСЃС‚СЂР°С†РёСЏРјРё СЃР°Р№С‚С‹, РєРЅРёРіРё, Р¶СѓСЂРЅР°Р»С‹</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">21</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item"> 
-							<input class="test__answer-radio" type="radio" name="21" id="21a" value="21a">
-							<label class="test__answer-title" for="21a">РћСЃСѓС‰РµСЃС‚РІР»СЏС‚СЊ РїРѕСЃС‚РѕСЏРЅРЅСѓСЋ РїСЃРёС…РѕР»РѕРіРёС‡РµСЃРєСѓСЋ Рё С„РёР·РёС‡РµСЃРєСѓСЋ РїРѕРґРіРѕС‚РѕРІРєСѓ Рє СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏРј, С‚СѓСЂРЅРёСЂР°Рј</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="21" id="21b" value="21b">
-							<label class="test__answer-title" for="21b">РЈС‡Р°СЃС‚РІРѕРІР°С‚СЊ РІ СЌРєСЃРїРµРґРёС†РёСЏС…,РїРѕСЃРІСЏС‰РµРЅРЅС‹С… РёР·СѓС‡РµРЅРёСЋ РїСЂРёСЂРѕРґРЅС‹С… СЏРІР»РµРЅРёР№</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">22</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="22" id="22a" value="22a">
-							<label class="test__answer-title" for="22a">РЎС‚СЂРѕРёС‚СЊ  РґРѕРјР° РїРѕ РїР»Р°РЅР°Рј, РґРµР»Р°С‚СЊ СЂР°Р·РІРѕРґРєСѓ СЌР»РµРєС‚СЂРёС‡РµСЃС‚РІР° РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ РїСЂРѕРµРєС‚РѕРј</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="22" id="22b" value="22b">
-							<label class="test__answer-title" for="22b">Р Р°Р±РѕС‚Р°С‚СЊ СЃ С„РёРЅР°РЅСЃРѕРІС‹РјРё Р·Р°РєРѕРЅР°РјРё Рё РєРѕРґРµРєСЃР°РјРё</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">23</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="23" id="23a" value="23a">
-							<label class="test__answer-title" for="23a">РџСЂРѕРµРєС‚РёСЂРѕРІР°С‚СЊ СЃР°РґРѕРІРѕ-РїР°СЂРєРѕРІС‹Рµ Р·РѕРЅС‹, РѕС„РѕСЂРјР»СЏС‚СЊ СѓС‡Р°СЃС‚РєРё СЃ РїРѕРјРѕС‰СЊСЋ СЂР°СЃС‚РµРЅРёР№</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="23" id="23b" value="23b">
-							<label class="test__answer-title" for="23b">РђРЅР°Р»РёР·РёСЂРѕРІР°С‚СЊ РјРѕР»РµРєСѓР»СЏСЂРЅС‹Р№ СЃРѕСЃС‚Р°РІ РєСЂРѕРІРё</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">24</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="24" id="24a" value="24a">
-							<label class="test__answer-title" for="24a">РџСЂРѕРµРєС‚РёСЂРѕРІР°С‚СЊ РЅРѕРІРѕРµ РїСЂРѕРёР·РІРѕРґСЃС‚РІРµРЅРЅРѕРµ РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµ, РґРѕРјР°</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="24" id="24b" value="24b">
-							<label class="test__answer-title" for="24b">РџСЂРѕРёР·РІРѕРґРёС‚СЊ Р°СЂС…РёС‚РµРєС‚СѓСЂРЅРѕ-РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚РµР»СЊРЅС‹Рµ СЂР°Р±РѕС‚С‹ РёСЃС‚РѕСЂРёС‡РµСЃРєРёС… РјРµСЃС‚</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">25</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="25" id="25a" value="25a">
-							<label class="test__answer-title" for="25a">РћС‚С‚Р°С‡РёРІР°С‚СЊ РјР°СЃС‚РµСЂСЃС‚РІРѕ РІС‹РїРѕР»РЅРµРЅРёСЏ СЃРїРѕСЂС‚РёРІРЅРѕРіРѕ СѓРїСЂР°Р¶РЅРµРЅРёСЏ, РїСЂРµРІРѕР·РјРѕРіР°СЏ СѓСЃС‚Р°Р»РѕСЃС‚СЊ Рё СЃС‚СЂР°С…</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="25" id="25b" value="25b">
-							<label class="test__answer-title" for="25b">Р Р°Р·СЂР°Р±Р°С‚С‹РІР°С‚СЊ РЅРѕРІС‹Рµ РјРѕРґРµР»Рё СЃРїРѕСЂС‚РёРІРЅС‹С… С‚СЂРµРЅР°Р¶РµСЂРѕРІ, РІРµР»РѕСЃРёРїРµРґРѕРІ Рё РґСЂСѓРіРѕРµ СЃРїРѕСЂС‚РёРІРЅРѕРµ РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµ</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">26</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="26" id="26a" value="26a">
-							<label class="test__answer-title" for="26a">РћСЂРіР°РЅРёР·РѕРІС‹РІР°С‚СЊ РїСЂР°Р·РґРЅРёРєРё, РІС‹СЃС‚СѓРїР°С‚СЊ РІ СЂРѕР»Рё С‚Р°РјР°РґС‹</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="26" id="26b" value="26b">
-							<label class="test__answer-title" for="26b">Р’РµСЃС‚Рё РєРѕРЅС†РµСЂС‚РЅС‹Рµ РїСЂРѕРіСЂР°РјРјС‹, РѕР±СЉСЏРІР»СЏС‚СЊ Р·СЂРёС‚РµР»СЏРј РёРјРµРЅР° РІС‹СЃС‚СѓРїР°СЋС‰РёС… Рё РЅР°Р·РІР°РЅРёСЏ РЅРѕРјРµСЂРѕРІ РїСЂРѕРіСЂР°РјРјС‹</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">27</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="27" id="27a" value="27a">
-							<label class="test__answer-title" for="27a">РР·СѓС‡Р°С‚СЊ Р¶РёР·РЅСЊ РѕСЂРіР°РЅРёР·РјРѕРІ СЃ РїРѕРјРѕС‰СЊСЋ СЌР»РµРєС‚СЂРѕРЅРЅРѕРіРѕ РјРёРєСЂРѕСЃРєРѕРїР°</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="27" id="27b" value="27b">
-							<label class="test__answer-title" for="27b">РћРєР°Р·С‹РІР°С‚СЊ Р»СЋРґСЏРј РїСЃРёС…РѕР»РѕРіРёС‡РµСЃРєСѓСЋ РїРѕРјРѕС‰СЊ, СЂР°Р±РѕС‚Р°С‚СЊ РЅР° С‚РµР»РµС„РѕРЅРµ РґРѕРІРµСЂРёСЏ</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">28</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="28" id="28a" value="28a">
-							<label class="test__answer-title" for="28a">РћР±СЂР°Р±Р°С‚С‹РІР°С‚СЊ, Р°РЅР°Р»РёР·РёСЂРѕРІР°С‚СЊ Рё РѕР±РѕР±С‰Р°С‚СЊ СЃРѕС†РёРѕР»РѕРіРёС‡РµСЃРєРёРµ РґР°РЅРЅС‹Рµ</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="28" id="28b" value="28b">
-							<label class="test__answer-title" for="28b">РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ РЅР°Рґ РєСЂР°СЃРѕС‚РѕР№ СЃРІРѕРµР№ С„РёРіСѓСЂС‹ Рё РІРЅРµС€РЅРѕСЃС‚Рё</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">29</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="29" id="29a" value="29a">
-							<label class="test__answer-title" for="29a">Р Р°Р·СЂР°Р±Р°С‚С‹РІР°С‚СЊ СЃСЂРµРґСЃС‚РІР° Р·Р°С‰РёС‚С‹ СЂР°СЃС‚РµРЅРёР№ РѕС‚ РІСЂРµРґРёС‚РµР»РµР№ Рё РІРёСЂСѓСЃРѕРІ</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="29" id="29b" value="29b">
-							<label class="test__answer-title" for="29b">РџРёСЃР°С‚СЊ РєРѕРјРїСЊСЋС‚РµСЂРЅС‹Рµ РїСЂРѕРіСЂР°РјРјС‹</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__answer-block">
-				<div class="test__answer-number">30</div>
-				<div>
-					<ul class="test__answer-list">
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="30" id="30a" value="30a">
-							<label class="test__answer-title" for="30a">РљРѕРЅСЃСѓР»СЊС‚РёСЂРѕРІР°С‚СЊ Р»СЋРґРµР№ РІ С„РёС‚РЅРµСЃ-Р·Р°Р»Рµ, РІ Р±Р°СЃСЃРµР№РЅРµ, РЅР° СЃРїРѕСЂС‚РёРІРЅРѕР№ РїР»РѕС‰Р°РґРєРµ</label>
-						</li>
-						<li class="test__answer-item">
-							<input class="test__answer-radio" type="radio" name="30" id="30b" value="30b">
-							<label class="test__answer-title" for="30b">РўСЂРµРЅРёСЂРѕРІР°С‚СЊ РѕР±С‰СѓСЋ РІС‹РЅРѕСЃР»РёРІРѕСЃС‚СЊ Рё СЃРѕРІРµСЂС€РµРЅСЃС‚РІРѕРІР°С‚СЊ РѕС‚РґРµР»СЊРЅС‹Рµ СЃРїРѕСЂС‚РёРІРЅС‹Рµ РёР»Рё Р°СЂС‚РёСЃС‚РёС‡РµСЃРєРёРµ РЅР°РІС‹РєРё</label>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="test__btn-wrapper">
-				<button type=submit name="submit" class="button button--corner resultsButton">
-            РџРѕРєР°Р·Р°С‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚
-        </button>
-			</div>
-</form>
+    <div class="test__answer-block test__answer-block--no-answer">
+      <div class="test__answer-number test__answer-number--no-answer">1</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="1" id="1a" value="1a">
+            <label class="test__answer-title" for="1a">Выращивать и дрессировать служебных собак для поиска
+              наркотиков</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="1" id="1b" value="1b">
+            <label class="test__answer-title" for="1b">Разрабатывать новые модели электронной бытовой техники</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">2</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="2" id="2a" value="2a">
+            <label class="test__answer-title" for="2a">Спасать людей после аварии и землетрясения</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="2" id="2b" value="2b">
+            <label class="test__answer-title" for="2b">Заверять документы, оформлять доверенности, договоры</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">3</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="3" id="3a" value="3a">
+            <label class="test__answer-title" for="3a">Петь в музыкальной группе</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="3" id="3b" value="3b">
+            <label class="test__answer-title" for="3b">Интенсивно тренироваться, совершенствоваться и добиваться новых
+              спортивных результатов</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">4</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="4" id="4a" value="4a">
+            <label class="test__answer-title" for="4a">Налаживать работу компьютеров и оборудования</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="4" id="4b" value="4b">
+            <label class="test__answer-title" for="4b">Рассказывать о товаре, убеждать людей приобретать его</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">5</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="5" id="5a" value="5a">
+            <label class="test__answer-title" for="5a">Переводить научные тексты</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="5" id="5b" value="5b">
+            <label class="test__answer-title" for="5b">Писать рассказы, сценарии, фельетоны</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">6</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="6" id="6a" value="6a">
+            <label class="test__answer-title" for="6a">Тренировать свой организм, чтобы он выдерживал воздействие
+              больших физических нагрузок</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="6" id="6b" value="6b">
+            <label class="test__answer-title" for="6b">Разрабатывать мероприятия по охранере дких растений</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">7</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="7" id="7a" value="7a">
+            <label class="test__answer-title" for="7a">Ремонтировать оргтехнику, компьютеры, телефоны</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="7" id="7b" value="7b">
+            <label class="test__answer-title" for="7b">Исправлять смысловые и стилистические ошибки в готовящихся к
+              печати текстах</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">8</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="8" id="8a" value="8a">
+            <label class="test__answer-title" for="8a">Заниматься флористикой, оформлять помещения цветами</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="8" id="8b" value="8b">
+            <label class="test__answer-title" for="8b">Анализировать состояние растений и животных в загрязненных
+              условиях среды</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">9</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="9" id="9a" value="9a">
+            <label class="test__answer-title" for="9a">Управлять автомобилем, автобусом, трейлером, локомотивом
+              поезда</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="9" id="9b" value="9b">
+            <label class="test__answer-title" for="9b">Микшировать музыку или корректировать фотоснимки с помощью
+              компьютера</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">10</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="10" id="10a" value="10a">
+            <label class="test__answer-title" for="10a">Ежедневно тренировать свои атлетические навыки в спортивном
+              зале, в бассейне, на стадионе, корте и т.д.</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="10" id="10b" value="10b">
+            <label class="test__answer-title" for="10b">Отлаживать работу спортивного автомобиля и заменять механизмы в
+              случае неисправности</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">11</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="11" id="11a" value="11a">
+            <label class="test__answer-title" for="11a">Давать людям консультации по туристическим маршрутам других
+              городов и стран</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="11" id="11b" value="11b">
+            <label class="test__answer-title" for="11b">Оформлять витрины универмагов; заниматься оформлением концертов
+              и шоу</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">12</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="12" id="12a" value="12a">
+            <label class="test__answer-title" for="12a">Разводить декоративных рыб и ухаживать за аквариумами в
+              офисах</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="12" id="12b" value="12b">
+            <label class="test__answer-title" for="12b">Оказывать людям медицинскую помощь</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">13</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="13" id="13a" value="13a">
+            <label class="test__answer-title" for="13a">Упорядочивать документацию фирмы и подготавливать
+              новую(договора, счета, ведомости, доверенности)</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="13" id="13b" value="13b">
+            <label class="test__answer-title" for="13b">Вырабатывать навыки красивой походки и пластичных движений для
+              профессионального выступления на подиуме</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">14</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="14" id="14a" value="14a">
+            <label class="test__answer-title" for="14a">Изучать генетику, выводить новые сорта растений</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="14" id="14b" value="14b">
+            <label class="test__answer-title" for="14b">Работать в фондах архивов, находить необходимые
+              документы</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">15</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="15" id="15a" value="15a">
+            <label class="test__answer-title" for="15a">Сопровождать людей в сложных туристических походах в роли
+              инструктора</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="15" id="15b" value="15b">
+            <label class="test__answer-title" for="15b">Придумывать и отрабатывать сложные акробатические трюки,
+              спортивные номера</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">16</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="16" id="16a" value="16a">
+            <label class="test__answer-title" for="16a">Лечить кошек, собак, лошадей и пр. </label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="16" id="16b" value="16b">
+            <label class="test__answer-title" for="16b">Осуществлять сборку компьютеров</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">17</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="17" id="17a" value="17a">
+            <label class="test__answer-title" for="17a">Искать нужных людей, проводить подбор персонала в различные
+              фирмы</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="17" id="17b" value="17b">
+            <label class="test__answer-title" for="17b">Проводить финансовый анализ рынка ценных бумаг</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">18</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="18" id="18a" value="18a">
+            <label class="test__answer-title" for="18a">Играть на сцене, сниматься в кино, ставить трюки</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="18" id="18b" value="18b">
+            <label class="test__answer-title" for="18b">Тренировать и репетировать красивые и точные движения перед
+              спортивным выступлением</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">19</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="19" id="19a" value="19a">
+            <label class="test__answer-title" for="19a">Налаживать работу медицинского лазера, ультразвуковой
+              аппаратуры</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="19" id="19b" value="19b">
+            <label class="test__answer-title" for="19b">Преподавать различные предметы в школе, техникуме, институте и
+              т.д.</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">20</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="20" id="20a" value="20a">
+            <label class="test__answer-title" for="20a">Рассчитывать экономный путь транспортировки товара до
+              потребителя</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="20" id="20b" value="20b">
+            <label class="test__answer-title" for="20b">Оформлять иллюстрациями сайты, книги, журналы</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">21</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="21" id="21a" value="21a">
+            <label class="test__answer-title" for="21a">Осуществлять постоянную психологическую и физическую подготовку
+              к соревнованиям, турнирам</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="21" id="21b" value="21b">
+            <label class="test__answer-title" for="21b">Участвовать в экспедициях,посвященных изучению природных
+              явлений</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">22</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="22" id="22a" value="22a">
+            <label class="test__answer-title" for="22a">Строить дома по планам, делать разводку электричества в
+              соответствии с проектом</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="22" id="22b" value="22b">
+            <label class="test__answer-title" for="22b">Работать с финансовыми законами и кодексами</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">23</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="23" id="23a" value="23a">
+            <label class="test__answer-title" for="23a">Проектировать садово-парковые зоны, оформлять участки с помощью
+              растений</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="23" id="23b" value="23b">
+            <label class="test__answer-title" for="23b">Анализировать молекулярный состав крови</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">24</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="24" id="24a" value="24a">
+            <label class="test__answer-title" for="24a">Проектировать новое производственное оборудование, дома</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="24" id="24b" value="24b">
+            <label class="test__answer-title" for="24b">Производить архитектурно-восстановительные работы исторических
+              мест</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">25</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="25" id="25a" value="25a">
+            <label class="test__answer-title" for="25a">Оттачивать мастерство выполнения спортивного упражнения,
+              превозмогая усталость и страх</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="25" id="25b" value="25b">
+            <label class="test__answer-title" for="25b">Разрабатывать новые модели спортивных тренажеров, велосипедов и
+              другое спортивное оборудование</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">26</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="26" id="26a" value="26a">
+            <label class="test__answer-title" for="26a">Организовывать праздники, выступать в роли тамады</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="26" id="26b" value="26b">
+            <label class="test__answer-title" for="26b">Вести концертные программы, объявлять зрителям имена выступающих
+              и названия номеров программы</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">27</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="27" id="27a" value="27a">
+            <label class="test__answer-title" for="27a">Изучать жизнь организмов с помощью электронного
+              микроскопа</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="27" id="27b" value="27b">
+            <label class="test__answer-title" for="27b">Оказывать людям психологическую помощь, работать на телефоне
+              доверия</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">28</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="28" id="28a" value="28a">
+            <label class="test__answer-title" for="28a">Обрабатывать, анализировать и обобщать социологические
+              данные</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="28" id="28b" value="28b">
+            <label class="test__answer-title" for="28b">Профессионально работать над красотой своей фигуры и
+              внешности</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">29</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="29" id="29a" value="29a">
+            <label class="test__answer-title" for="29a">Разрабатывать средства защиты растений от вредителей и
+              вирусов</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="29" id="29b" value="29b">
+            <label class="test__answer-title" for="29b">Писать компьютерные программы</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__answer-block">
+      <div class="test__answer-number">30</div>
+      <div>
+        <ul class="test__answer-list">
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="30" id="30a" value="30a">
+            <label class="test__answer-title" for="30a">Консультировать людей в фитнес-зале, в бассейне, на спортивной
+              площадке</label>
+          </li>
+          <li class="test__answer-item">
+            <input class="test__answer-radio" type="radio" name="30" id="30b" value="30b">
+            <label class="test__answer-title" for="30b">Тренировать общую выносливость и совершенствовать отдельные
+              спортивные или артистические навыки</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="test__btn-wrapper">
+      <button type=submit name="submit" class="button button--corner resultsButton">
+        Показать результат
+      </button>
+    </div>
+  </form>
 
-</body>
+  </body>
 </main>
 <footer class="footer">
-    <div class="wrapper footer__banners">
-        <script language="JavaScript1.2"  type="text/javascript">
+  <div class="wrapper footer__banners">
+    <script language="JavaScript1.2" type="text/javascript">
 
 
-function setParameter(str, parameter, value) {
-    i = str.indexOf(parameter);
-    tmp = '';
-    if (i >=0) {
-        tmp = str.replace()
-    }
-}
+      function setParameter(str, parameter, value) {
+        i = str.indexOf(parameter);
+        tmp = '';
+        if (i >= 0) {
+          tmp = str.replace()
+        }
+      }
 
-function getNextPage(i) {
+      function getNextPage(i) {
         var param = /(pagenum=)\d*/;
         var newparam = 0;
         if (i > 0) {
-            newparam = 1;
-        }
-        else {
-            newparam = -1;
+          newparam = 1;
+        } else {
+          newparam = -1;
         }
         var tmp = new String(document.location);
-        var loc = tmp.replace(param, "pagenum="+newparam);
-		if (loc == tmp) {
-			loc += "&pagenum="+newparam;
-		}
+        var loc = tmp.replace(param, "pagenum=" + newparam);
+        if (loc == tmp) {
+          loc += "&pagenum=" + newparam;
+        }
         document.location = loc;
-    return false;
-}
+        return false;
+      }
 
-</script> 
-
-
-<script src="/templates/119050_list/js/jssor.slider.mini.js" type="text/javascript"> </script>
-<script type="text/javascript">
-        jQuery(document).ready(function ($) {
-
-
-            var options = {
-$FillMode: 5,
-                $AutoPlay: false,                                   //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
-                $AutoPlayInterval: 0,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-                $PauseOnHover: 0,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-
-                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-                $SlideEasing: $JssorEasing$.$EaseLinear,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
-                $SlideDuration: 4500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-                $SlideWidth: 140,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-                $SlideHeight: 45,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
-                $DisplayPieces: 9,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-                $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-                $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-            };
-
-            var jssor_slider_banner = new $JssorSlider$("slider_banner_container", options);
-
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizes
-            function ScaleSlider() {
-                var bodyWidth = document.body.clientWidth;
-                if (bodyWidth)
-                    jssor_slider_banner.$ScaleWidth(Math.min(bodyWidth, 1000));
-                else
-                    window.setTimeout(ScaleSlider, 30);
-            }
-
-            ScaleSlider();
-
-            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-                $(window).bind('resize', ScaleSlider);
-            }
-
-
-            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
-            //    $(window).bind("orientationchange", ScaleSlider);
-            //}
-            //responsive code end
-
-$('#slider_banner_container').hover(function() { jssor_slider_banner.$Play(); }, function() { jssor_slider_banner.$Pause(); });
-
-
-        });
     </script>
-<style type="text/css">
-#slider_banner_img_container div {
- text-align: center;
-}
-#slider_banner_img_container div a {
- margin: 0;
-}</style>
-< id="slider_banner_container" style="position: relative; width: 1000px; height: 45px; overflow: hidden; margin: 0 auto;">
-	<!-- Loading Screen -->
-	<div style="position: absolute; top: 0px; left: 0px;" u="loading">
-		<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; top: 0px; left: 0px;width: 100%;height:100%;">
-			&nbsp;</div>
-		<div style="position: absolute; display: block; top: 0px; left: 0px;width: 100%;height:100%;">
-			&nbsp;</div>
-	</div>
-	<!-- Slides Container -->
-	
 
-<div>
-			<a href="https://www.bsuir.by/" rel="nofollow" target="_blank">
-				<img class="footer__banner" alt="РїРѕСЂС‚Р°Р» Р‘Р“РЈРР " src="/m/12_113227_1_54858.jpg" u="image" />
-			</a>
-			</div>
-	
-<div>
-			<a href="https://abiturient.by/" rel="nofollow" target="_blank">
-				<img class="footer__banner" alt="РђР‘РРўРЈР РР•РќРў.BY" src="/m/12_113227_1_54862.svg" u="image" />
-			</a>
-			</div>
-	
-<div>
-			<a href="https://www.youtube.com/channel/UCnAG9KWPnPhniEH7ezu0yew" rel="nofollow" target="_blank">
-				<img class="footer__banner" alt="MOL TV" src="/m/12_113227_1_54861.svg" u="image" />
-			</a>
-			</div>
-	
-<div>
-			<a href="https://lms.bsuir.by/" rel="nofollow" target="_blank">
-				<img class="footer__banner" alt="Р¤РРќРћ" src="/m/12_113227_1_54845.svg" u="image" />
-			</a>
-			</div>
-	
-<div>
-			<a href="https://edu.gov.by/" rel="nofollow" target="_blank">
-				<img class="footer__banner" alt="РњРёРЅРёСЃС‚РµСЂСЃС‚РІРѕ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ Р РµСЃРїСѓР±Р»РёРєРё Р‘РµР»Р°СЂСѓСЃСЊ" src="/m/12_113227_1_54847.svg" u="image" />
-			</a>
-			</div>
-	
-<div>
-			<a href="https://export.by/" rel="nofollow" target="_blank">
-				<img class="footer__banner" alt="export.by" src="/m/12_113227_1_54848.svg" u="image" />
-			</a>
-			</div>
-	
-</div>
-	<a href="http://www.jssor.com" style="display: none">javascript carousel</a>
 
-	<!-- Jssor Slider End --></div>
-    <div class="footer__all-size">
-        <div class="wrapper footer__wrapper--info">
-            <a href="/">
-                <img class="logo footer__logo" src="/online/layouts/501//img/logo.svg" alt=""/>
-            </a>
-            <div class="footer__content-box">
-                <div class="information footer__information">
-	<p class="footer__description">
-		Р®СЂРёРґРёС‡РµСЃРєРёР№ Р°РґСЂРµСЃ:<br />
-		220013 Рі. РњРёРЅСЃРє, СѓР». Рџ. Р‘СЂРѕРІРєРё, 6</p>
-	<p class="footer__description">
-		РўРµР»РµС„РѕРЅ РїСЂРёРµРјРЅРѕР№ РєРѕРјРёСЃСЃРёРё:<br />
-		+375 17 293-88-15</p>
-</div>
-<div class="information footer__information">
-	<p>
-		&#160;</p>
-	<p class="footer__description">
-		Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹:<br />
-		09.00 - 18.00</p>
-	<p class="footer__description">
-		Email:<br />
-		<a class="footer__link" href="mailto:prcom@bsuir.by">prcom@bsuir.by</a></p>
-</div>
-<p>
-	&#160;</p>
-</div>
-            <div class="acc footer__acc">
-                
-	<a class="acc__link footer__acc-opacity" href="https://www.instagram.com/priembsuir/" title="РњС‹ РІ РРЅСЃС‚Р°РіСЂР°РјРј"><img alt="" src="/m/12_113227_1_54852.svg" /> </a> <a class="acc__link footer__acc-opacity" href="https://vk.com/priembsuir" title="РњС‹ РІ РІРљРѕРЅС‚Р°РєС‚Рµ"> <img alt="" src="/m/12_113227_1_54853.svg" /> </a></div>
-        </div>
+    <script src="/templates/119050_list/js/jssor.slider.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+
+
+        var options = {
+          $FillMode: 5,
+          $AutoPlay: false,                                   //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+          $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+          $AutoPlayInterval: 0,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+          $PauseOnHover: 0,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+          $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+          $SlideEasing: $JssorEasing$.$EaseLinear,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+          $SlideDuration: 4500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+          $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+          $SlideWidth: 140,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+          $SlideHeight: 45,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+          $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+          $DisplayPieces: 9,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+          $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+          $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+          $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+          $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+        };
+
+        var jssor_slider_banner = new $JssorSlider$("slider_banner_container", options);
+
+        //responsive code begin
+        //you can remove responsive code if you don't want the slider scales while window resizes
+        function ScaleSlider() {
+          var bodyWidth = document.body.clientWidth;
+          if (bodyWidth)
+            jssor_slider_banner.$ScaleWidth(Math.min(bodyWidth, 1000));
+          else
+            window.setTimeout(ScaleSlider, 30);
+        }
+
+        ScaleSlider();
+
+        if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+          $(window).bind('resize', ScaleSlider);
+        }
+
+
+        //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+        //    $(window).bind("orientationchange", ScaleSlider);
+        //}
+        //responsive code end
+
+        $('#slider_banner_container').hover(function () {
+          jssor_slider_banner.$Play();
+        }, function () {
+          jssor_slider_banner.$Pause();
+        });
+
+
+      });
+    </script>
+    <style type="text/css">
+      #slider_banner_img_container div {
+        text-align: center;
+      }
+
+      #slider_banner_img_container div a {
+        margin: 0;
+      }</style>
+    < id="slider_banner_container" style="position: relative; width: 1000px; height: 45px; overflow: hidden; margin: 0
+    auto;">
+    <!-- Loading Screen -->
+    <div style="position: absolute; top: 0px; left: 0px;" u="loading">
+      <div
+        style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; top: 0px; left: 0px;width: 100%;height:100%;">
+        &nbsp;
+      </div>
+      <div style="position: absolute; display: block; top: 0px; left: 0px;width: 100%;height:100%;">
+        &nbsp;
+      </div>
     </div>
+    <!-- Slides Container -->
+
+
+    <div>
+      <a href="https://www.bsuir.by/" rel="nofollow" target="_blank">
+        <img class="footer__banner" alt="портал БГУИР" src="/m/12_113227_1_54858.jpg" u="image"/>
+      </a>
+    </div>
+
+    <div>
+      <a href="https://abiturient.by/" rel="nofollow" target="_blank">
+        <img class="footer__banner" alt="АБИТУРИЕНТ.BY" src="/m/12_113227_1_54862.svg" u="image"/>
+      </a>
+    </div>
+
+    <div>
+      <a href="https://www.youtube.com/channel/UCnAG9KWPnPhniEH7ezu0yew" rel="nofollow" target="_blank">
+        <img class="footer__banner" alt="MOL TV" src="/m/12_113227_1_54861.svg" u="image"/>
+      </a>
+    </div>
+
+    <div>
+      <a href="https://lms.bsuir.by/" rel="nofollow" target="_blank">
+        <img class="footer__banner" alt="ФИНО" src="/m/12_113227_1_54845.svg" u="image"/>
+      </a>
+    </div>
+
+    <div>
+      <a href="https://edu.gov.by/" rel="nofollow" target="_blank">
+        <img class="footer__banner" alt="Министерство образования Республики Беларусь" src="/m/12_113227_1_54847.svg"
+             u="image"/>
+      </a>
+    </div>
+
+    <div>
+      <a href="https://export.by/" rel="nofollow" target="_blank">
+        <img class="footer__banner" alt="export.by" src="/m/12_113227_1_54848.svg" u="image"/>
+      </a>
+    </div>
+
+  </div>
+  <a href="http://www.jssor.com" style="display: none">javascript carousel</a>
+
+  <!-- Jssor Slider End --></div>
+  <div class="footer__all-size">
+    <div class="wrapper footer__wrapper--info">
+      <a href="/">
+        <img class="logo footer__logo" src="/online/layouts/501//img/logo.svg" alt=""/>
+      </a>
+      <div class="footer__content-box">
+        <div class="information footer__information">
+          <p class="footer__description">
+            Юридический адрес:<br/>
+            220013 г. Минск, ул. П. Бровки, 6</p>
+          <p class="footer__description">
+            Телефон приемной комиссии:<br/>
+            +375 17 293-88-15</p>
+        </div>
+        <div class="information footer__information">
+          <p>
+            &#160;</p>
+          <p class="footer__description">
+            Время работы:<br/>
+            09.00 - 18.00</p>
+          <p class="footer__description">
+            Email:<br/>
+            <a class="footer__link" href="mailto:prcom@bsuir.by">prcom@bsuir.by</a></p>
+        </div>
+        <p>
+          &#160;</p>
+      </div>
+      <div class="acc footer__acc">
+
+        <a class="acc__link footer__acc-opacity" href="https://www.instagram.com/priembsuir/"
+           title="Мы в Инстаграмм"><img alt="" src="/m/12_113227_1_54852.svg"/> </a> <a
+        class="acc__link footer__acc-opacity" href="https://vk.com/priembsuir" title="Мы в вКонтакте"> <img alt=""
+                                                                                                            src="/m/12_113227_1_54853.svg"/>
+      </a></div>
+    </div>
+  </div>
 </footer>
 
 <div class="popup hidden__opacity">
-    <div class="popup__body">
-        <a class="popup__close"><img src="/online/layouts/501//img/close.svg" alt=""></a>
-        <div class="popup__content">
-            <!--<p>
-	<button class="button button--corner popup__btn">Р›РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚</button></p>-->
-<ul class="popup__list">
-	<li class="popup__list-item">
-		<img class="popup__link-img" src="/online/layouts/501/img/popup/spetial.svg" /> <a class="popup__link" href="/online/showpage.jsp?PageID=84721&resID=113227&lang=ru&menuItemID=0&_cms_=1&_abc_=1">РЎРїРµС†РёР°Р»СЊРЅРѕСЃС‚Рё</a></li>
-	<li class="popup__list-item">
-		<img class="popup__link-img" src="/online/layouts/501/img/popup/programmer.svg" /> <a class="popup__link" href="/online/showpage.jsp?PageID=85074&resID=113227&lang=ru&menuItemID=0&_cms_=1&_abc_=1">РЈС‡РёС‚СЊСЃСЏ РЅР° РїСЂРѕРіСЂР°РјРјРёСЃС‚Р°</a></li>
-	<li class="popup__list-item">
-		<img class="popup__link-img" src="/online/layouts/501/img/popup/courses.svg" /> <a class="popup__link" href="/online/showpage.jsp?PageID=84202&resID=113227&lang=ru&menuItemID=0&_cms_=1&_abc_=1">РџРѕРґРіРѕС‚РѕРІРёС‚РµР»СЊРЅС‹Рµ РєСѓСЂСЃС‹</a></li>
-	<li class="popup__list-item">
-		<img class="popup__link-img" src="/online/layouts/501/img/popup/day.svg" /> <a class="popup__link" href="/online/showpage.jsp?PageID=85376&resID=113227&lang=ru&menuItemID=119100&_cms_=1&_abc_=1">Р”РЅРµРІРЅРѕРµ</a></li>
-	<li class="popup__list-item">
-		<img class="popup__link-img" src="/online/layouts/501/img/popup/correspondence.svg" /> <a class="popup__link" href="/online/showpage.jsp?PageID=85370&resID=113227&lang=ru&menuItemID=119101&_cms_=1&_abc_=1">Р—Р°РѕС‡РЅРѕРµ</a></li>
-	<li class="popup__list-item">
-		<img class="popup__link-img" src="/online/layouts/501/img/popup/distance.svg" /> <a class="popup__link" href="/online/showpage.jsp?PageID=85371&resID=113227&lang=ru&menuItemID=119102&_cms_=1&_abc_=1">Р”РёСЃС‚Р°РЅС†РёРѕРЅРЅРѕРµ</a></li>
-	<li class="popup__list-item">
-		<img class="popup__link-img" src="/online/layouts/501/img/popup/abbraviated.svg" /> <a class="popup__link" href="/online/showpage.jsp?PageID=85377&resID=113227&lang=ru&menuItemID=119103&_cms_=1&_abc_=1">РЎРѕРєСЂР°С‰С‘РЅРЅРѕРµ</a></li>
-	<li class="popup__list-item">
-		<img class="popup__link-img" src="/online/layouts/501/img/popup/too_learn.svg" /><a class="popup__link" href="/online/showpage.jsp?PageID=85378&resID=113227&lang=ru&menuItemID=119104&_cms_=1&_abc_=1">Р’С‚РѕСЂРѕРµ РІС‹СЃС€РµРµ</a></li>
-</ul>
-</div>
-        <div class="popup__content popup__content--bg">
-            <ul class="popup__list popup__list--untop">
-	<li class="popup__list-item">
-		<a class="popup__link popup__link--wite" href="/online/showpage.jsp?PageID=85063&resID=113227&lang=ru&menuItemID=0&_cms_=1&_abc_=1">РџСЂРѕС…РѕРґРЅС‹Рµ Р±Р°Р»Р»С‹ РїСЂРѕС€Р»С‹С… Р»РµС‚ </a></li>
-	<li class="popup__list-item">
-		<a class="popup__link popup__link--wite" href="/online/showpage.jsp?PageID=84721&resID=113227&lang=ru&menuItemID=0&_cms_=1&_abc_=1">РџР»Р°РЅ РїСЂРёС‘РјР° </a></li>
-	<li class="popup__list-item">
-		<a class="popup__link popup__link--wite" href="/online/showpage.jsp?PageID=84618&resID=113227&lang=ru&menuItemID=119106&_cms_=1&_abc_=1">РћР±С‰РµР¶РёС‚РёРµ</a></li>
-	<li class="popup__list-item">
-		<a class="popup__link popup__link--wite" href="https://www.bsuir.by/ru/magistratura/dlya-postupayuschikh">РџРѕСЃС‚СѓРїР»РµРЅРёРµ РІ РјР°РіРёСЃС‚СЂР°С‚СѓСЂСѓ </a></li>
-	<li class="popup__list-item">
-		<a class="popup__link popup__link--wite" href="https://www.bsuir.by/ru/inostrannym-grazhdanam">РРЅРѕСЃС‚СЂР°РЅРЅС‹Рј Р°Р±РёС‚СѓСЂРёРµРЅС‚Р°Рј </a></li>
-</ul>
-<div class="popup__info">
-	<div class="information popup__information">
-		<p>
-			<span class="popup__contacts">Р®СЂРёРґРёС‡РµСЃРєРёР№ Р°РґСЂРµСЃ:</span></p>
-		<span class="popup__contacts">220013 Рі. РњРёРЅСЃРє, СѓР». Рџ. Р‘СЂРѕРІРєРё, 6 </span>
-		<p>
-			<a href="/online/showpage.jsp?PageID=84709&resID=113227&lang=ru&menuItemID=119097&_cms_=1&_abc_=1"><span class="popup__contacts"><span class="popup__link popup__link--wite popup__link--footer">РЎС…РµРјР° РєРѕСЂРїСѓСЃРѕРІ </span> </span></a></p>
-		<p>
-			<span class="popup__contacts">РўРµР»РµС„РѕРЅ РїСЂРёРµРјРЅРѕР№ РєРѕРјРёСЃСЃРёРё:</span></p>
-		<span class="popup__contacts">+375 17 293-88-15 </span></div>
-	<div class="information popup__information">
-		<p>
-			<span class="popup__contacts">Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹:</span></p>
-		<span class="popup__contacts">09.00 - 18.00 </span> <span class="popup__contacts popup__contacts--unmargin"> </span>
-		<p>
-			<span class="popup__contacts popup__contacts--unmargin">Email:</span></p>
-		<span class="popup__contacts popup__contacts--unmargin"><a class="popup__link popup__link--wite popup__link--footer" href="#">prcom@bsuir.by </a> </span></div>
-	<div class="acc popup__acc">
-		<a class="acc__link" href=" https://www.instagram.com/priembsuir"><img alt="РџСЂРёРµРјРЅР°СЏ РєРѕРјРёСЃСЃРёСЏ РІ РРЅСЃС‚Р°РіСЂР°РјРј" src="/m/12_113227_1_54852.svg" /></a> <a class="acc__link" href="https://vk.com/priembsuir/"><img alt="РџСЂРёРµРјРЅР°СЏ РєРѕРјРёСЃСЃРёСЏ РІ Р’РљРѕРЅР°РєС‚Рµ" src="/m/12_113227_1_54853.svg" /></a></div>
-</div>
-<p>
-	&#160;</p>
-</div>
+  <div class="popup__body">
+    <a class="popup__close"><img src="/online/layouts/501//img/close.svg" alt=""></a>
+    <div class="popup__content">
+      <!--<p>
+<button class="button button--corner popup__btn">Личный кабинет</button></p>-->
+      <ul class="popup__list">
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="/online/layouts/501/img/popup/spetial.svg"/> <a class="popup__link"
+                                                                                            href="/online/showpage.jsp?PageID=84721&resID=113227&lang=ru&menuItemID=0&_cms_=1&_abc_=1">Специальности</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="/online/layouts/501/img/popup/programmer.svg"/> <a class="popup__link"
+                                                                                               href="/online/showpage.jsp?PageID=85074&resID=113227&lang=ru&menuItemID=0&_cms_=1&_abc_=1">Учиться
+          на программиста</a></li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="/online/layouts/501/img/popup/courses.svg"/> <a class="popup__link"
+                                                                                            href="/online/showpage.jsp?PageID=84202&resID=113227&lang=ru&menuItemID=0&_cms_=1&_abc_=1">Подготовительные
+          курсы</a></li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="/online/layouts/501/img/popup/day.svg"/> <a class="popup__link"
+                                                                                        href="/online/showpage.jsp?PageID=85376&resID=113227&lang=ru&menuItemID=119100&_cms_=1&_abc_=1">Дневное</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="/online/layouts/501/img/popup/correspondence.svg"/> <a class="popup__link"
+                                                                                                   href="/online/showpage.jsp?PageID=85370&resID=113227&lang=ru&menuItemID=119101&_cms_=1&_abc_=1">Заочное</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="/online/layouts/501/img/popup/distance.svg"/> <a class="popup__link"
+                                                                                             href="/online/showpage.jsp?PageID=85371&resID=113227&lang=ru&menuItemID=119102&_cms_=1&_abc_=1">Дистанционное</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="/online/layouts/501/img/popup/abbraviated.svg"/> <a class="popup__link"
+                                                                                                href="/online/showpage.jsp?PageID=85377&resID=113227&lang=ru&menuItemID=119103&_cms_=1&_abc_=1">Сокращённое</a>
+        </li>
+        <li class="popup__list-item">
+          <img class="popup__link-img" src="/online/layouts/501/img/popup/too_learn.svg"/><a class="popup__link"
+                                                                                             href="/online/showpage.jsp?PageID=85378&resID=113227&lang=ru&menuItemID=119104&_cms_=1&_abc_=1">Второе
+          высшее</a></li>
+      </ul>
     </div>
+    <div class="popup__content popup__content--bg">
+      <ul class="popup__list popup__list--untop">
+        <li class="popup__list-item">
+          <a class="popup__link popup__link--wite"
+             href="/online/showpage.jsp?PageID=85063&resID=113227&lang=ru&menuItemID=0&_cms_=1&_abc_=1">Проходные баллы
+            прошлых лет </a></li>
+        <li class="popup__list-item">
+          <a class="popup__link popup__link--wite"
+             href="/online/showpage.jsp?PageID=84721&resID=113227&lang=ru&menuItemID=0&_cms_=1&_abc_=1">План приёма </a>
+        </li>
+        <li class="popup__list-item">
+          <a class="popup__link popup__link--wite"
+             href="/online/showpage.jsp?PageID=84618&resID=113227&lang=ru&menuItemID=119106&_cms_=1&_abc_=1">Общежитие</a>
+        </li>
+        <li class="popup__list-item">
+          <a class="popup__link popup__link--wite" href="https://www.bsuir.by/ru/magistratura/dlya-postupayuschikh">Поступление
+            в магистратуру </a></li>
+        <li class="popup__list-item">
+          <a class="popup__link popup__link--wite" href="https://www.bsuir.by/ru/inostrannym-grazhdanam">Иностранным
+            абитуриентам </a></li>
+      </ul>
+      <div class="popup__info">
+        <div class="information popup__information">
+          <p>
+            <span class="popup__contacts">Юридический адрес:</span></p>
+          <span class="popup__contacts">220013 г. Минск, ул. П. Бровки, 6 </span>
+          <p>
+            <a href="/online/showpage.jsp?PageID=84709&resID=113227&lang=ru&menuItemID=119097&_cms_=1&_abc_=1"><span
+              class="popup__contacts"><span
+              class="popup__link popup__link--wite popup__link--footer">Схема корпусов </span> </span></a></p>
+          <p>
+            <span class="popup__contacts">Телефон приемной комиссии:</span></p>
+          <span class="popup__contacts">+375 17 293-88-15 </span></div>
+        <div class="information popup__information">
+          <p>
+            <span class="popup__contacts">Время работы:</span></p>
+          <span class="popup__contacts">09.00 - 18.00 </span> <span
+          class="popup__contacts popup__contacts--unmargin"> </span>
+          <p>
+            <span class="popup__contacts popup__contacts--unmargin">Email:</span></p>
+          <span class="popup__contacts popup__contacts--unmargin"><a
+            class="popup__link popup__link--wite popup__link--footer" href="#">prcom@bsuir.by </a> </span></div>
+        <div class="acc popup__acc">
+          <a class="acc__link" href=" https://www.instagram.com/priembsuir"><img alt="Приемная комиссия в Инстаграмм"
+                                                                                 src="/m/12_113227_1_54852.svg"/></a> <a
+          class="acc__link" href="https://vk.com/priembsuir/"><img alt="Приемная комиссия в ВКонакте"
+                                                                   src="/m/12_113227_1_54853.svg"/></a></div>
+      </div>
+      <p>
+        &#160;</p>
+    </div>
+  </div>
 </div>
 </div>
 
-    <!-- BEGIN cloudim code {literal} -->
-    <script type="text/javascript" charset="utf-8">document.write(unescape("%3Cdiv id='cloudim_widget'%3E%3Cscript src='https://static.cloudim.ru/js/chat.js' type='text/javascript'%3E%3C/script%3E%3C/div%3E"));</script> <div id="cloudim_cr" style="position:absolute; left:-9999px;">Cloudim - <a target="_blank" href="https://cloudim.ru/">РѕРЅР»Р°Р№РЅ РєРѕРЅСЃСѓР»СЊС‚Р°РЅС‚ РґР»СЏ СЃР°Р№С‚Р°</a> Р±РµСЃРїР»Р°С‚РЅРѕ.</div>
-    <script type="text/javascript" charset="utf-8">
-        Cloudim.Chat.init({uid:49167});
-    </script>
-    <!-- {/literal} END cloudim code -->
+<!-- BEGIN cloudim code {literal} -->
+<script type="text/javascript"
+        charset="utf-8">document.write(unescape("%3Cdiv id='cloudim_widget'%3E%3Cscript src='https://static.cloudim.ru/js/chat.js' type='text/javascript'%3E%3C/script%3E%3C/div%3E"));</script>
+<div id="cloudim_cr" style="position:absolute; left:-9999px;">Cloudim - <a target="_blank" href="https://cloudim.ru/">онлайн
+  консультант для сайта</a> бесплатно.
+</div>
+<script type="text/javascript" charset="utf-8">
+  Cloudim.Chat.init({uid: 49167});
+</script>
+<!-- {/literal} END cloudim code -->
 
 </body>
 </html>

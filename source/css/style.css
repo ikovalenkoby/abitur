@@ -1035,9 +1035,6 @@ h4 {
   margin-left: 18px;
   margin-bottom: 16px;
 }
-.main-content__list li {
-  list-style-type: "— ";
-}
 @media screen and (max-width: 767px) {
   .main-content__list {
     font-size: 1.2rem;
@@ -1446,6 +1443,9 @@ h4 {
   grid-gap: 10px;
   margin-bottom: 20px;
 }
+.filter--programmist {
+  grid-template-columns: 190px repeat(3, 1px) repeat(2, 130px) 1fr;
+}
 .filter__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1488,6 +1488,9 @@ h4 {
     line-height: 1.6rem;
     grid-template-columns: 80px 80px minmax(20px, auto) 190px 190px;
   }
+  .filter--programmist {
+    grid-template-columns: repeat(3, 1px) 190px repeat(2, 130px) 1fr;
+  }
   .filter__checkselect:first-of-type {
     grid-column-start: 4;
   }
@@ -1524,6 +1527,18 @@ h4 {
   .filter button:nth-last-child(2) {
     margin-left: 0;
   }
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.flex__space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .flex-row {
   display: -webkit-box;
@@ -1671,12 +1686,12 @@ h4 {
 .table--bordered > tfoot > tr > th,
 .table--bordered > thead > tr > td,
 .table--bordered > thead > tr > th {
-  border: 1px solid #464e6a6b;
-  border-top-color: #464e6a6b;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
   text-align: center;
+  outline: 1px solid #464e6a6b;
+}
+.table--bordered > thead > tr > td,
+.table--bordered > thead > tr > th {
+  background-color: #ffffff;
 }
 .table__column-day--budget,
 .table__column-day--paid,
@@ -1740,14 +1755,14 @@ h4 {
 .table__sort-icon--active svg {
   fill: #464e6a;
 }
-.table .table__column-blocks {
+.table__column-blocks {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.table .table__block-cell {
+.table__block-cell {
   padding: 7px;
   border: 1px solid #464e6a6b;
   border-top-color: #464e6a6b;
@@ -1759,7 +1774,7 @@ h4 {
   font-size: 1.4rem;
   line-height: 1.8rem;
 }
-.table .table__special-cell {
+.table__special-cell {
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1771,53 +1786,58 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
 }
+.table thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 .table__row-fkp {
   background-color: #f7fff5;
 }
 .table__row-fkp--active {
-  background-color: #8df07d;
+  background-color: #c2ffb3;
 }
 .table__row-fitu {
   background-color: #fffbf5;
 }
 .table__row-fitu--active {
-  background-color: #e8d31a;
+  background-color: #ffe0b3;
 }
 .table__row-fre {
   background-color: #fdfff5;
 }
 .table__row-fre--active {
-  background-color: #f4ffca;
+  background-color: #f0ffb3;
 }
 .table__row-fksis {
-  background-color: #f5fff9;
+  background-color: #f5fffd;
 }
 .table__row-fksis--active {
-  background-color: #acffcd;
+  background-color: #b3fff0;
 }
 .table__row-fik {
-  background-color: #f5ffff;
+  background-color: #f5f8ff;
 }
 .table__row-fik--active {
-  background-color: #a4ffff;
+  background-color: #b3c9ff;
 }
 .table__row-ief {
-  background-color: #f5f9ff;
+  background-color: #fef5ff;
 }
 .table__row-ief--active {
-  background-color: #93beff;
+  background-color: #f7b3ff;
 }
 .table__row-vf {
   background-color: #f5fffa;
 }
 .table__row-vf--active {
-  background-color: #99ffcc;
+  background-color: #b3ffd9;
 }
 .table__row-iit {
   background-color: #f9f5ff;
 }
 .table__row-iit--active {
-  background-color: #b788ff;
+  background-color: #d1b3ff;
 }
 .table > tbody > tr > td.table__column-spec {
   text-align: left;
@@ -1858,7 +1878,11 @@ h4 {
     width: 100%;
   }
   .table__column-spec {
-    display: none;
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    /*display: none;*/
   }
   .table > thead .table__column-spec {
     height: 122px;
@@ -1875,9 +1899,8 @@ h4 {
     padding: 7px;
   }
   .table__column-blocks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    /* display: flex;*/
+    display: none;
   }
   .scroll {
     overflow: auto;
@@ -1947,7 +1970,8 @@ h4 {
   text-decoration: none;
   color: #4d4d4d;
 }
-.breadcrumbs a::after {
+.breadcrumbs a::after,
+.breadcrumbs span::after {
   content: "";
   height: 10px;
   width: 5px;
@@ -1968,14 +1992,29 @@ h4 {
 .breadcrumbs span {
   font-size: 1.4rem;
   color: #464e6a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10px;
+}
+.breadcrumbs span:last-child::after {
+  content: "";
+  height: 0;
+  width: 0;
 }
 @media screen and (max-width: 767px) {
   .breadcrumbs {
     margin-bottom: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .breadcrumbs a,
   .breadcrumbs span {
     font-size: 1.2rem;
+    padding-bottom: 5px;
   }
 }
 .nomain-content table > table {
@@ -2126,6 +2165,7 @@ h4 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 30;
 }
 .information {
   display: -webkit-box;
@@ -2214,6 +2254,10 @@ h4 {
 }
 .test__answer-list {
   list-style: none;
+  padding: 10px;
+}
+ul.test__answer-list {
+  margin-left: 0;
 }
 .test__answer-item {
   display: -webkit-box;
@@ -2222,12 +2266,13 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 12px 12px 8px 8px;
   height: 50%;
 }
 .test__answer-item:last-child {
-  padding-top: 8px;
-  padding-bottom: 12px;
+  margin-top: 10px;
+}
+.test__answer-item:hover {
+  background-color: #4b4b4b29;
 }
 .test__answer-radio {
   display: none;
@@ -2236,6 +2281,7 @@ h4 {
   position: relative;
   padding-left: 28px;
   max-width: 332px;
+  cursor: pointer;
 }
 .test__answer-title::before {
   content: "";
@@ -2252,7 +2298,7 @@ h4 {
 .test__answer-radio:checked + .test__answer-title::before {
   background-color: #4b4b4b;
   background-clip: content-box;
-  padding: 3px;
+  padding: 2px;
 }
 .test__btn-wrapper {
   width: 100%;
@@ -2418,7 +2464,7 @@ h4 {
   position: relative;
 }
 .reference__title::before {
-  content: "—";
+  content: "-";
   position: absolute;
   left: -20px;
 }
