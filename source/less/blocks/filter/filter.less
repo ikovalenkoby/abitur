@@ -5,7 +5,11 @@
   margin-bottom: 20px;
 
   &--programmist {
-    grid-template-columns: 190px repeat(3,1px) repeat(2, 130px) 1fr;
+    grid-template-columns: 190px 140px  120px 1fr;
+  }
+
+  &--paid-fac {
+    grid-template-columns: 80px 80px 190px 140px 120px 1fr;
   }
 
   &__label {
@@ -56,7 +60,11 @@
     grid-template-columns: 80px 80px minmax(20px, auto) 190px 190px;
 
     &--programmist {
-      grid-template-columns: repeat(3,1px) 190px repeat(2, 130px) 1fr;
+      grid-template-columns: 190px 190px minmax(190px, auto);
+    }
+
+    &--paid-fac {
+      grid-template-columns: 80px 80px 190px minmax(20px, auto) 120px 120px;
     }
 
     &__checkselect:first-of-type {
@@ -71,11 +79,50 @@
       margin-left: auto;
     }
   }
+
+  .filter--paid-fac .filter__checkselect {
+    grid-column-start: 3;
+  }
+
+  .filter--paid-fac button:nth-last-child(2) {
+    grid-column-start: 5;
+  }
+
+  .filter--programmist .filter__checkselect:first-of-type {
+    grid-column-start: 1;
+  }
+
+  .filter--programmist button:nth-last-child(2) {
+    grid-column-start: 2;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .filter {
+
+   /* &--programmist {
+      grid-template-columns: repeat(3, 1px) 190px repeat(2, 130px) 1fr;
+    }*/
+
+    &--paid-fac {
+      grid-template-columns: 80px minmax(80px, auto) 190px;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+
+  .filter--paid-fac button:nth-last-child(2) {
+    grid-column-start: 2;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .filter {
     grid-template-columns: minmax(175px, auto) minmax(175px, auto);
+
+    &--paid-fac {
+      grid-template-columns: 80px minmax(80px, auto) 190px;
+      grid-template-rows: 1fr 1fr;
+    }
 
     &__checkselect:first-of-type {
       grid-column-start: 1;
@@ -90,6 +137,20 @@
       margin-left: 0;
     }
   }
+
+  .filter--paid-fac button:nth-last-child(2) {
+    grid-column-start: 2;
+  }
+
+  .filter--paid-fac .filter__checkselect:first-of-type {
+    grid-column-start: 3;
+  }
+
+  .filter--paid-fac button:last-child {
+     margin-right: 0;
+     margin-left: auto;
+  }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -104,5 +165,18 @@
     & button:nth-last-child(2) {
       margin-left: 0;
     }
+
+    &--paid-fac {
+      grid-template-columns: 120px minmax(120px, auto);
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+  }
+
+  .filter--paid-fac .filter__checkselect:first-of-type {
+    grid-column-start: 1;
+  }
+
+  .filter--paid-fac button:nth-last-child(2) {
+    grid-column-start: 1;
   }
 }
